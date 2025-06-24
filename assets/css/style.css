@@ -10,8 +10,14 @@
 
 /* General Styling Rules */
 body {
+    background-image: url(/assets/images/eras-tour-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
     background-color: #f4cb8d;
     font-family: var(--primary-font);
+    padding-top: 10px;
 }
 
 #opening-instructions {
