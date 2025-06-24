@@ -86,50 +86,38 @@ const debutQuestions = [
     },
 ]
 
-let questionNumber = 0;
-let scoreNumber = 0;
+const allErasQuestions = {
+    debut: debutQuestions,
+};
 
-function loadQuestion(){
-    question.innerText = debutQuestions[questionNumber].question;
+// General Code for the DOM
+const eras = document.getElementById ("pick-era");
+const quizSpace = document.getElementById ("quiz-space");
+const question = document.getElementById ("question");
+const answers = document.getElementById ("answer-space");
+const nextQuestion = document.getElementById ("next-question")
+
+let currentQuestionIndex = 0;
+let currentQuestions = [];
+
+// Era selector
+let eraButtons = document.getElementsByClassName ("era-selector-button");
+
+for (let button of eraButtons) {
+    button.addEventListener("click", function() {
+        let gameChoice = this.getAttribute ("data-type");
+
+        if (allErasQuestions[gameChoice]) {
+            startQuiz (allQuestions [gameChoice]);
+        }
+    });
 }
 
-function loadAnswers(){
-    answer0.innerText = debutQuestions[questionNumber].answers[0];
-    answer1.innerText = debutQuestions[questionNumber].answers[1];
-    answer2.innerText = debutQuestions[questionNumber].answers[2];
-    answer3.innerText = debutQuestions[questionNumber].answers[3];
+// Quiz Logic
+function startQuiz (questionsArray){
+    currentQuestions = questionsArray;
+    currentQuestionIndex = 0;
+    eras.classList.add("d-none");
+    quizSpace.classList.remove("d-none");
+    showQuestion (currentQuestions[currentQuestionIndex]);
 }
-
-function callQuiz (){
-    loadQuestion();
-    loadAnswers();
-}
-
-function checkAnswer(answerClicked) {
-    let correctAnswer = debutQuestions[questionNumber].correct;
-
-    // Get all answer buttons in an array 
-
-    const buttons = [answer0, answer1, answer2, answer3];
-
-    if (answerClicked === correctAnswer) {
-        // Change correct answer to green
-        buttons[answerClicked].classList.add("correctAnswer");
-        console.log ("you got it right, well done!");
-        scoreNumber++;
-        score.innerText = scoreNumber;
-    } else {
-        // Incorrect answer changed to red
-        buttons[answerClicked].classList.add("wrongAnswer");
-        console.log ("oops not quite");
-    }
-        // Load next question
-        callQuiz();
-
-        // Clear any styles on previous answer
-        
-    }
-
-
-callQuiz();
-
