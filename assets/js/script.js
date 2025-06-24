@@ -108,7 +108,7 @@ for (let button of eraButtons) {
         let gameChoice = this.getAttribute ("data-type");
 
         if (allErasQuestions[gameChoice]) {
-            startQuiz (allQuestions [gameChoice]);
+            startQuiz (allErasQuestions [gameChoice]);
         }
     });
 }
@@ -121,3 +121,21 @@ function startQuiz (questionsArray){
     quizSpace.classList.remove("d-none");
     showQuestion (currentQuestions[currentQuestionIndex]);
 }
+
+// Show Question
+function showQuestion (quest) {
+    question.innerText = quest.question;
+    answers.innerHTML = "";
+  
+    question.answers.forEach((answer, index) => {
+        const button = document.createElement("button");
+        button.innerText = answer;
+        button.onclick = () => {
+            showAnswer (button, index === question.correct);
+        };
+        answers.appendChild(button);
+    })
+}
+
+console.log(gameChoice)
+startQuiz();
