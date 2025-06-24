@@ -48,19 +48,33 @@ function loadAnswers(){
 function callQuiz (){
     loadQuestion();
     loadAnswers();
-    addCorrectAnswer();
 }
 
 function checkAnswer(answerClicked) {
-    correctAnswer = debutQuestions[questionNumber].correct;
-    if (answerClicked === correctAnswer) {
-        console.log ("you got it right, well done!");
-    }
-}
+    let correctAnswer = debutQuestions[questionNumber].correct;
 
-function addCorrectAnswer() {
-    scoreNumber++;
-}
+    // Get all answer buttons in an array 
+
+    const buttons = [answer0, answer1, answer2, answer3];
+
+    if (answerClicked === correctAnswer) {
+        // Change correct answer to green
+        buttons[answerClicked].classList.add("correctAnswer");
+        console.log ("you got it right, well done!");
+        scoreNumber++;
+        score.innerText = scoreNumber;
+    } else {
+        // Incorrect answer changed to red
+        buttons[answerClicked].classList.add("wrongAnswer");
+        console.log ("oops not quite");
+    }
+        // Load next question
+        callQuiz();
+
+        // Clear any styles on previous answer
+        
+    }
+
 
 callQuiz();
 

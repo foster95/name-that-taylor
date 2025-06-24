@@ -1,13 +1,33 @@
+/* Global Variables*/
+
+body {
+    background-color: #f4cb8d;
+}
+
+#opening-instructions {
+    background-color: #b9d2b5;
+    text-align: center; 
+    border: 2px, solid, #b9d2b5;
+    padding-bottom: 20px;
+}
+
+#pick-era {
+    background-color: #b9d2b5;
+    text-align: center; 
+    border: 2px, solid, #b9d2b5;
+    padding-bottom: 20px;
+}
+
 /* Colour change to indicate correct answer */
 
-.correctAnswer {
+.correct-answer {
     background-color: green;
     color: white;
 }
 
 /*Colour change to indicate incorrect answer */
 
-.wrongAnswer {
+.wrong-answer {
     background-color: red;
     color: white;
 }
