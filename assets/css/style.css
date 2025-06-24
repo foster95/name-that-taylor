@@ -28,6 +28,17 @@ body {
     padding-bottom: 20px;
 }
 
+/* Question Area Styling */
+#quiz-space {
+    text-align: center;
+}
+
+#question {
+    border: 2px, solid;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
 /* Colour change to indicate correct answer */
 
 .correct-answer {
