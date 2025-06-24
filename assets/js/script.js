@@ -152,8 +152,27 @@ function startQuiz (questionsArray){
 // Show correct Era at top of quiz
 const eraEl = document.getElementById("show");
 
-    function revealEra (era) {
-    eraEl.innerText = era;
+// Format Era titles for readability at top of page
+function formatEraName(era) {
+  const eraNames = {
+    debut: "Debut",
+    fearless: "Fearless",
+    speakNow: "Speak Now",
+    red: "Red",
+    nineteeneightynine: "1989",
+    reputation: "Reputation",
+    lover: "Lover",
+    folklore: "Folklore",
+    evermore: "Evermore",
+    midnights: "Midnights",
+    ttpd: "The Tortured Poets Department",
+    ttpdAnthology: "The Tortured Poets Department - The Anthology"
+  };
+  return eraNames [era];
+}
+  
+  function revealEra (era) {
+    eraEl.innerText = formatEraName(era);
     }
 
 // Show Question and answers
