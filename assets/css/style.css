@@ -20,29 +20,54 @@ body {
     padding-top: 10px;
 }
 
+#welcome {
+    text-align: center;
+}
 #opening-instructions {
-    background-color: #b9d2b5;
+    background-color: #f4cb8d;
     text-align: center; 
-    border: 2px, solid, #b9d2b5;
-    padding-bottom: 20px;
+    border: 2px, solid, #f4cb8d;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    opacity: 80%;
+    border-radius: 25px;
+    width: 95%;
 }
 
 #pick-era {
-    background-color: #b9d2b5;
+    background-color: #f4cb8d;
     text-align: center; 
-    border: 2px, solid, #b9d2b5;
+    border: 2px, solid, #f4cb8d;
     padding-bottom: 20px;
+    opacity: 80%;
+    border-radius: 25px;
+    width: 95%;
 }
 
 /* Question Area Styling */
 #quiz-space {
     text-align: center;
+    background-color: #f4cb8d;
+    opacity: 80%;
+    border-radius: 25px;
+    width: 95%;
+
 }
 
 #question {
-    border: 2px, solid;
-    border-radius: 15px;
-    font-size: 2rem;
+    font-size: 1.25rem;
+}
+
+#answer-space {
+    text-align: center;
+}
+
+#score {
+margin-bottom: 5rem;
+padding-bottom: 1rem;
+padding-top: 1rem;
+font-weight: bold;
+
 }
 
 /* Colour change to indicate correct answer */

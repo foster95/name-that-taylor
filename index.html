@@ -49,6 +49,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!--Opening page-->
+    <div id="welcome" class="container">
+        <h1>Name that Song<br>
+            Taylor's Version</h1>
+
+        <p>Her name is Taylor and she was born in 1989!</p>
+    </div>
     <!--Opening instructions on how to play-->
     <div id="opening-instructions" class="container">
       <h1><b>How to Play</b></h1>
@@ -82,47 +89,47 @@
 
     <!--Eras Selection-->
     <div id="pick-era" class="container d-none">
-      <div id="choose-era"><p>Choose Your Era</p></div>
-      <div class="row row-cols-3 row-gap-3">
+      <div id="choose-era"><p><h2>Choose Your Era</h2></p></div>
+      <div class="row row-cols-1 row-gap-3">
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="debut">Debut</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="debut">Debut</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="fearless">Fearless</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="fearless">Fearless</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="speakNow">Speak Now</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="speakNow">Speak Now</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="red">Red</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="red">Red</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="nineteeneightynine">1989</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="nineteeneightynine">1989</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="reputation">
+          <button class="btn btn-light era-selector-button w-100" data-type="reputation">
             Reputation
           </button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="lover">Lover</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="lover">Lover</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="folklore">Folklore</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="folklore">Folklore</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="evermore">Evermore</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="evermore">Evermore</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="midnights">Midnights</button>
+          <button class="btn btn-light era-selector-button w-100" data-type="midnights">Midnights</button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="ttpd">
+          <button class="btn btn-light era-selector-button w-100" data-type="ttpd">
             The Tortured Poets Department
           </button>
         </div>
         <div class="col">
-          <button class="btn btn-light era-selector-button" data-type="ttpdAnthology">
+          <button class="btn btn-light era-selector-button w-100" data-type="ttpdAnthology">
             The Tortured Poets Department - The Anthology
           </button>
         </div>
@@ -133,14 +140,13 @@
     <div id="quiz-space" class="container d-none">
       <p id="show">Defined Era</p>  
       <p id="question">Question</p>
-      <div id="answer-space">
-        <button class="btn btn-light answer1"></button>
-        <button class="btn btn-light answer2"></button>
-        <button class="btn btn-light answer3"></button>
-        <button class="btn btn-light answer4"></button>
+      <div id="answer-space" class="row row-cols-1 row-gap-3">
+        <div class="col"><button class="btn btn-light answer1 w-100"></button></div>
+        <div class="col"><button class="btn btn-light answer2 w-100"></button></div>
+        <div class="col"><button class="btn btn-light answer3 w-100"></button></div>
+        <div class="col"><button class="btn btn-light answer4 w-100"></button></div>
       </div>
 
-        <button id="next-question" class="btn btn-light">Next Question</button>
         <!--Score Section-->
         <p id="score">Score: 0</p>
 
