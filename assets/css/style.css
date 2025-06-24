@@ -1,7 +1,17 @@
-/* Global Variables*/
+/* Fonts */
+/* Primary Font - Google Fonts BenchNine */
+@import url(@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
+/* Global Variables*/
+:root {
+    --primary-font: "Manrope", sans-serif;
+}
+
+/* General Styling Rules */
 body {
     background-color: #f4cb8d;
+    font-family: var(--primary-font);
 }
 
 #opening-instructions {
