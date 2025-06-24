@@ -101,7 +101,7 @@ const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
 
-// Reveal Era selector - suggested by chat GPT
+// Show Era selector section - suggested by chat GPT
 document.addEventListener("DOMContentLoaded", () => {
     const pickButton = document.getElementById("pick-button");
     pickButton.addEventListener("click",(event) => {
@@ -130,6 +130,7 @@ for (let button of eraButtons) {
 
         if (allErasQuestions[gameChoice]) {
             console.log ("Loading questions for", gameChoice);
+            revealEra(gameChoice);
             startQuiz (allErasQuestions [gameChoice]);
         } else {
             console.log ("No game questions found for", gameChoice)
@@ -147,6 +148,13 @@ function startQuiz (questionsArray){
     quizSpace.classList.remove("d-none");
     showQuestion (currentQuestions[currentQuestionIndex]);
 }
+
+// Show correct Era at top of quiz
+const eraEl = document.getElementById("show");
+
+    function revealEra (era) {
+    eraEl.innerText = era;
+    }
 
 // Show Question and answers
 const answerButtons = [
