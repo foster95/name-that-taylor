@@ -93,9 +93,10 @@ const allErasQuestions = {
 // General Code for the DOM
 const eras = document.getElementById ("pick-era");
 const quizSpace = document.getElementById ("quiz-space");
-const question = document.getElementById ("question");
+const questionEl = document.getElementById ("question");
 const answers = document.getElementById ("answer-space");
-const nextQuestion = document.getElementById ("next-question")
+const nextQuestion = document.getElementById ("next-question");
+const scoreEl = document.getElementById ("score");
 
 let currentQuestionIndex = 0;
 let currentQuestions = [];
@@ -106,9 +107,13 @@ let eraButtons = document.getElementsByClassName ("era-selector-button");
 for (let button of eraButtons) {
     button.addEventListener("click", function() {
         let gameChoice = this.getAttribute ("data-type");
+        console.log("Clicked era", gameChoice);
 
         if (allErasQuestions[gameChoice]) {
+            console.log ("Loading questions for", gameChoice);
             startQuiz (allErasQuestions [gameChoice]);
+        } else {
+            console.log ("No game questions found for", gameChoice)
         }
     });
 }
@@ -122,20 +127,34 @@ function startQuiz (questionsArray){
     showQuestion (currentQuestions[currentQuestionIndex]);
 }
 
-// Show Question
+// Show Question and answers
+const answerButtons = [
+    document.querySelector(".answer1"),
+    document.querySelector(".answer2"),
+    document.querySelector(".answer3"),
+    document.querySelector(".answer4")
+]
 function showQuestion (quest) {
-    question.innerText = quest.question;
-    answers.innerHTML = "";
-  
-    question.answers.forEach((answer, index) => {
-        const button = document.createElement("button");
+    questionEl.innerText = quest.question;
+
+    // Pull answers from array
+    quest.answers.forEach ((answer, index) => {
+        const button = answerButtons [index];
         button.innerText = answer;
-        button.onclick = () => {
-            showAnswer (button, index === question.correct);
+
+    // Suggestion from chat GPT to stop event stacking issues
+    button.onclick = () => {
+            showAnswer(button, index === quest.correct);
         };
-        answers.appendChild(button);
-    })
+    });
 }
 
-console.log(gameChoice)
-startQuiz();
+function showAnswer (button, isCorrect) {
+    if (isCorrect) {
+        score++;
+        scoreEl.innerText = `Score: ${score};
+    }
+}
+
+// Score tracker
+let score = 0
