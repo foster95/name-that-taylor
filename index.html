@@ -11,17 +11,16 @@
 </head>
 <body>
     <div class="container">
-        <div id="question-space"></div>
-        <button id="answer0"></button>
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
+        <div id="wrapper">
+        <div id="question"></div>
+        <button id="answer0" onclick = "checkAnswer(0)"></button>
+        <button id="answer1" onclick = "checkAnswer(1)"></button>
+        <button id="answer2" onclick = "checkAnswer(2)"></button>
+        <button id="answer3" onclick = "checkAnswer(3)"></button>
     </div>
-
-    <div class="scorebox">
-        <span id="score">0</span>
+    <p>Score: <span id="score">O</span></p>
     </div>
     
-    <script src="assets/js/"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

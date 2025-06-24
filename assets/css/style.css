@@ -1,0 +1,13 @@
+/* Colour change to indicate correct answer */
+
+.correctAnswer {
+    background-color: green;
+    color: white;
+}
+
+/*Colour change to indicate incorrect answer */
+
+.wrongAnswer {
+    background-color: red;
+    color: white;
+}
