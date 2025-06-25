@@ -28,6 +28,11 @@ body {
     display: none !important;
 }
 
+#website-logo a {
+    text-decoration-line: none;
+    color: black;
+}
+
 #welcome-line-1 {
     margin-top: -15px;
     font-size: 10px;
