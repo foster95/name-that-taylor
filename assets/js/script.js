@@ -124,6 +124,8 @@ const debutQuestions = [
 
 ];
 
+// Questions Fearless
+
 const fearlessQuestions = [
     {
     "question": "You take my hand and drag me head first",
@@ -240,6 +242,8 @@ const fearlessQuestions = [
     },
 ];
 
+// Questions Speak Now
+
 const speakNowQuestions = [
 
     {
@@ -303,52 +307,52 @@ const speakNowQuestions = [
     },
 
     {
-    "question": "Your string of lights is still bright to me"
+    "question": "Your string of lights is still bright to me",
     "answers": ["The Story of Us", "Sparks Fly", "Love Story", "Innocent"],
     "correct": 3
     },
 
     {
-    "question": "Stood there and watched you walk away from everything we had"
+    "question": "Stood there and watched you walk away from everything we had",
     "answers": ["Long Live", "Haunted", "Dear John", "Enchanted"],
     "correct": 1
     },
 
     {
-    "question": "And I hope the sun shines and it's a beautiful day and something reminds you you wish you had stayed "
+    "question": "And I hope the sun shines and it's a beautiful day and something reminds you you wish you had stayed",
     "answers": ["Ours", "If This was a Movie", "Sparks Fly", "Last Kiss"],
     "correct": 3
     },
 
     {
-    "question": "You traded your baseball cap for a crown"
+    "question": "You traded your baseball cap for a crown",
     "answers": ["Superman", "Long Live", "The Story of Us", "Mean"],
     "correct": 1
     },
 
     {
-    "question": "The stakes are high, the water's rough"
+    "question": "The stakes are high, the water's rough",
     "answers": ["Ours", "Love Story", "Innocent", "Back to December"],
     "correct": 0
     },
 
     {
-    "question": "Now I'm pacing down the hall, chasing down your street"
+    "question": "Now I'm pacing down the hall, chasing down your street",
     "answers": ["Speak Now", "Never Grow Up", "Haunted", "If This was a  Movie"],
     "correct": 3
     },
 
      {
-    "question": "But I hope someday you'll take me away, and save the day"
+    "question": "But I hope someday you'll take me away, and save the day",
     "answers": ["Enchanted", "Ours", "Superman", "Better than Revenge"],
     "correct": 2
     },
-]
+];
 
 const allErasQuestions = {
     debut: debutQuestions,
     fearless: fearlessQuestions,
-    speakNow: speakNowQuestions,
+    speakNow: speakNowQuestions
 };
 
 // General Code for the DOM
