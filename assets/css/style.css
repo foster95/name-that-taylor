@@ -1,11 +1,15 @@
 /* Fonts */
-/* Primary Font - Google Fonts BenchNine */
+/* Primary Font - Google Fonts Manrope */
 @import url(@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Secondary Font - Google Fonts Licorice */
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
 
 
 /* Global Variables*/
 :root {
     --primary-font: "Manrope", sans-serif;
+    --secondary-font: "Licorice", cursive;
 }
 
 /* General Styling Rules */
@@ -20,18 +24,56 @@ body {
     padding-top: 10px;
 }
 
-#welcome {
+#welcome-line-1 {
     text-align: center;
 }
+
+#welcome-line-2 {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    margin-top: -27px;
+    font-weight: bold;
+}
+
+
 #opening-instructions {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px, solid, #f4cb8d;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-top: 5px;
     opacity: 80%;
     border-radius: 25px;
-    width: 95%;
+}
+
+#opening-instructions h1 {
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    margin-top: -5px;
+    margin-bottom: -11px;
+    
+}
+
+#opening-instructions h2 {
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#pick-button {
+    width: 75%;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#choose-era h2 {
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #pick-era {
@@ -41,12 +83,26 @@ body {
     padding-bottom: 20px;
     opacity: 80%;
     border-radius: 25px;
-    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#pick-era button {
+    width: 75%;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 /* Era title Styling */
 #show {
     padding-top: 10px;
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-weight: bold;
 }
 
 /* Question Area Styling */
@@ -55,16 +111,27 @@ body {
     background-color: #f4cb8d;
     opacity: 80%;
     border-radius: 25px;
-    width: 95%;
 
 }
 
 #question {
     font-size: 1.25rem;
+    padding-left: 21px;
+    padding-right: 21px;
 }
 
 #answer-space {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#answer-space button {
+    width: 75%;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 #score {

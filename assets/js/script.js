@@ -337,7 +337,7 @@ function showQuestion (quest) {
 function showAnswer (button, isCorrect) {
     if (isCorrect) {
         score++;
-        scoreEl.innerText = `Score: ${score} out of 15`;
+        scoreEl.innerText = `${score} / 15`;
     }
 
     // Jump to next question automatically after 1.5 seconds
