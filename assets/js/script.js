@@ -84,7 +84,7 @@ const debutQuestions = [
     "answers": ["Our Song", "Tim McGraw", "Stay Beautiful", "A Perfectly Good Heart"],
     "correct": 3
     },
-]
+];
 
 const fearlessQuestions = [
     {
@@ -200,10 +200,7 @@ const fearlessQuestions = [
     "answers": ["The Other Side of the Door", "Forever & Always", "Fifteen", "Hey Stephen"],
     "correct": 0
     },
-
-
-
-]
+];
 
 const allErasQuestions = {
     debut: debutQuestions,
@@ -220,25 +217,6 @@ const scoreEl = document.getElementById ("score");
 
 let currentQuestionIndex = 0;
 let currentQuestions = [];
-
-// Show Era selector section - suggested by chat GPT
-document.addEventListener("DOMContentLoaded", () => {
-    const pickButton = document.getElementById("pick-button");
-    pickButton.addEventListener("click",(event) => {
-        event.preventDefault();
-        console.log ("Pick button clicked!");
-
-        // Remove d-class to show era choice
-        const pickEraDiv = document.getElementById ("pick-era");
-        pickEraDiv.classList.remove("d-none");
-
-        // Hide opening instructions
-        const openInstructions = document.getElementById ("opening-instructions");
-        if (openInstructions) {
-            openInstructions.classList.add("d-none");
-        }
-
-    });
 
 // Era selector
 let eraButtons = document.getElementsByClassName ("era-selector-button");
@@ -258,14 +236,10 @@ for (let button of eraButtons) {
     });
 }
 
-});
-
-// Quiz Logic
+// Quiz Logic - load and shuffle questions to always random)
 function startQuiz (questionsArray){
-    currentQuestions = questionsArray;
+    currentQuestions = shuffleArray(questionsArray).slice(0, 15);
     currentQuestionIndex = 0;
-    eras.classList.add("d-none");
-    quizSpace.classList.remove("d-none");
     showQuestion (currentQuestions[currentQuestionIndex]);
 }
 
@@ -322,6 +296,9 @@ function showAnswer (button, isCorrect) {
         score++;
         scoreEl.innerText = `Score: ${score}`;
     }
+
+    // Wait 1.5 seconds and load next question
+    if (currentQuestionIndex < )
 }
 
 // Score tracker

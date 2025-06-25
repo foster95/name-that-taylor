@@ -37,27 +37,20 @@
 
     <title>Name That Song - Taylor's Version</title>
 
-    <!--Bootstrap Style Sheet-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-
     <!--Personal Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
+
   </head>
   <body>
     <!--Opening page-->
-    <div id="welcome" class="container">
+    <div id="welcome">
         <h1>Name that Song<br>
             Taylor's Version</h1>
 
         <p>Her name is Taylor and she was born in 1989!</p>
     </div>
     <!--Opening instructions on how to play-->
-    <div id="opening-instructions" class="container">
+    <div id="opening-instructions">
       <h1><b>How to Play</b></h1>
       <p>
         Think you know every lyric, every bridge, and every hidden message from
@@ -76,7 +69,7 @@
         Folklore woods, or shimmer like a Mirrorball?<br />
         <b>Read & Guess:</b> We'll show you a snippet of a Taylor Swift song
         from your chosen era. Read carefully!<br />
-        <b>Name That Tune:</b> Select the correct song title from the
+        <b>Name That Song:</b> Select the correct song title from the
         multiple-choice options presented.
       </div>
 
@@ -84,52 +77,28 @@
         Can you Name That Tune faster than you can say "Long Live"? Let's find
         out!
       </p>
-      <button id="pick-button" class="btn btn-light">It's been a long time coming...</button>
+      <button id="pick-button">It's been a long time coming...</button>
     </div>
 
     <!--Eras Selection-->
-    <div id="pick-era" class="container d-none">
+    <div id="pick-era">
       <div id="choose-era"><p><h2>Choose Your Era</h2></p></div>
-      <div class="row row-cols-1 row-gap-3">
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="debut">Debut</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="fearless">Fearless</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="speakNow">Speak Now</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="red">Red</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="nineteeneightynine">1989</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="reputation">
+          <button class="era-selector-button" data-type="debut">Debut</button>
+          <button class="era-selector-button" data-type="fearless">Fearless</button>
+          <button class="era-selector-button" data-type="speakNow">Speak Now</button>
+          <button class="era-selector-button" data-type="red">Red</button>
+          <button class="era-selector-button" data-type="nineteeneightynine">1989</button>
+          <button class="era-selector-button" data-type="reputation">
             Reputation
           </button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="lover">Lover</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="folklore">Folklore</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="evermore">Evermore</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="midnights">Midnights</button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="ttpd">
+          <button class="era-selector-button" data-type="lover">Lover</button>
+          <button class="era-selector-button" data-type="folklore">Folklore</button>
+          <button class="era-selector-button" data-type="evermore">Evermore</button>
+          <button class="era-selector-button" data-type="midnights">Midnights</button>
+          <button class="era-selector-button" data-type="ttpd">
             The Tortured Poets Department
           </button>
-        </div>
-        <div class="col">
-          <button class="btn btn-light era-selector-button w-100" data-type="ttpdAnthology">
+          <button class="era-selector-button" data-type="ttpdAnthology">
             The Tortured Poets Department - The Anthology
           </button>
         </div>
@@ -137,14 +106,14 @@
     </div>
 
     <!--Question Section-->
-    <div id="quiz-space" class="container d-none">
+    <div id="quiz-space">
       <p id="show">Defined Era</p>  
       <p id="question">Question</p>
-      <div id="answer-space" class="row row-cols-1 row-gap-3">
-        <div class="col"><button class="btn btn-light answer1 w-100"></button></div>
-        <div class="col"><button class="btn btn-light answer2 w-100"></button></div>
-        <div class="col"><button class="btn btn-light answer3 w-100"></button></div>
-        <div class="col"><button class="btn btn-light answer4 w-100"></button></div>
+      <div id="answer-space">
+        <button class="answer1"></button>
+        <button class="answer2"></button>
+        <button class="answer3"></button>
+        <button class="answer4"></button>
       </div>
 
         <!--Score Section-->
@@ -152,13 +121,13 @@
 
     </div>
     </div>
+    <!--Additional Button-->
+    <div id="additional-buttons" class="container row row-cols-2 row-gap-2">
+        <button>Return to Start</button></div>
+        <button>Help</button></div>
+        <button>Another Era</button></div>
 
-    <!--Bootstrap Script-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+    </div>
 
     <!--Script-->
     <script src="assets/js/script.js"></script>

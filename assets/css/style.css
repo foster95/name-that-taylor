@@ -44,6 +44,11 @@ body {
     width: 95%;
 }
 
+/* Era title Styling */
+#show {
+    padding-top: 10px;
+}
+
 /* Question Area Styling */
 #quiz-space {
     text-align: center;
