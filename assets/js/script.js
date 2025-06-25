@@ -346,6 +346,9 @@ const answerButtons = [
 function showQuestion (quest) {
     questionEl.innerText = quest.question;
 
+    // Enable button on each individual question
+    answerButtons.forEach(btn => btn.disabled = false);
+
     // Pull answers from array
     quest.answers.forEach ((answer, index) => {
         const button = answerButtons [index];
@@ -368,7 +371,6 @@ function showAnswer (button, isCorrect) {
     answerButtons.forEach(btn => btn.disabled = true);
 
     // Jump to next question automatically after 1.5 seconds
-
     currentQuestionIndex++;
     if (currentQuestionIndex < currentQuestions.length) {
         setTimeout(() => {
