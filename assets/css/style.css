@@ -1,6 +1,6 @@
 /* Fonts */
 /* Primary Font - Google Fonts Manrope */
-@import url(@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 /* Secondary Font - Google Fonts Licorice */
 @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
@@ -26,26 +26,37 @@ body {
 
 .dissapear {
     display: none !important;
-
 }
 
 #welcome-line-1 {
-    text-align: center;
+    margin-top: -15px;
+    font-size: 10px;
 }
 
 #welcome-line-2 {
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 50px;
-    margin-top: -27px;
+    font-size: 32px;
+    margin-top: -75px;
     font-weight: bold;
 }
 
+#start {
+    text-align: center;
+}
 
+#start-button {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: var(--primary-font);
+
+}
 #opening-instructions {
     background-color: #f4cb8d;
     text-align: center; 
-    border: 2px, solid, #f4cb8d;
+    border: 2px solid #f4cb8d;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-top: 5px;
@@ -72,19 +83,20 @@ body {
     width: 75%;
     padding: 10px;
     border-radius: 25px;
+    font-family: var(--primary-font);
 }
 
 #choose-era h2 {
     font-family: var(--secondary-font);
     font-size: 50px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
 }
 
 #pick-era {
     background-color: #f4cb8d;
     text-align: center; 
-    border: 2px, solid, #f4cb8d;
+    border: 2px solid #f4cb8d;
     padding-bottom: 20px;
     opacity: 80%;
     border-radius: 25px;
@@ -92,12 +104,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: -30px;
 }
 
 #pick-era button {
     width: 75%;
     padding: 10px;
     border-radius: 25px;
+    font-family: var(--primary-font);
 }
 
 /* Era title Styling */
@@ -137,6 +151,7 @@ body {
     width: 75%;
     padding: 10px;
     border-radius: 25px;
+    font-family: var(--primary-font);
 }
 
 #score {

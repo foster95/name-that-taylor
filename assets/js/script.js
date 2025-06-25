@@ -268,6 +268,7 @@ function hideSection (id) {
 // Show opening instructions
 document.getElementById ("start-button").addEventListener ("click", () => {
     showSection("opening-instructions");
+    hideSection ("one-liner");
     hideSection("start-button");
 });
 
@@ -290,6 +291,7 @@ for (let button of eraButtons) {
             console.log ("Loading questions for", gameChoice);
             hideSection ("pick-era");
             showSection ("quiz-space");
+            showSection ("additional-buttons");
             revealEra(gameChoice);
             startQuiz (allErasQuestions [gameChoice]);
         } else {
