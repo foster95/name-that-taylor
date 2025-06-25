@@ -24,6 +24,11 @@ body {
     padding-top: 10px;
 }
 
+.dissapear {
+    display: none !important;
+
+}
+
 #welcome-line-1 {
     text-align: center;
 }

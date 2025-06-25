@@ -256,7 +256,29 @@ const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
 
-// Era selector
+// Show sections as required
+function showSection(id) {
+    document.getElementById(id).classList.remove("dissapear");
+}
+
+function hideSection (id) {
+    document.getElementById(id).classList.add("dissapear");
+}
+
+// Show opening instructions
+document.getElementById ("start-button").addEventListener ("click", () => {
+    showSection("opening-instructions");
+    hideSection("start-button");
+});
+
+// show Era selector
+
+document.getElementById ("pick-button").addEventListener ("click", () => {
+    showSection("pick-era");
+    hideSection("opening-instructions");
+});
+
+// select Era then open quiz
 let eraButtons = document.getElementsByClassName ("era-selector-button");
 
 for (let button of eraButtons) {
@@ -266,6 +288,8 @@ for (let button of eraButtons) {
 
         if (allErasQuestions[gameChoice]) {
             console.log ("Loading questions for", gameChoice);
+            hideSection ("pick-era");
+            showSection ("quiz-space");
             revealEra(gameChoice);
             startQuiz (allErasQuestions [gameChoice]);
         } else {
@@ -273,21 +297,6 @@ for (let button of eraButtons) {
         }
     });
 }
-
-// shuffle questions
-function shuffleArray(array) {
-    return [...array].sort(() => Math.random() - 0.5);
-}
-
-// Quiz Logic - load and shuffle questions to only show 15)
-function startQuiz (questionsArray){
-    currentQuestions = shuffleArray(questionsArray).slice(0, 15);
-    currentQuestionIndex = 0;
-    showQuestion (currentQuestions[currentQuestionIndex]);
-}
-
-// Show correct Era at top of quiz
-const eraEl = document.getElementById("show");
 
 // Format Era titles for readability at top of page
 function formatEraName(era) {
@@ -303,7 +312,7 @@ function formatEraName(era) {
     evermore: "Evermore",
     midnights: "Midnights",
     ttpd: "The Tortured Poets Department",
-    ttpdAnthology: "The Tortured Poets Department - The Anthology"
+    ttpdAnthology: "TTPD - The Anthology"
   };
   return eraNames [era];
 }
@@ -311,6 +320,21 @@ function formatEraName(era) {
   function revealEra (era) {
     eraEl.innerText = formatEraName(era);
     }
+
+// Show correct Era at top of quiz
+const eraEl = document.getElementById("show");
+
+// shuffle questions
+function shuffleArray(array) {
+    return [...array].sort(() => Math.random() - 0.5);
+}
+
+// Quiz Logic - load and shuffle questions to only show 15)
+function startQuiz (questionsArray){
+    currentQuestions = shuffleArray(questionsArray).slice(0, 15);
+    currentQuestionIndex = 0;
+    showQuestion (currentQuestions[currentQuestionIndex]);
+}
 
 // Show Question and answers
 const answerButtons = [
@@ -339,6 +363,9 @@ function showAnswer (button, isCorrect) {
         score++;
         scoreEl.innerText = `${score} / 15`;
     }
+
+    // Disable buttons so player cannot choose another
+    answerButtons.forEach(btn => btn.disabled = true);
 
     // Jump to next question automatically after 1.5 seconds
 
