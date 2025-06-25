@@ -347,28 +347,38 @@ function showQuestion (quest) {
     questionEl.innerText = quest.question;
 
     // Enable button on each individual question
-    answerButtons.forEach(btn => btn.disabled = false);
+    quest.answers.forEach((answer, index) => {
+        const btn = answerButtons [index];
+        btn.disabled = false;
+        btn.classList.remove("correct-answer", "wrong-answer");
+        btn.innerText = answer;
 
-    // Pull answers from array
-    quest.answers.forEach ((answer, index) => {
-        const button = answerButtons [index];
-        button.innerText = answer;
-
-    // Suggestion from chat GPT to stop event stacking issues
-    button.onclick = () => {
-            showAnswer(button, index === quest.correct);
+        btn.onclick = () => {
+            showAnswer (btn, index === quest.correct);
         };
     });
 }
 
 function showAnswer (button, isCorrect) {
+    // Update score if correct
     if (isCorrect) {
         score++;
         scoreEl.innerText = `${score} / 15`;
     }
 
-    // Disable buttons so player cannot choose another
-    answerButtons.forEach(btn => btn.disabled = true);
+    // Disable buttons so player cannot choose another and show colour highlight
+    answerButtons.forEach((btn, index) => {
+        btn.disabled = true;
+
+      // Change colour to indicate if correct or incorrect answer
+    if (index === currentQuestions [currentQuestionIndex].correct) {
+        btn.classList.add("correct-answer");
+    }    
+
+    if (btn === button && !isCorrect) {
+        btn.classList.add("wrong-answer");
+    }
+});
 
     // Jump to next question automatically after 1.5 seconds
     currentQuestionIndex++;
