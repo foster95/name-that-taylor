@@ -84,6 +84,44 @@ const debutQuestions = [
     "answers": ["Our Song", "Tim McGraw", "Stay Beautiful", "A Perfectly Good Heart"],
     "correct": 3
     },
+
+    {
+    "question": "I hate that stupid old pickup truck you never let me drive",
+    "answers": ["Picture to Burn", "Should Have Said No", "Mary's Song (Oh My My My)", "Invisible"],
+    "correct": 0
+    },
+
+    {
+    "question": "The water's high, you're jumping into it",
+    "answers": ["Tim McGraw", "Tied Together with a Smile", "Cold As You", "Teardrops on My Guitar"],
+    "correct": 1
+    },
+
+    {
+    "question": "She said, I was seven and you were nine",
+    "answers": ["Picture to Burn", "I'm Only Me When I'm With You", "Cold As You", "Mary's Song (Oh My My My)"],
+    "correct": 3
+    },
+
+    {
+    "question": "We could be a beautiful miracle, unbelievable",
+    "answers": ["Our Song", "Should Have Said No", "Invisible", "Teardrops on My Guitar"],
+    "correct": 2
+    },
+
+    {
+    "question": "Maybe I should've seen the signs, should've read the writing on the wall",
+    "answers": ["A Perfectly Good Heart", "Our Song", "The Outside", "Cold As You"],
+    "correct": 0
+    },
+
+    {
+    "question": "He said the way my blue eyes shined Put those Georgia stars to shame that night",
+    "answers": ["Invisible", "Tim McGraw", "Tied Together with a Smile", "Picture to Burn"],
+    "correct": 1
+    },
+
+
 ];
 
 const fearlessQuestions = [
@@ -236,7 +274,12 @@ for (let button of eraButtons) {
     });
 }
 
-// Quiz Logic - load and shuffle questions to always random)
+// shuffle questions
+function shuffleArray(array) {
+    return [...array].sort(() => Math.random() - 0.5);
+}
+
+// Quiz Logic - load and shuffle questions to only show 15)
 function startQuiz (questionsArray){
     currentQuestions = shuffleArray(questionsArray).slice(0, 15);
     currentQuestionIndex = 0;
@@ -294,11 +337,17 @@ function showQuestion (quest) {
 function showAnswer (button, isCorrect) {
     if (isCorrect) {
         score++;
-        scoreEl.innerText = `Score: ${score}`;
+        scoreEl.innerText = `Score: ${score} out of 15`;
     }
 
-    // Wait 1.5 seconds and load next question
-    if (currentQuestionIndex < )
+    // Jump to next question automatically after 1.5 seconds
+
+    currentQuestionIndex++;
+    if (currentQuestionIndex < currentQuestions.length) {
+        setTimeout(() => {
+            showQuestion(currentQuestions[currentQuestionIndex]);
+        }, 1500);
+    }
 }
 
 // Score tracker
