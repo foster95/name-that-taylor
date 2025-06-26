@@ -384,6 +384,7 @@ function hideSection (id) {
 // Show opening instructions
 document.getElementById ("start-button").addEventListener ("click", () => {
     hideSection ("website-opener");
+    showSection ("logo");
     showSection("opening-instructions");
     hideSection ("one-liner");
     hideSection("start-button");
