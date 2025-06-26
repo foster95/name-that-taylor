@@ -251,5 +251,29 @@ body {
     #additional-buttons {
         margin-top: -41px;
     }
-    
+}
+
+/* Media Query for iPhone 12 screens (390px) and larger */
+@media screen and (min-width: 390px) {
+
+    /* Website opener*/
+    #website-opener {
+        margin-top: 63%;
+    }
+
+    #opening-instructions {
+        margin-top: 22%;
+    }
+
+    #opening-instructions p {
+        font-size: 15px;
+    }
+
+    #individual-instructions {
+        font-size: 15px;
+    }
+
+    #quiz-space {
+        margin-top: 30%;
+    }
 }
