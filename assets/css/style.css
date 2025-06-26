@@ -344,4 +344,49 @@ body {
     #quiz-space {
         margin-top: 30%;
     }
+
+    #pick-era {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+
+    #choose-era h2 {
+        font-size: 60px;
+    }
+
+    #pick-era button {
+        width: 52%;
+        font-size: 19px;
+    }
+
+    #quiz-space {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 19%;
+    }
+
+    #show {
+        font-size: 60px;
+    }
+
+    #question {
+        font-size: 1.5rem;
+    }
+
+    #answer-space button {
+        font-size: 19px;
+        width: 70%;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+
+    #additional-buttons button {
+        width: 23%;
+        font-size: 19px;
+    }
 }
