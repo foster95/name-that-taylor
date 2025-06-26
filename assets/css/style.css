@@ -217,3 +217,39 @@ body {
     background-color: red;
     color: white;
 }
+
+/* Media Query for iPhone screens (375px) and larger */
+@media screen and (min-width: 375px) {
+
+    /* Website opener*/
+    #website-opener {
+        margin-top: 45%;
+    }
+
+    #opening-instructions {
+        margin-top: 6%;
+    }
+
+    #opening-instructions p {
+        font-size: 13px;
+    }
+
+    #individual-instructions {
+        font-size: 13px;
+    }
+
+    #pick-era {
+        margin-top: 6%;
+        margin-bottom: 10px;
+        padding-bottom: 2rem;
+    }
+
+    #quiz-space {
+        margin-top: 20px;
+    }
+
+    #additional-buttons {
+        margin-top: -41px;
+    }
+    
+}
