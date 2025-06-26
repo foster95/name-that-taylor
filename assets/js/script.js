@@ -367,22 +367,11 @@ let currentQuestions = [];
 
 // Show sections as required
 function showSection(id) {
-    document.getElementById(id).classList.remove("dissapear");
+    document.getElementById(id).classList.remove("disappear");
 }
 
 function hideSection (id) {
-    document.getElementById(id).classList.add("dissapear");
-}
-
-// Show/hide utility functions
-function showSection(id) {
-  const el = document.getElementById(id);
-  if (el) el.classList.remove("disappear");
-}
-
-function hideSection(id) {
-  const el = document.getElementById(id);
-  if (el) el.classList.add("disappear");
+    document.getElementById(id).classList.add("disappear");
 }
 
 // On DOM ready, show welcome and hide others
@@ -390,7 +379,7 @@ window.addEventListener('DOMContentLoaded', () => {
   showSection("website-opener");
   hideSection("opening-instructions");
   hideSection("logo");
-});
+  hideSection("pick-era");
 
 // On start button click, transition to instructions screen
 document.getElementById("start-button").addEventListener("click", () => {
@@ -399,12 +388,12 @@ document.getElementById("start-button").addEventListener("click", () => {
   hideSection("website-opener");
 });
 
-
 // show Era selector
-
 document.getElementById ("pick-button").addEventListener ("click", () => {
-    showSection("pick-era");
+    console.log ("It's been a long time coming clicked");
     hideSection("opening-instructions");
+    showSection("pick-era");
+});
 });
 
 // select Era then open quiz
