@@ -366,6 +366,12 @@ const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
 
+// Automatically load opening screen with the DOM
+window.addEventListener('DOMContentLoaded', () => {
+    const welcomeBox = document.getElementById("website-opener");
+    showSection("website-opener");
+});
+
 // Show sections as required
 function showSection(id) {
     document.getElementById(id).classList.remove("dissapear");
@@ -377,6 +383,7 @@ function hideSection (id) {
 
 // Show opening instructions
 document.getElementById ("start-button").addEventListener ("click", () => {
+    hideSection ("website-opener");
     showSection("opening-instructions");
     hideSection ("one-liner");
     hideSection("start-button");
