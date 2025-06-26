@@ -1,5 +1,19 @@
 # name-that-taylor
 
+Project 02 by Alice Foster
+
+View live github project
+
+# Name That Song - Taylor's Version
+
+Name that Song - Taylor's Version is designed as a fun quiz, which allows users to test their knowledge about Taylor Swift's lyrics, from her very first album through to her most recent. 
+
+The website is compromised of a simple quiz mechanic through JavaScript, which allows the user to choose the album they wish to test themselves on, before being prompted with random lyrics from that particular album. If the answer is correct, the answer will highlight in green, if it is incorrect the answer will highlight in red and the correct answer will be revealed. At the end of the 15 questions, the user will be greeted with an end of quiz message, which is dependent on how well they answered the quiz.
+
+
+
+
+
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.
 
