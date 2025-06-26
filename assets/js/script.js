@@ -356,21 +356,14 @@ const allErasQuestions = {
 };
 
 // General Code for the DOM
-const eras = document.getElementById ("pick-era");
+const pickEra = document.getElementById ("pick-era");
 const quizSpace = document.getElementById ("quiz-space");
 const questionEl = document.getElementById ("question");
 const answers = document.getElementById ("answer-space");
-const nextQuestion = document.getElementById ("next-question");
 const scoreEl = document.getElementById ("score");
 
 let currentQuestionIndex = 0;
 let currentQuestions = [];
-
-// Automatically load opening screen with the DOM
-window.addEventListener('DOMContentLoaded', () => {
-    const welcomeBox = document.getElementById("website-opener");
-    showSection("website-opener");
-});
 
 // Show sections as required
 function showSection(id) {
@@ -381,14 +374,31 @@ function hideSection (id) {
     document.getElementById(id).classList.add("dissapear");
 }
 
-// Show opening instructions
-document.getElementById ("start-button").addEventListener ("click", () => {
-    hideSection ("website-opener");
-    showSection ("logo");
-    showSection("opening-instructions");
-    hideSection ("one-liner");
-    hideSection("start-button");
+// Show/hide utility functions
+function showSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.remove("disappear");
+}
+
+function hideSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.add("disappear");
+}
+
+// On DOM ready, show welcome and hide others
+window.addEventListener('DOMContentLoaded', () => {
+  showSection("website-opener");
+  hideSection("opening-instructions");
+  hideSection("logo");
 });
+
+// On start button click, transition to instructions screen
+document.getElementById("start-button").addEventListener("click", () => {
+  showSection("logo");
+  showSection("opening-instructions");
+  hideSection("website-opener");
+});
+
 
 // show Era selector
 

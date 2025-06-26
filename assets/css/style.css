@@ -24,7 +24,7 @@ body {
     padding-top: 10px;
 }
 
-.dissapear {
+.disappear {
     display: none !important;
 }
 
@@ -271,6 +271,74 @@ body {
 
     #individual-instructions {
         font-size: 15px;
+    }
+
+    #quiz-space {
+        margin-top: 30%;
+    }
+}
+
+/* Media Query for iPad screens (768px) and larger */
+@media screen and (min-width: 768px) {
+
+    /* Website opener*/
+    #website-opener {
+        margin-top: 45%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 19px;
+    }
+
+    #welcome-line-1 {
+        font-size: 16px;
+    }
+
+    #welcome-line-2 {
+        font-size: 40px;
+        margin-top: -16%;
+    }
+
+    #start {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #start button {
+        font-size: 20px;
+    }
+
+    #opening-instructions {
+        margin-top: 15%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #opening-instructions h1 {
+        font-size: 60px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 55px;
+    }
+
+    #opening-instructions p {
+        font-size: 20px;
+    }
+
+    #individual-instructions {
+        font-size: 19px;
+    }
+
+    #pick-button {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 19px;
     }
 
     #quiz-space {
