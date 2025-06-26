@@ -152,7 +152,7 @@ body {
     background-color: #f4cb8d;
     opacity: 80%;
     border-radius: 25px;
-    margin-top: 60%;
+    margin-top: 50%;
 
 }
 
@@ -178,13 +178,20 @@ body {
 }
 
 #score {
-margin-bottom: 5rem;
-padding-bottom: 1rem;
-padding-top: 1rem;
-font-weight: bold;
-
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
 }
 
+#additional-buttons button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: var(--primary-font);
+    margin-left: 4px;
+    margin-right: 4px;
+}
 /* Colour change to indicate correct answer */
 
 .correct-answer {
