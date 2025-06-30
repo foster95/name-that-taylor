@@ -44,12 +44,11 @@ body {
     text-align: center;
     background-color: #f4cb8d;
     border: 2px solid #f4cb8d;
-    padding-top: 10px;
-    padding-bottom: 35px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-top: 75%;
     opacity: 80%;
     border-radius: 25px;
-
 }
 
 #website-opener a {
@@ -91,8 +90,8 @@ body {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 2%;
+    padding-top: 2%;
     margin-top: 16%;
     opacity: 80%;
     border-radius: 25px;
@@ -120,17 +119,11 @@ body {
     font-family: var(--primary-font);
 }
 
-#choose-era h2 {
-    font-family: var(--secondary-font);
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: -5px;
-}
-
 #pick-era {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
+    padding-top: 2%;
     padding-bottom: 20px;
     opacity: 80%;
     border-radius: 25px;
@@ -139,6 +132,13 @@ body {
     align-items: center;
     gap: 10px;
     margin-top: 11%;
+}
+
+#pick-era h2 {
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: -5px;
 }
 
 #pick-era button {
@@ -283,7 +283,7 @@ body {
 
     /* Website opener*/
     #website-opener {
-        margin-top: 45%;
+        margin-top: 40%;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -296,7 +296,11 @@ body {
 
     #welcome-line-2 {
         font-size: 40px;
-        margin-top: -16%;
+        margin-top: -11%;
+    }
+
+    #website-opener p {
+        font-size: 20px;
     }
 
     #start {
@@ -352,7 +356,7 @@ body {
         margin-top: 5%;
     }
 
-    #choose-era h2 {
+    #pick-era h2 {
         font-size: 60px;
     }
 
@@ -388,5 +392,155 @@ body {
     #additional-buttons button {
         width: 23%;
         font-size: 19px;
+    }
+}
+
+/* Media Query for larger tablet screens (820px) and wider */
+
+@media screen and (min-width: 768px) {
+    #website-opener {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+
+    #welcome-line-2 {
+        font-size: 50px;
+        margin-top: -13%;
+    }
+
+    #website-opener p {
+        font-size: 27px;
+        margin-top: -50px;
+    }
+
+    #opening-instructions {
+        margin-top: 28%;
+    }
+
+    #opening-instructions h1 {
+        font-size: 75px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 65px;
+    }
+
+    #opening-instructions p {
+        font-size: 25px;
+    }
+
+    #pick-button {
+        font-size: 25px;
+    }
+
+    #pick-era {
+        margin-top: 22%;
+    }
+
+    #pick-era h2 {
+        font-size: 75px;
+    }
+
+    #pick-era button {
+        font-size: 25px;
+    }
+
+    #quiz-space {
+        margin-top: 33%;
+    }
+
+    #show {
+        font-size: 75px;
+    }
+
+    #question {
+        font-size: 2rem;
+    }
+
+    #answer-space button {
+        font-size: 25px;
+    }
+}
+
+/* Media Query for large tablet screens (1024px) and wider */
+@media screen and (min-width: 768px) {
+    #welcome-line-1 {
+        font-size: 18px;
+    }
+
+    #welcome-line-2 {
+        font-size: 55px;
+        margin-top: -12%;
+    }
+
+    #website-opener p {
+        font-size: 32px;
+    }
+
+    #start-button {
+        font-size: 30px;
+        width: 40%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #opening-instructions {
+        margin-top: 25%;
+    }
+
+    #opening-instructions h1 {
+        font-size: 85px;
+    }
+    
+    #opening-instructions p {
+        font-size: 33px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 75px;
+    }
+
+    #pick-button {
+        font-size: 33px;
+        width: 65%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #pick-era {
+        margin-top: 14%;
+        padding-bottom: 5%;
+    }
+
+    #pick-era h2 {
+        font-size: 85px;
+    }
+    #pick-era button {
+        font-size: 32px;
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #quiz-space {
+        margin-top: 32%;
+    }
+
+    #show {
+        font-size: 85px;
+    }
+
+    #question {
+        font-size: 2.5rem;
+    }
+
+    #answer-space button {
+        font-size: 32px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #score {
+        font-size: 2rem;
     }
 }
