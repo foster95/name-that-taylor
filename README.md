@@ -10,6 +10,28 @@ Name that Song - Taylor's Version is designed as a fun quiz, which allows users 
 
 The website is compromised of a simple quiz mechanic through JavaScript, which allows the user to choose the album they wish to test themselves on, before being prompted with random lyrics from that particular album. If the answer is correct, the answer will highlight in green, if it is incorrect the answer will highlight in red and the correct answer will be revealed. At the end of the 15 questions, the user will be greeted with an end of quiz message, which is dependent on how well they answered the quiz.
 
+# Table of Contents
+UX
+User Stories
+In order to prepare for the project, I created a series of user stories that were built in Github's project board. The user stories can be found below:
+
+* As a user I need to be able to use the website in a clearly visible, engaging, responsive way. This should be the same across all devices and should be accessible for all users.
+
+* As a user playing Name that Song - Taylor's Version, I should be able to easily access the instruction to the game at any time and should have no issues reading them.
+
+* As a user playing the game I want to know if my answer if correct or incorrect immediately and have it add to a tally if the score is correct.
+
+* As a game player and a Taylor fan I want the ability to choose the Era of songs I am guessing. No point in calling yourself a Swifty game if you can't guess ALL the Eras!
+
+* As a user and Taylor fan I would like to recieve a Taylor themed message at the end of the game based on how many answers I got correct. These messages should be punny, light hearted and just a touch of fun.
+
+* As a fan of Taylor and a user of the game I want the option to challenge myself to harder levels within each Era
+
+* As a user playing the game, I do not want to have the same question shown to me everytime I play the game and instead want a randomised selection every time.
+
+* As a user and player of the game, I would like an element of time pressure and to see a countdown clock which resets at every question
+
+The full project board list can be found by clicking here
 
 
 
