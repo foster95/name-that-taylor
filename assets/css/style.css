@@ -397,7 +397,7 @@ body {
 
 /* Media Query for larger tablet screens (820px) and wider */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     #website-opener {
         margin-top: 50%;
         margin-bottom: 50%;
@@ -414,7 +414,7 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 28%;
+        margin-top: 14%;
     }
 
     #opening-instructions h1 {
@@ -434,7 +434,7 @@ body {
     }
 
     #pick-era {
-        margin-top: 22%;
+        margin-top: 5%;
     }
 
     #pick-era h2 {
@@ -446,7 +446,7 @@ body {
     }
 
     #quiz-space {
-        margin-top: 33%;
+        margin-top: 26%;
     }
 
     #show {
@@ -463,7 +463,7 @@ body {
 }
 
 /* Media Query for large tablet screens (1024px) and wider */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     #welcome-line-1 {
         font-size: 18px;
     }
@@ -542,5 +542,26 @@ body {
 
     #score {
         font-size: 2rem;
+    }
+}
+
+/* Media Query for desktop (1280px) and wider */
+@media screen and (min-width: 1280px) {
+    #website-opener {
+        margin-top: 38%;
+    }
+
+    #opening-instructions {
+        margin-top: 8%;
+    }
+
+    #pick-era {
+        margin-top: 4%;
+        margin-bottom: 7%;
+        padding-bottom: 5%;
+    }
+
+    #quiz-space {
+        margin-top: 20%;
     }
 }
