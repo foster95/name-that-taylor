@@ -565,3 +565,92 @@ body {
         margin-top: 20%;
     }
 }
+
+/* Media Query for xl desktop (1440px) and wider */
+@media screen and (min-width: 1440px) {
+    #website-opener {
+        margin-top: 19%;
+    }
+
+    #welcome-line-1 {
+        font-size: 15px
+    }
+
+    #welcome-line-2 {
+        font-size: 40px;
+        margin-top: -9%;
+    }
+
+    #website-opener p {
+        font-size: 20px;
+    }
+
+    #start-button {
+        font-size: 20px;
+        width: 16%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #opening-instructions {
+        margin-top: 7%;
+    }
+
+    #opening-instructions h1 {
+        font-size: 65px;
+    }
+
+    #opening-instructions p {
+        font-size: 20px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 50px;
+    }
+
+    #pick-button {
+        font-size: 20px;
+        width: 27%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    #pick-era h2 {
+        font-size: 50px;
+    }
+
+    #pick-era button {
+        font-size: 21px;
+        width: 40%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #quiz-space{
+        margin-top: 4%;
+    }
+
+    #show {
+        font-size: 50px;
+    }
+
+    #question {
+        font-size: 1.5rem;
+    }
+
+    #answer-space button {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 50%;
+    }
+
+    #score {
+        font-size: 1.5rem;
+    }
+
+    #additional-buttons button {
+        width: 10px;
+        font-size: 17px;
+    }
+}
