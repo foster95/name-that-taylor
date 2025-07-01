@@ -556,15 +556,15 @@ body {
 @media screen and (min-width: 1024px) {
 
     #nts {
-        font-size: 23px;
+        font-size: 30px;
     }
 
     #tv {
-        font-size: 55px;
+        font-size: 65px;
     }
 
     #website-opener {
-        margin-top: 28.5rem;
+        margin-top: 39.5rem;
     }
     
     #welcome-line-1 {
@@ -588,61 +588,66 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 4rem;
-        padding: 15px;
+        margin-top: 14rem;
+        padding: 27px;
     }
 
     #opening-instructions h1 {
-        font-size: 72px;
+        font-size: 95px;
     }
     
     #opening-instructions p {
-        font-size: 27px;
+        font-size: 34px;
     }
 
     #opening-instructions h2 {
-        font-size: 61px;
+        font-size: 82px;
     }
 
     #pick-button {
-        font-size: 27px;
+        font-size: 34px;
         width: 55%;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     #pick-era {
-        margin-top: 1rem;
-        padding-bottom: 5%;
+        margin-top: 12rem;
+        padding: 5px;
+        padding-bottom: 94px;
     }
 
     #pick-era h2 {
-        font-size: 61px;
+        font-size: 82px;
     }
 
     #pick-era button {
-        font-size: 27px;
+        font-size: 34px;
         width: 65%;
         padding-top: 12px;
         padding-bottom: 12px;
     }
 
     #quiz-space {
-        margin-top: 1rem;
+        margin-top: 22rem;
     }
 
     #show {
-        font-size: 50px;
+        font-size: 82px;
+    }
+
+    #question {
+        font-size: 2.3rem;
     }
 
     #answer-space button {
-        font-size: 27px;
+        font-size: 34px;
         padding-top: 15px;
         padding-bottom: 15px;
         width: 61%;
     }
 
     #score {
-        font-size: 1.75rem;
+        font-size: 2.3rem;
     }
 }
