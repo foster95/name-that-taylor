@@ -235,6 +235,30 @@ body {
     color: white;
 }
 
+/* Media Query for xsmall phone screens (320px) and larger */
+@media screen and (min-width: 320px) {
+    #website-opener {
+        margin-top: 6rem;
+    }
+
+    #opening-instructions p {
+        font-size: 13px;
+    }
+
+     #quiz-space {
+        margin-top: 1.5rem;
+    }
+
+    #show {
+        font-size: 45px;
+        margin-bottom: -14px;
+    }
+
+    #additional-buttons button {
+        font-size: 12px;
+    }
+}
+
 /* Media Query for iPhone screens (375px) and larger */
 @media screen and (min-width: 375px) {
 
