@@ -469,7 +469,7 @@ body {
     }
 
     #website-opener {
-        margin-top: 34rem;
+        margin-top: 25rem;
     }
 
     #welcome-line-1 {
@@ -492,7 +492,7 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 15rem;
+        margin-top: 3rem;
         padding: 14px;
     }
 
@@ -510,36 +510,36 @@ body {
 
     #pick-button {
         font-size: 25px;
-        width: 45%;
+        width: 60%;
     }
 
     #pick-era {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 
     #pick-era h2 {
-        font-size: 43px;
+        font-size: 60px;
     }
 
     #pick-era button {
-        font-size: 20px;
+        font-size: 26px;
         width: 55%;
     }
 
     #quiz-space {
-        margin-top: 2rem;
+        margin-top: 10rem;
     }
 
     #show {
-        font-size: 43px;
+        font-size: 60px;
     }
 
     #question {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 
     #answer-space button {
-        font-size: 19px;
+        font-size: 22px;
         width: 55%;
     }
 
