@@ -652,88 +652,86 @@ body {
     }
 }
 
-/* Media Query for xl desktop (1440px) and wider */
-@media screen and (min-width: 1440px) {
-
-    #nts {
-        font-size: 21px;
-    }
+/* Media Query for desktop (1280px) and wider */
+@media screen and (min-width: 1280px) {
 
     #tv {
-        font-size: 41px;
+        font-size: 40px;
     }
 
     #website-opener {
-        margin-top: 15rem;
-        width: 60%;
+        margin-top: 11rem;
+        width: 60%
     }
 
     #welcome-line-1 {
-        font-size: 15px
+        font-size: 16px;
     }
 
     #welcome-line-2 {
-        font-size: 40px;
-        margin-top: -9%;
+        font-size: 45px;
+        margin-top: -15%
     }
 
     #website-opener h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #start-button {
-        font-size: 20px;
-        width: 22%;
+        width: 25%;
         padding-top: 10px;
         padding-bottom: 10px;
+        font-size: 22px;
     }
 
     #opening-instructions {
-        margin-top: 3rem;
-        padding: 25px;
+        margin-top: 2rem;
+        padding: 20px;
         width: 60%;
     }
 
     #opening-instructions h1 {
-        font-size: 65px;
+        font-size: 60px;
     }
 
     #opening-instructions p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #opening-instructions h2 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     #pick-button {
-        font-size: 21px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 40%;
     }
 
     #pick-era {
+        margin-top: 4%;
+        margin-bottom: 7%;
+        padding-bottom: 5%;
         width: 60%;
     }
 
     #pick-era h2 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     #pick-era button {
-        font-size: 25px;
-        width: 50%;
-        padding-top: 17px;
-        padding-bottom: 17px;
+        width: 55%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
-    #quiz-space{
-        margin-top: 4rem;
+    #quiz-space {
         width: 60%;
     }
 
     #show {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     #question {
@@ -744,7 +742,6 @@ body {
         font-size: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 50%;
     }
 
     #score {
@@ -752,7 +749,11 @@ body {
     }
 
     #additional-buttons button {
-        font-size: 17px;
+        width: 10%;
+        font-size: 16px;
+    }
+
+    #additional-buttons button {
+        width: 15px;
     }
 }
-
