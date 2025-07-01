@@ -28,6 +28,28 @@ body {
     display: none !important;
 }
 
+.landing-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#website-opener {
+    background-color: #f4cb8d;
+    border: 2px solid #f4cb8d;
+    padding: 2rem;
+    border-radius: 25px;
+    opacity: 0.9;
+    text-align: center;
+    max-width: 500px;
+    margin: 0
+}
+
 #logo {
     text-align: center;
     padding-top: 10px;
@@ -45,24 +67,6 @@ body {
     font-weight: bold;
 }
 
-#website-opener {
-    text-align: center;
-    background-color: #f4cb8d;
-    border: 2px solid #f4cb8d;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: 10rem;
-    opacity: 80%;
-    border-radius: 25px;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-#website-opener a {
-    text-decoration-line: none;
-    color: black;
-}
-
 #welcome-line-1 {
     text-align: center;
     margin-top: -15px;
@@ -72,8 +76,8 @@ body {
 #welcome-line-2 {
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 32px;
-    margin-top: -75px;
+    font-size: 24px;
+    margin-top: -64px;
     font-weight: bold;
 }
 
@@ -130,6 +134,7 @@ body {
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
+    font-size: 15px;
 }
 
 #pick-era {
@@ -157,10 +162,11 @@ body {
 }
 
 #pick-era button {
-    width: 75%;
+    width: 85%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
+    font-size: 15px;
 }
 
 /* Era title Styling */
@@ -178,11 +184,10 @@ body {
     text-align: center;
     background-color: #f4cb8d;
     opacity: 80%;
-    border-radius: 25px;
     margin-top: 2.5rem;
+    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #question {
@@ -213,6 +218,14 @@ body {
     font-weight: bold;
 }
 
+#additional-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: -3rem;
+}
+
 #additional-buttons button {
     width: 30%;
     padding: 10px;
@@ -235,91 +248,24 @@ body {
     color: white;
 }
 
-/* Media Query for xsmall phone screens (320px) and larger */
-@media screen and (min-width: 320px) {
-    #website-opener {
-        margin-top: 6rem;
-    }
-
-    #opening-instructions p {
-        font-size: 13px;
-    }
-
-     #quiz-space {
-        margin-top: 1.5rem;
-    }
-
-    #show {
-        font-size: 45px;
-        margin-bottom: -14px;
-    }
-
-    #additional-buttons button {
-        font-size: 12px;
-    }
-}
-
 /* Media Query for iPhone screens (375px) and larger */
 @media screen and (min-width: 375px) {
 
-    /* Website opener*/
-    #website-opener {
-        margin-top: 13rem;
-    }
-
-    #opening-instructions {
-        margin-top: 3rem;
-    }
-
-    #opening-instructions p {
-        font-size: 13px;
-    }
-
-    #individual-instructions {
-        font-size: 13px;
-    }
-
-    #pick-era {
-        margin-top: 3rem;
-        margin-bottom: 10px;
-        padding-bottom: 2rem;
-    }
-
     #additional-buttons {
-        margin-top: -41px;
+        gap: 0rem;
     }
 }
 
 /* Media Query for iPhone 12 screens (390px) and larger */
 @media screen and (min-width: 390px) {
 
-    #website-opener {
-        margin-top: 16rem;
-    }
-
-    #opening-instructions {
-        margin-top: 5rem;
-    }
-
     #opening-instructions p {
-        font-size: 15px;
-    }
-
-    #individual-instructions {
-        font-size: 15px;
-    }
-
-    #quiz-space {
-        margin-top: 7rem;
+        font-size: 16px;
     }
 }
 
 /* Media Query for iPhone 12 screens (430px) and larger */
 @media screen and (min-width: 430px) {
-
-    #website-opener {
-        margin-top: 18rem;
-    }
 
     #website-opener h3 {
         font-size: 17px;
@@ -328,10 +274,6 @@ body {
     #start-button {
         font-size: 17px;
         width: 45%
-    }
-
-    #opening-instructions {
-        margin-top: 8rem;
     }
 
     #opening-instructions h1 {
@@ -350,20 +292,12 @@ body {
         font-size: 17px;
     }
 
-    #pick-era {
-        margin-top: 3rem;
-    }
-
     #pick-era h2 {
         font-size: 40px;
     }
 
     #pick-era button {
         font-size: 17px;
-    }
-
-    #quiz-space {
-        margin-top: 10rem;
     }
 }
 
@@ -380,7 +314,6 @@ body {
 
     /* Website opener*/
     #website-opener {
-        margin-top: 19.5rem;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -413,7 +346,6 @@ body {
         margin-right: auto;
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 5rem;
     }
 
     #opening-instructions h1 {
@@ -435,20 +367,14 @@ body {
         font-size: 21px;
     }
 
-    #quiz-space {
-        margin-top: 30%;
-    }
-
     #pick-era {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1rem;
     }
 
     #pick-era h2 {
         font-size: 60px;
-        margin-top: 21px;
     }
 
     #pick-era button {
@@ -458,7 +384,6 @@ body {
 
     #quiz-space {
         width: 80%;
-        margin-top: 10rem;
     }
 
     #show {
@@ -496,22 +421,16 @@ body {
         font-size: 51px;
     }
 
-    #website-opener {
-        margin-top: 25rem;
-    }
-
     #welcome-line-1 {
         font-size: 15px;
     }
 
     #welcome-line-2 {
         font-size: 45px;
-        margin-top: -16%;
     }
 
     #website-opener h3 {
         font-size: 23px;
-        margin-top: -50px;
     }
     
     #start-button {
@@ -520,7 +439,6 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 3rem;
         padding: 14px;
     }
 
@@ -541,10 +459,6 @@ body {
         width: 60%;
     }
 
-    #pick-era {
-        margin-top: 3rem;
-    }
-
     #pick-era h2 {
         font-size: 60px;
     }
@@ -552,10 +466,6 @@ body {
     #pick-era button {
         font-size: 22px;
         width: 55%;
-    }
-
-    #quiz-space {
-        margin-top: 10rem;
     }
 
     #show {
@@ -586,10 +496,6 @@ body {
     #tv {
         font-size: 65px;
     }
-
-    #website-opener {
-        margin-top: 26.5rem;
-    }
     
     #welcome-line-1 {
         font-size: 19px;
@@ -597,7 +503,6 @@ body {
 
     #welcome-line-2 {
         font-size: 53px;
-        margin-top: -12%;
     }
 
     #website-opener h3 {
@@ -612,7 +517,6 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 5rem;
         padding: 27px;
     }
 
@@ -636,7 +540,6 @@ body {
     }
 
     #pick-era {
-        margin-top: 3rem;
         padding: 5px;
         padding-bottom: 72px;
     }
@@ -650,10 +553,6 @@ body {
         width: 65%;
         padding-top: 12px;
         padding-bottom: 12px;
-    }
-
-    #quiz-space {
-        margin-top: 14rem;
     }
 
     #show {
@@ -676,6 +575,30 @@ body {
     }
 }
 
+/* Media Query for bug showing at 1201px */
+
+@media screen and (min-width: 1201px) {
+    #welcome-line-1 {
+        font-size: 17px;
+    }
+
+    #welcome-line-2 {
+        font-size: 47px;
+        margin-top: -7rem;
+    }
+
+    #website-opener h3 {
+        font-size: 24px;
+    }
+
+    #start-button {
+        font-size: 24px;
+        width: 35%;
+    }
+}
+
+
+
 /* Media Query for desktop (1280px) and wider */
 @media screen and (min-width: 1280px) {
 
@@ -684,7 +607,6 @@ body {
     }
 
     #website-opener {
-        margin-top: 11rem;
         width: 60%
     }
 
@@ -694,7 +616,6 @@ body {
 
     #welcome-line-2 {
         font-size: 45px;
-        margin-top: -15%
     }
 
     #website-opener h3 {
@@ -709,7 +630,6 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 2rem;
         padding: 20px;
         width: 60%;
     }
@@ -734,7 +654,6 @@ body {
     }
 
     #pick-era {
-        margin-top: 4%;
         margin-bottom: 7%;
         padding-bottom: 5%;
         width: 60%;
@@ -753,7 +672,6 @@ body {
 
     #quiz-space {
         width: 60%;
-        margin-top: 1rem;
     }
 
     #show {
@@ -796,7 +714,6 @@ body {
     }
 
     #website-opener {
-        margin-top: 15rem;
         width: 60%;
     }
 
@@ -806,7 +723,6 @@ body {
 
     #welcome-line-2 {
         font-size: 41px;
-        margin-top: -12%;
     }
 
     #website-opener h3 {
@@ -821,7 +737,6 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 3rem;
         padding: 25px;
         width: 60%;
     }
@@ -860,7 +775,6 @@ body {
     }
 
     #quiz-space{
-        margin-top: 4rem;
         width: 60%;
     }
 
@@ -893,9 +807,5 @@ body {
 @media screen and (min-width: 1600px) {
     #welcome-line-2 {
         margin-top: -11%;
-    }
-
-    #opening-instructions {
-        margin-top: 6rem;
     }
 }

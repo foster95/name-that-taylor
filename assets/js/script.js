@@ -380,21 +380,29 @@ window.addEventListener('DOMContentLoaded', () => {
   hideSection("opening-instructions");
   hideSection("logo");
   hideSection("pick-era");
-
-// On start button click, transition to instructions screen
-document.getElementById("start-button").addEventListener("click", () => {
-  showSection("logo");
-  showSection("opening-instructions");
-  hideSection("website-opener");
 });
 
-// show Era selector
-document.getElementById ("pick-button").addEventListener ("click", () => {
+/**
+ * On click, take the user to the instructions page
+ */
+
+function startButton() {
+    console.log("start button clicked");
+    showSection("logo");
+    showSection("opening-instructions");
+    hideSection("website-opener");
+}
+
+/**
+ * on clicking "it's been a long time coming" the user is taken to the era 
+ * selection option
+ */
+
+function pickButton() {
     console.log ("It's been a long time coming clicked");
     hideSection("opening-instructions");
     showSection("pick-era");
-});
-});
+}
 
 // select Era then open quiz
 let eraButtons = document.getElementsByClassName ("era-selector-button");

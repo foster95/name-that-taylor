@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=, initial-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
     <!--Meta tags for search engines-->
     <meta
@@ -48,13 +48,15 @@
     </header>
 
     <!--Opening page-->
-    <div id="website-opener" class="disappear">
-    <div id="welcome-line-1"><h1>Name that Song...</h1><br></div>
-    <div id="welcome-line-2"><h1>Taylor's Version</a></h1></div>
-        <h3>Her name is Taylor and she was born in 1989!</h3>
-        <button id="start-button">Let's Go!</button>
+    <div class="landing-wrapper">
+        <div id="website-opener">
+            <div id="welcome-line-1"><h1>Name that Song...</h1><br></div>
+            <div id="welcome-line-2"><h1>Taylor's Version</h1></div>
+                <h3>Her name is Taylor and she was born in 1989!</h3>
+                <button id="start-button" aria-label="Go to game instructions" onclick="startButton();">Let's Go!</button>
+            </div>
     </div>
-    </div>
+    
 
     <!--Opening instructions on how to play-->
     <div id="opening-instructions" class="disappear">
@@ -77,29 +79,29 @@
         Can you Name That Tune faster than you can say "Long Live"? Let's find
         out!
       </p>
-      <button id="pick-button">It's been a long time coming...</button>
+      <button id="pick-button" aria-label="choose which game to play" onclick="pickButton();">It's been a long time coming...</button>
     </div>
     </div>
 
     <!--Eras Selection-->
     <div id="pick-era" class="disappear">
       <h2>Choose Your Era</h2>
-          <button class="era-selector-button" data-type="debut">Debut</button>
-          <button class="era-selector-button" data-type="fearless">Fearless</button>
-          <button class="era-selector-button" data-type="speakNow">Speak Now</button>
-          <button class="era-selector-button" data-type="red">Red</button>
-          <button class="era-selector-button" data-type="nineteeneightynine">1989</button>
-          <button class="era-selector-button" data-type="reputation">
+          <button class="era-selector-button" aria-label="start Debut game" data-type="debut">Debut</button>
+          <button class="era-selector-button" aria-label="start Fearless game" data-type="fearless">Fearless</button>
+          <button class="era-selector-button" aria-label="start Speak Now game" data-type="speakNow">Speak Now</button>
+          <button class="era-selector-button" aria-label="start Red game" data-type="red">Red</button>
+          <button class="era-selector-button" aria-label="start 1989 game" data-type="nineteeneightynine">1989</button>
+          <button class="era-selector-button" aria-label="start Reputation game" data-type="reputation">
             Reputation
           </button>
-          <button class="era-selector-button" data-type="lover">Lover</button>
-          <button class="era-selector-button" data-type="folklore">Folklore</button>
-          <button class="era-selector-button" data-type="evermore">Evermore</button>
-          <button class="era-selector-button" data-type="midnights">Midnights</button>
-          <button class="era-selector-button" data-type="ttpd">
+          <button class="era-selector-button" aria-label="start Lover game" data-type="lover">Lover</button>
+          <button class="era-selector-button" aria-label="start Folklore game" data-type="folklore">Folklore</button>
+          <button class="era-selector-button" aria-label="start Evermore game" data-type="evermore">Evermore</button>
+          <button class="era-selector-button" aria-label="start Midnights game" data-type="midnights">Midnights</button>
+          <button class="era-selector-button" aria-label="start The Tortured Poets Department game" data-type="ttpd">
             The Tortured Poets Department
           </button>
-          <button class="era-selector-button" data-type="ttpdAnthology">
+          <button class="era-selector-button" aria-label="start The Tortured Poets Departmet - The Anthology game" data-type="ttpdAnthology">
             TTPD - The Anthology
           </button>
         </div>
@@ -109,10 +111,10 @@
       <p id="show">Defined Era</p>  
       <p id="question">Question</p>
       <div id="answer-space">
-        <button class="answer1">Answer 1</button>
-        <button class="answer2">Answer 2</button>
-        <button class="answer3">Answer 3</button>
-        <button class="answer4">Answer 4</button>
+        <button class="answer1" aria-label="Option 1">Answer 1</button>
+        <button class="answer2" aria-label="Option 2">Answer 2</button>
+        <button class="answer3" aria-label="Option 3">Answer 3</button>
+        <button class="answer4" aria-label="Option 4">Answer 4</button>
       </div>
 
         <!--Score Section-->
