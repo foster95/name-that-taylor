@@ -564,7 +564,7 @@ body {
     }
 
     #website-opener {
-        margin-top: 39.5rem;
+        margin-top: 26.5rem;
     }
     
     #welcome-line-1 {
@@ -588,60 +588,60 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 14rem;
+        margin-top: 5rem;
         padding: 27px;
     }
 
     #opening-instructions h1 {
-        font-size: 95px;
+        font-size: 85px;
     }
     
     #opening-instructions p {
-        font-size: 34px;
+        font-size: 29px;
     }
 
     #opening-instructions h2 {
-        font-size: 82px;
+        font-size: 73px;
     }
 
     #pick-button {
-        font-size: 34px;
+        font-size: 29px;
         width: 55%;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     #pick-era {
-        margin-top: 12rem;
+        margin-top: 3rem;
         padding: 5px;
-        padding-bottom: 94px;
+        padding-bottom: 72px;
     }
 
     #pick-era h2 {
-        font-size: 82px;
+        font-size: 73px;
     }
 
     #pick-era button {
-        font-size: 34px;
+        font-size: 29px;
         width: 65%;
         padding-top: 12px;
         padding-bottom: 12px;
     }
 
     #quiz-space {
-        margin-top: 22rem;
+        margin-top: 14rem;
     }
 
     #show {
-        font-size: 82px;
+        font-size: 73px;
     }
 
     #question {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     #answer-space button {
-        font-size: 34px;
+        font-size: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
         width: 61%;
