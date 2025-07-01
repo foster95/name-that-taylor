@@ -556,15 +556,15 @@ body {
 @media screen and (min-width: 1024px) {
 
     #nts {
-        font-size: 17px;
+        font-size: 23px;
     }
 
     #tv {
-        font-size: 35px;
+        font-size: 55px;
     }
 
     #website-opener {
-        margin-top: 12.5rem;
+        margin-top: 28.5rem;
     }
     
     #welcome-line-1 {
@@ -593,22 +593,22 @@ body {
     }
 
     #opening-instructions h1 {
-        font-size: 60px;
+        font-size: 72px;
     }
     
     #opening-instructions p {
-        font-size: 17px;
+        font-size: 27px;
     }
 
     #opening-instructions h2 {
-        font-size: 50px;
+        font-size: 61px;
     }
 
     #pick-button {
-        font-size: 17px;
-        width: 33%;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        font-size: 27px;
+        width: 55%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     #pick-era {
@@ -617,12 +617,12 @@ body {
     }
 
     #pick-era h2 {
-        font-size: 50px;
+        font-size: 61px;
     }
 
     #pick-era button {
-        font-size: 20px;
-        width: 50%;
+        font-size: 27px;
+        width: 65%;
         padding-top: 12px;
         padding-bottom: 12px;
     }
@@ -636,10 +636,10 @@ body {
     }
 
     #answer-space button {
-        font-size: 18px;
+        font-size: 27px;
         padding-top: 15px;
         padding-bottom: 15px;
-        width: 40%;
+        width: 61%;
     }
 
     #score {
