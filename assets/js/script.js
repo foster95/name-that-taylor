@@ -365,7 +365,10 @@ const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
 
-// Show sections as required
+/**
+ * Show/hide sections as required
+ */
+
 function showSection(id) {
     document.getElementById(id).classList.remove("disappear");
 }
@@ -383,7 +386,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * On click, take the user to the instructions page
+ * On clicking "lets go", take the user to the instructions page
  */
 
 function startButton() {
@@ -404,7 +407,10 @@ function pickButton() {
     showSection("pick-era");
 }
 
-// select Era then open quiz
+/**
+ * select Era then open quiz
+ */
+
 let eraButtons = document.getElementsByClassName ("era-selector-button");
 
 for (let button of eraButtons) {
@@ -425,7 +431,10 @@ for (let button of eraButtons) {
     });
 }
 
-// Format Era titles for readability at top of page
+/**
+ *  Format Era titles for readability at top of page
+ */
+
 function formatEraName(era) {
   const eraNames = {
     debut: "Debut",
@@ -451,7 +460,10 @@ function formatEraName(era) {
 // Show correct Era at top of quiz
 const eraEl = document.getElementById("show");
 
-// shuffle questions
+/**
+ * shuffle questions
+ */
+
 function shuffleArray(array) {
     return [...array].sort(() => Math.random() - 0.5);
 }
@@ -463,13 +475,17 @@ function startQuiz (questionsArray){
     showQuestion (currentQuestions[currentQuestionIndex]);
 }
 
-// Show Question and answers
 const answerButtons = [
     document.querySelector(".answer1"),
     document.querySelector(".answer2"),
     document.querySelector(".answer3"),
     document.querySelector(".answer4")
 ]
+
+/**
+ * Show questions
+ */
+
 function showQuestion (quest) {
     questionEl.innerText = quest.question;
 
@@ -485,6 +501,10 @@ function showQuestion (quest) {
         };
     });
 }
+
+/**
+ * Show answers
+ */
 
 function showAnswer (button, isCorrect) {
     // Update score if correct
@@ -518,3 +538,34 @@ function showAnswer (button, isCorrect) {
 
 // Score tracker
 let score = 0
+
+
+/**
+ * Function for return to home button on quiz
+ */
+
+function homeButton() {
+    console.log ("Return to home");
+    hideSection("quiz-space");
+    showSection("website-opener");
+}
+
+/**
+ * Function for help button on quiz
+ */
+
+function helpButton() {
+    console.log ("Help clicked");
+    hideSection("quiz-space");
+    showSection("opening-instructions");
+}
+
+/**
+ * Function for start another era button on quiz
+ */
+
+function anotherEraButton() {
+    console.log ("Another era Button clicked");
+    hideSection("quiz-space");
+    showSection("pick-era");
+}
