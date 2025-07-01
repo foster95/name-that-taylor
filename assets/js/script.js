@@ -182,12 +182,6 @@ const fearlessQuestions = [
     },
 
     {
-    "question": "You used to shine so bright but I watched all of it fade ",
-    "answers": ["You're Not Sorry", "Tell Me Why", "The Other Side of the Door", "Come in with the Rain"],
-    "correct": 0
-    },
-
-    {
     "question": "You're so in love that you act insane",
     "answers": ["Fearless", "White Horse", "Change", "The Way I Loved You"],
     "correct": 3
@@ -473,6 +467,8 @@ function startQuiz (questionsArray){
     currentQuestions = shuffleArray(questionsArray).slice(0, 15);
     currentQuestionIndex = 0;
     showQuestion (currentQuestions[currentQuestionIndex]);
+    score = 0;
+    scoreEl.innerText = `0 / 15`
 }
 
 const answerButtons = [
@@ -533,39 +529,44 @@ function showAnswer (button, isCorrect) {
         setTimeout(() => {
             showQuestion(currentQuestions[currentQuestionIndex]);
         }, 1500);
+    } else {
+        setTimeout (() => {
+            endQuiz ();
+        }, 1500);
     }
 }
 
 // Score tracker
 let score = 0
 
-
-/**
- * Function for return to home button on quiz
+/** 
+ * End Quiz
  */
 
-function homeButton() {
-    console.log ("Return to home");
+function endQuiz () {
     hideSection("quiz-space");
-    showSection("website-opener");
+    showSection ("final-score-space");
+    finalScore();
 }
 
 /**
- * Function for help button on quiz
+ * Final score messages
  */
 
-function helpButton() {
-    console.log ("Help clicked");
-    hideSection("quiz-space");
-    showSection("opening-instructions");
-}
+function finalScore () {
+    let finalScore = parseInt(document.getElementById("score").innerText);
+    const finalScoreEl = document.getElementById("final-score");
 
-/**
- * Function for start another era button on quiz
- */
-
-function anotherEraButton() {
-    console.log ("Another era Button clicked");
-    hideSection("quiz-space");
-    showSection("pick-era");
+    if (finalScore >= 12 && finalScore <= 14) {
+        finalScoreEl.innerText = `
+        Alright, look what we have here! Someone just absolutely CRUSHED that quiz! 
+        Seriously, honey, you didn't just answer those questions, you knew them "All Too Well." 
+        I'm talking "Mastermind" level Swiftie status. Were you secretly in my songwriting room for "Midnights" 
+        or have you just been listening to "Fearless" on repeat since, well, forever?
+        
+        You didn't just shake off the competition, you shook it out of the park! This is your "Long Live" moment, your official entry into the Champion Era. And let me tell you, it looks gorgeous on you.
+        
+        So from me to you, congratulations, you brilliant, beautiful Swiftie! Now go blast "Teardrops on My Guitar" – 
+        not because you're sad, but because you're just that good.`;
+    }
 }
