@@ -547,7 +547,7 @@ body {
         width: 55%;
     }
 
-    #additiona-buttons button {
+    #additional-buttons button {
         width: 18%;
     }
 }
@@ -724,10 +724,12 @@ body {
         width: 55%;
         padding-top: 15px;
         padding-bottom: 15px;
+        font-size: 18px;
     }
 
     #quiz-space {
         width: 60%;
+        margin-top: 1rem;
     }
 
     #show {
@@ -754,6 +756,6 @@ body {
     }
 
     #additional-buttons button {
-        width: 15px;
+        width: 10%;
     }
 }
