@@ -28,6 +28,11 @@ body {
     display: none !important;
 }
 
+#logo {
+    text-align: center;
+    padding-top: 10px;
+}
+
 #nts {
     font-family: var(--primary-font);
     font-size: 15px;
@@ -46,7 +51,7 @@ body {
     border: 2px solid #f4cb8d;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-top: 75%;
+    margin-top: 15rem;
     opacity: 80%;
     border-radius: 25px;
 }
@@ -70,7 +75,7 @@ body {
     font-weight: bold;
 }
 
-#one-liner p {
+#website-opener p {
     margin-top: -30px;
 }
 
@@ -90,26 +95,29 @@ body {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    margin-top: 16%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: 1.5rem;
     opacity: 80%;
     border-radius: 25px;
 }
 
 #opening-instructions h1 {
     font-family: var(--secondary-font);
-    font-size: 50px;
+    font-size: 40px;
     margin-top: -5px;
     margin-bottom: -11px;
-    
+}
+
+#opening-instructions p {
+    font-size: 15px;
 }
 
 #opening-instructions h2 {
     font-family: var(--secondary-font);
-    font-size: 40px;
+    font-size: 33px;
     margin-top: 10px;
-    margin-bottom: -3px;
+    margin-bottom: -10px;
 }
 
 #pick-button {
@@ -123,20 +131,20 @@ body {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
-    padding-top: 2%;
-    padding-bottom: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     opacity: 80%;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 11%;
+    margin-top: 1rem;
 }
 
 #pick-era h2 {
     font-family: var(--secondary-font);
-    font-size: 50px;
+    font-size: 33px;
     margin-top: 10px;
     margin-bottom: -5px;
 }
@@ -164,7 +172,7 @@ body {
     background-color: #f4cb8d;
     opacity: 80%;
     border-radius: 25px;
-    margin-top: 30%;
+    margin-top: 2.5rem;
 
 }
 
@@ -223,11 +231,11 @@ body {
 
     /* Website opener*/
     #website-opener {
-        margin-top: 45%;
+        margin-top: 13rem;
     }
 
     #opening-instructions {
-        margin-top: 6%;
+        margin-top: 3rem;
     }
 
     #opening-instructions p {
@@ -239,13 +247,9 @@ body {
     }
 
     #pick-era {
-        margin-top: 6%;
+        margin-top: 3rem;
         margin-bottom: 10px;
         padding-bottom: 2rem;
-    }
-
-    #quiz-space {
-        margin-top: 20px;
     }
 
     #additional-buttons {
@@ -256,13 +260,12 @@ body {
 /* Media Query for iPhone 12 screens (390px) and larger */
 @media screen and (min-width: 390px) {
 
-    /* Website opener*/
     #website-opener {
-        margin-top: 63%;
+        margin-top: 16rem;
     }
 
     #opening-instructions {
-        margin-top: 22%;
+        margin-top: 5rem;
     }
 
     #opening-instructions p {
@@ -274,7 +277,60 @@ body {
     }
 
     #quiz-space {
-        margin-top: 30%;
+        margin-top: 7rem;
+    }
+}
+
+/* Media Query for iPhone 12 screens (430px) and larger */
+@media screen and (min-width: 430px) {
+
+    #website-opener {
+        margin-top: 18rem;
+    }
+
+    #website-opener p {
+        font-size: 17px;
+    }
+
+    #start-button {
+        font-size: 17px;
+        width: 45%
+    }
+
+    #opening-instructions {
+        margin-top: 8rem;
+    }
+
+    #opening-instructions h1 {
+        font-size: 50px;
+    }
+
+    #opening-instructions p {
+        font-size: 17px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 40px;
+    }
+
+    #pick-button {
+        font-size: 17px;
+    }
+
+    #pick-era {
+        margin-top: 3rem;
+    }
+
+    #pick-era h2 {
+        font-size: 40px;
+    }
+
+    #pick-era button {
+        font-size: 17px;
+    }
+
+    #quiz-space {
+        margin-top: 10rem;
     }
 }
 
@@ -283,7 +339,7 @@ body {
 
     /* Website opener*/
     #website-opener {
-        margin-top: 40%;
+        margin-top: 19.5rem;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -296,42 +352,39 @@ body {
 
     #welcome-line-2 {
         font-size: 40px;
-        margin-top: -11%;
+        margin-top: -17%;
     }
 
     #website-opener p {
         font-size: 20px;
     }
 
-    #start {
-        width: 40%;
+    #start-button {
+        font-size: 19px;
+        width: 35%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #start button {
-        font-size: 20px;
-    }
-
     #opening-instructions {
-        margin-top: 15%;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 10px;
         padding-right: 10px;
+        margin-top: 10rem;
     }
 
     #opening-instructions h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     #opening-instructions h2 {
-        font-size: 55px;
+        font-size: 40px;
     }
 
     #opening-instructions p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #individual-instructions {
@@ -339,10 +392,10 @@ body {
     }
 
     #pick-button {
-        width: 50%;
+        width: 43%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 19px;
+        font-size: 16px;
     }
 
     #quiz-space {
@@ -353,35 +406,36 @@ body {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-top: 5rem;
     }
 
     #pick-era h2 {
-        font-size: 60px;
+        font-size: 50px;
+        margin-top: -17px;
     }
 
     #pick-era button {
         width: 52%;
-        font-size: 19px;
+        font-size: 16px;
     }
 
     #quiz-space {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 19%;
+        margin-top: 11rem;
     }
 
     #show {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     #question {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #answer-space button {
-        font-size: 19px;
+        font-size: 16px;
         width: 70%;
     }
 
@@ -390,8 +444,8 @@ body {
     }
 
     #additional-buttons button {
-        width: 23%;
-        font-size: 19px;
+        width: 20%;
+        font-size: 16px;
     }
 }
 
@@ -399,8 +453,7 @@ body {
 
 @media screen and (min-width: 820px) {
     #website-opener {
-        margin-top: 50%;
-        margin-bottom: 50%;
+        margin-top: 32rem;
     }
 
     #welcome-line-2 {
@@ -414,7 +467,7 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 14%;
+        margin-top: 7rem;
     }
 
     #opening-instructions h1 {
@@ -434,7 +487,7 @@ body {
     }
 
     #pick-era {
-        margin-top: 5%;
+        margin-top: 4rem;
     }
 
     #pick-era h2 {
@@ -446,7 +499,7 @@ body {
     }
 
     #quiz-space {
-        margin-top: 26%;
+        margin-top: 19rem;
     }
 
     #show {
@@ -464,6 +517,11 @@ body {
 
 /* Media Query for large tablet screens (1024px) and wider */
 @media screen and (min-width: 1024px) {
+
+    #website-opener {
+        margin-top: 39rem;
+    }
+    
     #welcome-line-1 {
         font-size: 18px;
     }
@@ -485,7 +543,7 @@ body {
     }
 
     #opening-instructions {
-        margin-top: 25%;
+        margin-top: 15rem;
     }
 
     #opening-instructions h1 {
@@ -508,7 +566,7 @@ body {
     }
 
     #pick-era {
-        margin-top: 14%;
+        margin-top: 10rem;
         padding-bottom: 5%;
     }
 
@@ -523,7 +581,7 @@ body {
     }
 
     #quiz-space {
-        margin-top: 32%;
+        margin-top: 25rem;
     }
 
     #show {
@@ -569,7 +627,8 @@ body {
 /* Media Query for xl desktop (1440px) and wider */
 @media screen and (min-width: 1440px) {
     #website-opener {
-        margin-top: 19%;
+        margin-top: 15rem;
+        width: 60%;
     }
 
     #welcome-line-1 {
@@ -587,13 +646,15 @@ body {
 
     #start-button {
         font-size: 20px;
-        width: 16%;
+        width: 22%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     #opening-instructions {
-        margin-top: 7%;
+        margin-top: 3.5rem;
+        padding: 25px;
+        width: 60%;
     }
 
     #opening-instructions h1 {
@@ -609,10 +670,14 @@ body {
     }
 
     #pick-button {
-        font-size: 20px;
-        width: 27%;
-        padding-top: 13px;
-        padding-bottom: 13px;
+        font-size: 21px;
+        width: 40%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #pick-era {
+        width: 60%;
     }
 
     #pick-era h2 {
@@ -620,14 +685,15 @@ body {
     }
 
     #pick-era button {
-        font-size: 21px;
-        width: 40%;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        font-size: 25px;
+        width: 50%;
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 
     #quiz-space{
-        margin-top: 4%;
+        margin-top: 5rem;
+        width: 60%;
     }
 
     #show {
@@ -650,7 +716,6 @@ body {
     }
 
     #additional-buttons button {
-        width: 10px;
         font-size: 17px;
     }
 }
