@@ -51,7 +51,7 @@ body {
     border: 2px solid #f4cb8d;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-top: 15rem;
+    margin-top: 10rem;
     opacity: 80%;
     border-radius: 25px;
     margin-left: auto; 
@@ -863,3 +863,15 @@ body {
         font-size: 17px;
     }
 
+}
+
+/* Media Query for xxl desktop (1600px) and wider */
+@media screen and (min-width: 1600px) {
+    #welcome-line-2 {
+        margin-top: -11%;
+    }
+
+    #opening-instructions {
+        margin-top: 6rem;
+    }
+}
