@@ -580,9 +580,45 @@ body {
     }
 
 }
-
-/* Media Query for desktops - 1440px and up */
+/* Media Query for xl desktops - 1440px and up */
 @media screen and (min-width:1440px){
     
-    #pick-era
+    #opening-instructions h1 {
+        font-size: 64px;
+    }
+
+    #opening-instructions p {
+        font-size: 24px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 57px;
+    }
+
+    #pick-button {
+        font-size: 24px;
+    }
+
+    #pick-era h2 {
+        font-size: 57px;
+    }
+
+    #pick-era button {
+        width: 43%;
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    #show {
+        font-size: 70px;
+    }
+
+    #question {
+        font-size: 30px;
+        padding: 12px;
+    }
+
+    #final-score {
+        font-size: 25px;
+    }
 }
