@@ -264,8 +264,8 @@ body {
 }
 
 /* Media Queries */
-/* Media Query for larger screens - 375px and up */
-@media screen and (min-width:375px) {
+/* Media Query for larger screens - 376px and up */
+@media screen and (min-width:376px) {
 
 #opening-instructions {
     margin-top: 0rem;
@@ -315,8 +315,8 @@ body {
 }
 }
 
-/* Media query for larger phone screens - 430px and up */
-@media screen and (min-width:430px) {
+/* Media query for larger phone screens - 431px and up */
+@media screen and (min-width:431px) {
 
     #opening-instructions h1 {
         font-size: 50px;
@@ -351,8 +351,8 @@ body {
     }
 }
 
-/* Media query for tablet screens - 768px and up */
-@media screen and (min-width:768px) {
+/* Media query for tablet screens - 769px and up */
+@media screen and (min-width:769px) {
 
     #logo {
         font-size: 45px;
@@ -402,7 +402,7 @@ body {
 }
 
 /* Media query for wider tablet screens - 820px and up */
-@media screen and (min-width:768px) {
+@media screen and (min-width:820px) {
 
     #logo {
         font-size: 55px;
