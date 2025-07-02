@@ -557,93 +557,76 @@ function finalScore () {
     const finalScoreEl = document.getElementById("final-score");
 
     if (score === 15) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
-        Okay, wait a minute... you got a perfect score?! Are you kidding us right now?! 
-        This wasn't just knowing the answers "All Too Well"; it was "Perfectly Fine" taken to an entirely new level! 
-        You didn't just pass; you absolutely conquered that quiz like it was "The Great War," and you were the only one left standing.
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
+
+        <p>Okay, wait a minute... you got a perfect score?! Are you kidding us right now?!</p>
         
-        You're not just a Swiftie; you're a certified Mastermind! It's as if you know the lyrics better than Taylor Swift herself sometimes.
-        This is your moment to really make the whole place shimmer!
+        <p>This wasn't just knowing the answers <em>"All Too Well"</em>; it was <em>"(Mr) Perfectly Fine"</em> taken to an entirely new level! You didn't just pass; you absolutely conquered that quiz like it was <em>"The Great War"</em>, and you were the only one left standing.</p>
         
-        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. 
-        Go celebrate like you just won a Grammy; you absolutely earned it.`;
+        <p>You're not just a Swiftie; you're a certified <em>"Mastermind!"</em> It's as if you know the lyrics better than Taylor Swift herself sometimes. This is your moment to really make the whole place shimmer!</p>
+        
+        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.`;
     }
     else if (score >= 12 && score <= 14) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
 
-        Did you have "The Lucky One" on repeat while studying, or are you just a "Mastermind" when it comes to all things Taylor? 
-        Because you absolutely slayed that quiz like it was a surprise album drop!
+        <p>Did you have <em>"The Lucky One"</em> on repeat while studying, or are you just a <em>"Mastermind</em> when it comes to all things Taylor? Because you absolutely slayed that quiz like it was a surprise album drop!</p>
         
-        We bet you were feeling "Fearless" walking into that, and now you're probably singing "Long Live" at the top of your lungs. 
-        You didn't just know the answers, you knew them "All Too Well."
+        <p>We bet you were feeling <em>"Fearless"</em> walking into that, and now you're probably singing <em>"Long Live"</em> at the top of your lungs. You didn't just know the answers, you knew them <em>"All Too Well."</em></p>
         
-        Consider this your "Picture to Burn" moment for anyone who doubted your Swiftie knowledge. 
-        You've officially entered your "Champion Era," and honestly, it looks gorgeous on you!
+        <p>Consider this your <em>"Picture to Burn"</em> moment for anyone who doubted your Swiftie knowledge.</p> 
         
-        Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering 
-        if you'll ever let us in on your "Mastermind" strategy, because we're not as cool as you.`;
+        <p>You've officially entered your champion Era, and honestly, it looks <em>"Gorgeous"</em> on you!</p>
+        
+        Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering if you'll ever let us in on your <em>"Mastermind"</em> strategy, because we're not as cool as you.`;
     }
 
        else if (score >= 9 && score <= 11) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
 
-        Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! 
-        You showed up, gave it your all, and you're still a brilliant Swiftie.
+        <p>Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! You showed up, gave it your all, and you're still a brilliant Swiftie.</p>
         
-        Sometimes, you don't know all the little secret Easter eggs, and honestly, that's totally okay! 
-        The whole point is to have fun. You just gotta "Shake It Off" when it comes to the score and remember what a dedicated fan you are.
+        <p>Sometimes, you don't know all the little secret Easter eggs, and honestly, that's totally okay! The whole point is to have fun. You just gotta <em>"Shake It Off"</em> when it comes to the score and remember what a dedicated fan you are.</p>
         
-        Don't even sweat it! There's always a "Begin Again" moment for the next quiz, and we know you'll absolutely crush it. 
-        Congratulations on playing along!`;
+        Don't even sweat it! There's always a <em>"Begin Again"</em> moment for the next quiz, and we know you'll absolutely crush it. Congratulations on playing along!`;
     }
 
      else if (score >= 4 && score <= 9) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
         
-        Well, that quiz was certainly a "Bad Blood" moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question
-        The important thing is you showed up, you played, and you still have an "Invisible String" connecting you to all things Taylor!
+        <p>Well, that quiz was certainly a <em>"Bad Blood"</em> moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question, the important thing is you showed up, you played, and you still have an <em>"Invisible String"</em> connecting you to all things Taylor!</p>
       
-        Maybe you just had a "Glitch" on a few answers, or perhaps you were too busy jamming to the music in your head to focus on the trivia. 
-        Either way, there's absolutely no need to "Shake It Off" (the feeling of disappointment!).
+        <p>Maybe you just had a <em>"Glitch"</em> on a few answers, or perhaps you were too busy jamming to the music in your head to focus on the trivia. Either way, there's absolutely no need to </em>"Shake It Off"</em>.</p>
     
-        Consider this just a little "Long Story Short" moment. It's all about the fun, plus, now you have even more reason to dive 
-        back into the discography. You can always "Begin Again" with another quiz!`;
+        Consider this just a little <em>"Long Story Short"</em> moment. It's all about the fun, plus, now you have even more reason to dive back into the discography. You can always <em>"Begin Again"</em> with another quiz!`;
     }
 
      else if (score >= 1 && score <= 4) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
         
-        Okay, so maybe that quiz was more of a "Death By A Thousand Cuts" than a "Love Story" for you, but hold up!
-        You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album 
-        booklets - a small victory, but a victory nonetheless!
+        <p>Okay, so maybe that quiz was more of a <em>"Death By A Thousand Cuts"</em> than a <em>"Love Story"</em> for you, but hold up! You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album booklets - a small victory, but a victory nonetheless!</p>
         
-        No need to "Shake It Off" in despair, because seriously, the fact that you even showed up and faced the music makes 
-        you a "Fearless" fan in our book. Maybe you were just too busy feeling "22" and having a blast to remember every deep cut, and that's perfectly okay!
+        <p>No need to <em>"Shake It Off"</em> in despair, because seriously, the fact that you even showed up and faced the music makes you a <em>"Fearless"</em> fan in our book. Maybe you were just too busy feeling <em>"22"</em> and having a blast to remember every deep cut, and that's perfectly okay!</p>
         
-        Consider this just a "Long Story Short" moment on your Swiftie journey. 
-        It's not about being a "Mastermind" every time, it's about the shared love for the music. 
-        Plus, now you've got a whole new set of lyrics to dive into for next time. You can always "Begin Again" with another quiz!`;
+        Consider this just a <em>"Long Story Short"</em> moment on your Swiftie journey. It's not about being a <em>"Mastermind"</em> every time, it's about the shared love for the music. Plus, now you've got a whole new set of lyrics to dive into for next time. You can always <em>"Begin Again"</em> with another quiz!`;
     }
 
         else if (score === 0) {
-        finalScoreEl.innerText = `
-        Your final score is ${score} / 15!
+        finalScoreEl.innerHTML = `
+        <p><strong>Your final score is ${score} / 15!</strong></p>
         
-        Okay, so you just took a Taylor Swift quiz and landed squarely in a "Blank Space" when it came to the answers, huh? 
-        You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!
+        <p>Okay, so you just took a Taylor Swift quiz and landed squarely in a <em>"Blank Space"</em> when it came to the answers, huh? You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!</p>
         
-        There's absolutely no need to "Shake It Off" in despair because, honestly, showing up and giving it a shot is a "Fearless" move in itself. 
-        Maybe you were just too busy feeling "22" and having a good time, or perhaps you were already mentally planning your next eras fit!
+        <p>There's absolutely no need to <em>"Shake It Off"</em> in despair because, honestly, showing up and giving it a shot is a <em>"Fearless"</em> move in itself. Maybe you were just too busy feeling <em>"22"</em> and having a good time, or perhaps you were already mentally planning your next eras fit!</p>
         
-        Consider this just a "Long Story Short" moment. The real win isn't about the score; it's about the pure, unadulterated love for 
-        Taylor's music that brought you to the quiz in the first place. 
-        You're still connected by an "Invisible String" to this fandom. Plus, now you have all the songs to re-listen to and 
-        all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going "Clean" on that scoreboard!`;
+        <p>Consider this just a <em>"Long Story Short"</em> moment. The real win isn't about the score; it's about the pure, unadulterated love for Taylor's music that brought you to the quiz in the first place.</p> 
+
+        You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!`;
     }
 }
 

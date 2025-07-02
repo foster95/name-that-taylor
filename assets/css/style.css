@@ -183,6 +183,7 @@ body {
 #quiz-space {
     text-align: center;
     background-color: #f4cb8d;
+    border: 2px solid #f4cb8d;
     opacity: 80%;
     margin-top: 2.5rem;
     border-radius: 25px;
@@ -212,10 +213,34 @@ body {
 }
 
 #score {
-    margin-bottom: 5rem;
-    padding-bottom: 2rem;
+    text-align: center;
+    background-color: #f4cb8d;
+    opacity: 80%;
+    margin-bottom: 3.5rem;
     padding-top: 1rem;
     font-weight: bold;
+}
+
+/* Final Score area styling */
+
+ #final-score-space {
+    text-align: center;
+    background-color: #f4cb8d;
+    border: 2px solid #f4cb8d;
+    opacity: 80%;
+    margin-top: 2.5rem;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 2.5rem;
+}
+
+#final-score {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    padding: 1rem;
+
 }
 
 #additional-buttons {
@@ -223,7 +248,7 @@ body {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: -3rem;
+    padding-top: 20px;
 }
 
 #additional-buttons button {
