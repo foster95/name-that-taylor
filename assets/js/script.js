@@ -554,10 +554,9 @@ function endQuiz () {
  */
 
 function finalScore () {
-    let finalScore = parseInt(document.getElementById("score").innerText);
     const finalScoreEl = document.getElementById("final-score");
 
-    if (finalScore >= 12 && finalScore <= 14) {
+    if (score >= 12 && score <= 14) {
         finalScoreEl.innerText = `
         Alright, look what we have here! Someone just absolutely CRUSHED that quiz! 
         Seriously, honey, you didn't just answer those questions, you knew them "All Too Well." 
