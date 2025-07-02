@@ -329,6 +329,7 @@ body {
 
 #pick-era-wrapper {
     gap: 4px;
+    max-height: 477px;
 }
 
 #pick-era {
@@ -403,6 +404,7 @@ body {
 
     #pick-era-wrapper {
         padding-bottom: 10px;
+        max-height: 100%;
     }
 
     #pick-era {
@@ -436,8 +438,8 @@ body {
     }
 }
 
-/* Media query for tablet screens - 769px and up */
-@media screen and (min-width:769px) {
+/* Media query for tablet screens - 768px and up */
+@media screen and (min-width:768px) {
 
     /* Logo styling */
 
