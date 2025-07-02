@@ -53,43 +53,24 @@ body {
 
 #logo {
     text-align: center;
-    padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 3rem;
-    padding-right: 2rem;
-
-}
-
-#nts {
-    font-family: var(--primary-font);
-    font-size: 21px;
-    font-weight: bold;
-    padding-left: 14px;
-}
-
-#tv {
+    padding-left: 4rem;
     font-family: var(--secondary-font);
-    font-size: 47px;
+    font-size: 31px;
     font-weight: bold;
+    padding-left: 6px;
+    padding-top: 10px
+
 }
 
-#welcome-line-1 {
+#title {
     text-align: center;
-    margin-top: -15px;
-    font-size: 10px;
-}
-
-#welcome-line-2 {
-    text-align: center;
+    font-size: 23px;
     font-family: var(--secondary-font);
-    font-size: 24px;
-    margin-top: -64px;
-    font-weight: bold;
 }
 
 #website-opener h3 {
-    margin-top: -30px;
     font-weight: normal;
 }
 
@@ -103,6 +84,7 @@ body {
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
+    font-size: 22px;
 
 }
 #opening-instructions {
@@ -117,39 +99,39 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
+    margin-top: 4rem;
 }
 
 #opening-instructions h1 {
     font-family: var(--secondary-font);
-    font-size: 40px;
+    font-size: 50px;
     margin-top: -5px;
     margin-bottom: -11px;
 }
 
 #opening-instructions p {
-    font-size: 23px;
+    font-size: 17px;
 }
 
 #opening-instructions h2 {
     font-family: var(--secondary-font);
-    font-size: 33px;
+    font-size: 43px;
     margin-top: 10px;
     margin-bottom: -10px;
 }
 
 #pick-button {
-    width: 75%;
+    width: 91%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
-    font-size: 15px;
+    font-size: 18px;
 }
 
 #pick-era {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
-    padding-top: 5%;
     padding-bottom: 5%;
     opacity: 80%;
     border-radius: 25px;
@@ -164,9 +146,8 @@ body {
 
 #pick-era h2 {
     font-family: var(--secondary-font);
-    font-size: 33px;
-    margin-top: 10px;
-    margin-bottom: -5px;
+    font-size: 43px;
+    margin-top: -4px;
 }
 
 #pick-era button {
@@ -193,14 +174,15 @@ body {
     background-color: #f4cb8d;
     border: 2px solid #f4cb8d;
     opacity: 80%;
-    margin-top: 2.5rem;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
+    margin-top: -3rem;
 }
 
 #question {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     padding-left: 21px;
     padding-right: 21px;
 }
@@ -214,19 +196,20 @@ body {
 }
 
 #answer-space button {
-    width: 75%;
+    width: 92%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
+    font-size: 19px;
 }
 
 #score {
     text-align: center;
     background-color: #f4cb8d;
     opacity: 80%;
-    margin-bottom: 3.5rem;
-    padding-top: 1rem;
+    margin-bottom: 2.5rem;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* Final Score area styling */
@@ -236,17 +219,17 @@ body {
     background-color: #f4cb8d;
     border: 2px solid #f4cb8d;
     opacity: 80%;
-    margin-top: 2.5rem;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2.5rem;
+    width: 95%;
 }
 
 #final-score {
     font-family: var(--primary-font);
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 17px;
+    padding: 10px;
 }
 
 #additional-buttons {
@@ -258,12 +241,13 @@ body {
 }
 
 #additional-buttons button {
-    width: 30%;
+    width: 42%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
     margin-left: 4px;
     margin-right: 4px;
+    font-size: 18px;
 }
 /* Colour change to indicate correct answer */
 

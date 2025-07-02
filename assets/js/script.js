@@ -545,6 +545,7 @@ let score = 0
 
 function endQuiz () {
     hideSection("quiz-space");
+    hideSection ("additional-buttons");
     showSection ("final-score-space");
     finalScore();
 }
@@ -630,3 +631,17 @@ function finalScore () {
     }
 }
 
+/**
+ * Add function to make return button work
+ */
+
+function homeButton() {
+    console.log ("home button clicked");
+    showSection("website-opener");
+    hideSection("quiz-space");
+    hideSection("final-score-space");
+    hideSection("pick-era");
+    hideSection("opening-instructions");
+    hideSection("additional-buttons");
+    hideSection("logo");
+}

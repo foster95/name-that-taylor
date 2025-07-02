@@ -40,18 +40,17 @@
     <!--Personal Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-  </head>
-  <body>
+</head>
+<body>
     <!--Logo - set to appear after opening page-->
-     <header id="logo" class="disappear">
-        <span id="nts">Name that Song...</span><span id="tv">Taylor's Version</span>
+    <header id="logo" class="disappear">
+        Name that Song...Taylor's Version
     </header>
 
     <!--Opening page-->
 <div class="landing-wrapper">
         <div id="website-opener">
-            <div id="welcome-line-1"><h1>Name that Song...</h1><br></div>
-            <div id="welcome-line-2"><h1>Taylor's Version</h1></div>
+            <div id="title"><h1>Name that Song...<br>Taylor's Version</h1></div>
                 <h3>Her name is Taylor and she was born in 1989!</h3>
                 <button id="start-button" aria-label="Go to game instructions" onclick="startButton();">Let's Go!</button>
             </div>
@@ -80,7 +79,7 @@
       </p>
       <button id="pick-button" aria-label="choose which game to play" onclick="pickButton();">It's been a long time coming...</button>
     </div>
-    </div>
+    
 
     <!--Eras Selection-->
     <div id="pick-era" class="disappear">
@@ -103,7 +102,7 @@
           <button class="era-selector-button" aria-label="start The Tortured Poets Departmet - The Anthology game" data-type="ttpdAnthology">
             TTPD - The Anthology
           </button>
-        </div>
+    </div>
 
     <!--Question Section-->
     <div id="quiz-space" class="disappear">
@@ -117,7 +116,7 @@
       </div>
 
         <!--Score Section-->
-        <p id="score">0 / 15</p>
+    <p id="score">0 / 15</p>
 
     </div>
 
@@ -125,16 +124,17 @@
     <div id="final-score-space" class="disappear">
         <p id="final-score"></p>
     </div>
+</div>    
 
     <!--Additional Button-->
     <div id="additional-buttons" class="disappear">
-        <button onclick="homeButton();">Return</button>
+        <button onclick="homeButton();">Home</button>
         <button onclick="helpButton();">Help</button>
         <button onclick="anotherEraButton();">Another Era</button>
     </div>
-</div>
+
 
     <!--Script-->
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
 </html>
