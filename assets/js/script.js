@@ -332,7 +332,7 @@ const speakNowQuestions = [
 
     {
     "question": "Now I'm pacing down the hall, chasing down your street",
-    "answers": ["Speak Now", "Never Grow Up", "Haunted", "If This was a  Movie"],
+    "answers": ["Speak Now", "Never Grow Up", "Haunted", "If This was a Movie"],
     "correct": 3
     },
 
@@ -405,7 +405,7 @@ function pickButton() {
  * select Era then open quiz
  */
 
-let eraButtons = document.getElementsByClassName ("era-selector-button");
+const eraButtons = document.getElementsByClassName ("era-selector-button");
 
 for (let button of eraButtons) {
     button.addEventListener("click", function() {
@@ -556,16 +556,94 @@ function endQuiz () {
 function finalScore () {
     const finalScoreEl = document.getElementById("final-score");
 
-    if (score >= 12 && score <= 14) {
+    if (score === 15) {
         finalScoreEl.innerText = `
-        Alright, look what we have here! Someone just absolutely CRUSHED that quiz! 
-        Seriously, honey, you didn't just answer those questions, you knew them "All Too Well." 
-        I'm talking "Mastermind" level Swiftie status. Were you secretly in my songwriting room for "Midnights" 
-        or have you just been listening to "Fearless" on repeat since, well, forever?
+        Your final score is ${score} / 15!
+        Okay, wait a minute... you got a perfect score?! Are you kidding us right now?! 
+        This wasn't just knowing the answers "All Too Well"; it was "Perfectly Fine" taken to an entirely new level! 
+        You didn't just pass; you absolutely conquered that quiz like it was "The Great War," and you were the only one left standing.
         
-        You didn't just shake off the competition, you shook it out of the park! This is your "Long Live" moment, your official entry into the Champion Era. And let me tell you, it looks gorgeous on you.
+        You're not just a Swiftie; you're a certified Mastermind! It's as if you know the lyrics better than Taylor Swift herself sometimes.
+        This is your moment to really make the whole place shimmer!
         
-        So from me to you, congratulations, you brilliant, beautiful Swiftie! Now go blast "Teardrops on My Guitar" – 
-        not because you're sad, but because you're just that good.`;
+        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. 
+        Go celebrate like you just won a Grammy; you absolutely earned it.`;
+    }
+    else if (score >= 12 && score <= 14) {
+        finalScoreEl.innerText = `
+        Your final score is ${score} / 15!
+
+        Did you have "The Lucky One" on repeat while studying, or are you just a "Mastermind" when it comes to all things Taylor? 
+        Because you absolutely slayed that quiz like it was a surprise album drop!
+        
+        We bet you were feeling "Fearless" walking into that, and now you're probably singing "Long Live" at the top of your lungs. 
+        You didn't just know the answers, you knew them "All Too Well."
+        
+        Consider this your "Picture to Burn" moment for anyone who doubted your Swiftie knowledge. 
+        You've officially entered your "Champion Era," and honestly, it looks gorgeous on you!
+        
+        Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering 
+        if you'll ever let us in on your "Mastermind" strategy, because we're not as cool as you.`;
+    }
+
+       else if (score >= 9 && score <= 11) {
+        finalScoreEl.innerText = `
+        Your final score is ${score} / 15!
+
+        Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! 
+        You showed up, gave it your all, and you're still a brilliant Swiftie.
+        
+        Sometimes, you don't know all the little secret Easter eggs, and honestly, that's totally okay! 
+        The whole point is to have fun. You just gotta "Shake It Off" when it comes to the score and remember what a dedicated fan you are.
+        
+        Don't even sweat it! There's always a "Begin Again" moment for the next quiz, and we know you'll absolutely crush it. 
+        Congratulations on playing along!`;
+    }
+
+     else if (score >= 4 && score <= 9) {
+        finalScoreEl.innerText = `
+        Your final score is ${score} / 15!
+        
+        Well, that quiz was certainly a "Bad Blood" moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question
+        The important thing is you showed up, you played, and you still have an "Invisible String" connecting you to all things Taylor!
+      
+        Maybe you just had a "Glitch" on a few answers, or perhaps you were too busy jamming to the music in your head to focus on the trivia. 
+        Either way, there's absolutely no need to "Shake It Off" (the feeling of disappointment!).
+    
+        Consider this just a little "Long Story Short" moment. It's all about the fun, plus, now you have even more reason to dive 
+        back into the discography. You can always "Begin Again" with another quiz!`;
+    }
+
+     else if (score >= 1 && score <= 4) {
+        finalScoreEl.innerText = `
+        Your final score is ${score} / 15!
+        
+        Okay, so maybe that quiz was more of a "Death By A Thousand Cuts" than a "Love Story" for you, but hold up!
+        You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album 
+        booklets - a small victory, but a victory nonetheless!
+        
+        No need to "Shake It Off" in despair, because seriously, the fact that you even showed up and faced the music makes 
+        you a "Fearless" fan in our book. Maybe you were just too busy feeling "22" and having a blast to remember every deep cut, and that's perfectly okay!
+        
+        Consider this just a "Long Story Short" moment on your Swiftie journey. 
+        It's not about being a "Mastermind" every time, it's about the shared love for the music. 
+        Plus, now you've got a whole new set of lyrics to dive into for next time. You can always "Begin Again" with another quiz!`;
+    }
+
+        else if (score === 0) {
+        finalScoreEl.innerText = `
+        Your final score is ${score} / 15!
+        
+        Okay, so you just took a Taylor Swift quiz and landed squarely in a "Blank Space" when it came to the answers, huh? 
+        You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!
+        
+        There's absolutely no need to "Shake It Off" in despair because, honestly, showing up and giving it a shot is a "Fearless" move in itself. 
+        Maybe you were just too busy feeling "22" and having a good time, or perhaps you were already mentally planning your next eras fit!
+        
+        Consider this just a "Long Story Short" moment. The real win isn't about the score; it's about the pure, unadulterated love for 
+        Taylor's music that brought you to the quiz in the first place. 
+        You're still connected by an "Invisible String" to this fandom. Plus, now you have all the songs to re-listen to and 
+        all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going "Clean" on that scoreboard!`;
     }
 }
+
