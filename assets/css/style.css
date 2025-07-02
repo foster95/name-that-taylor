@@ -83,8 +83,12 @@ body {
     border-radius: 25px;
     font-family: var(--primary-font);
     font-size: 22px;
-
 }
+
+#start-button: hover {
+    
+}
+
 #opening-instructions {
     background-color: #f4cb8d;
     text-align: center; 
@@ -355,8 +359,16 @@ body {
         font-size: 18px;
     }
 
+    #pick-era-wrapper {
+        padding-bottom: 10px;
+    }
+
     #pick-era {
         padding-top: 15px;
+    }
+
+    #pick-era h2 {
+        font-size: 45x;
     }
 
     #question {
@@ -468,9 +480,23 @@ body {
         width: 60%;
     }
 
+    #pick-era-wrapper {
+        gap: 10px;
+    }
+
     #pick-era {
         width: 75%;
         font-size: 25px;
+    }
+
+    #pick-era h2 {
+        font-size: 60px;
+        margin-bottom: 27px;
+    }
+
+    #pick-era button {
+        font-size: 25px;
+        padding: 10px;
     }
 
     #quiz-space {
