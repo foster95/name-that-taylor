@@ -559,7 +559,7 @@ function finalScore () {
 
     if (score === 15) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
 
         <p>Okay, wait a minute... you got a perfect score?! Are you kidding us right now?!</p>
         
@@ -571,7 +571,7 @@ function finalScore () {
     }
     else if (score >= 12 && score <= 14) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
 
         <p>Did you have <em>"The Lucky One"</em> on repeat while studying, or are you just a <em>"Mastermind</em> when it comes to all things Taylor? Because you absolutely slayed that quiz like it was a surprise album drop!</p>
         
@@ -586,7 +586,7 @@ function finalScore () {
 
        else if (score >= 9 && score <= 11) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
 
         <p>Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! You showed up, gave it your all, and you're still a brilliant Swiftie.</p>
         
@@ -597,7 +597,7 @@ function finalScore () {
 
      else if (score >= 4 && score <= 9) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
         
         <p>Well, that quiz was certainly a <em>"Bad Blood"</em> moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question, the important thing is you showed up, you played, and you still have an <em>"Invisible String"</em> connecting you to all things Taylor!</p>
       
@@ -608,7 +608,7 @@ function finalScore () {
 
      else if (score >= 1 && score <= 4) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
         
         <p>Okay, so maybe that quiz was more of a <em>"Death By A Thousand Cuts"</em> than a <em>"Love Story"</em> for you, but hold up! You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album booklets - a small victory, but a victory nonetheless!</p>
         
@@ -619,7 +619,7 @@ function finalScore () {
 
         else if (score === 0) {
         finalScoreEl.innerHTML = `
-        <p><strong>Your final score is ${score} / 15!</strong></p>
+        <strong>Your final score is ${score} / 15!</strong>
         
         <p>Okay, so you just took a Taylor Swift quiz and landed squarely in a <em>"Blank Space"</em> when it came to the answers, huh? You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!</p>
         

@@ -363,20 +363,20 @@ body {
     }
 
     #opening-instructions h1 {
-        font-size: 55px;
+        font-size: 69px;
     }
 
     #opening-instructions p {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     #opening-instructions h2 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     #pick-button {
-        font-size: 20px;
-        width: 47%;
+        font-size: 21px;
+        width: 60%;
     }
 
     #pick-era h2 {
@@ -431,7 +431,7 @@ body {
     }
 
     #opening-instructions p {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #opening-instructions h2 {
@@ -439,7 +439,7 @@ body {
     }
 
     #pick-button {
-        font-size: 30px;
+        font-size: 24px;
         width: 60%;
     }
 
@@ -452,12 +452,12 @@ body {
     }
 
     #question {
-        font-size: 44px;
+        font-size: 35px;
     }
 
     #answer-space button {
-        font-size: 37px;
-        width: 60%;
+        font-size: 28px;
+        width: 68%;
     }
 
     #final-score-space {
