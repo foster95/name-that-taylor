@@ -379,19 +379,6 @@ body {
 }
 }
 
-/* Media query for larger phone screens - 400px and up due to bug found in testing */
-@media screen and (min-width:400px) {
-
-#pick-era-wrapper {
-    max-height: 100%;
-}
-
- #pick-era button {
-    font-size: 16px;
-    width: 74%;
-    }
-}
-
 /* Media query for larger phone screens - 430px and up */
 @media screen and (min-width:430px) {
 
@@ -425,7 +412,7 @@ body {
     }
 
     #pick-era h2 {
-        font-size: 45x;
+        font-size: 45px;
     }
 
     /* Quiz section styling */
