@@ -108,7 +108,7 @@ body {
 }
 
 #opening-instructions p {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 #opening-instructions h2 {
@@ -119,19 +119,20 @@ body {
 }
 
 #pick-button {
-    width: 91%;
+    width: 81%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #pick-era-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     align-items: center;
     width: 100%;
+    margin-top: -25px;
 }
 
 #pick-era {
@@ -143,25 +144,25 @@ body {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    padding-top: 24px;
+    padding-top: 13px;
 }
 
 #pick-era h2 {
     font-family: var(--secondary-font);
     font-size: 43px;
-    margin-top: -4px;
+    margin-top: 7px;
 }
 
 #pick-era button {
-    width: 85%;
+    width: 80%;
     padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
-    font-size: 15px;
+    font-size: 13px;
 }
 
 /* Era title Styling */
@@ -270,8 +271,8 @@ body {
 }
 
 /* Media Queries */
-/* Media Query for larger screens - 376px and up */
-@media screen and (min-width:376px) {
+/* Media Query for larger screens - 375px and up */
+@media screen and (min-width:375px) {
 
 #opening-instructions {
     margin-top: 0rem;
