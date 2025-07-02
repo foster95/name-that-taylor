@@ -31,10 +31,10 @@ These user stories were then further broken down into the following categories:
 * As a user and Taylor fan I would like to recieve a Taylor themed message at the end of the game based on how many answers I got correct. These messages should be punny, light hearted and just a touch of fun.
 * As a user playing the game, I do not want to have the same question shown to me everytime I play the game and instead want a randomised selection every time.
 
-### Should have
+### Should Have
 * As a fan of Taylor and a user of the game I want the option to challenge myself to harder levels within each Era
 
-### Could have
+### Could Have
 * As a user and player of the game, I would like an element of time pressure and to see a countdown clock which resets at every question
 * As a user and player of the game, I would like the quiz to change colour palettes depending on which game I choose to run.
 
@@ -47,10 +47,12 @@ Name that Song - Taylor's Version has been designed as a single webpage, with a 
 
 All wireframes were created using Balsamiq
 
+### Mobile Wireframes
 ![Mobile Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-1.png)
 ![Mobile Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-2.png)
 ![Mobile Wireframe 3](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-3.png)
 
+### Desktop Wireframes
 ![Desktop Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-desktop-1.png)
 ![Desktop Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq%20wire-frame-desktop-2.png)
 ![Desktop Wireframe 3](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-desktop-3.png)
