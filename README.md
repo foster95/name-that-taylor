@@ -30,6 +30,20 @@ In order to prepare for the project, I created a series of user stories that wer
 
 The full project board list can be found by clicking here
 
+## Design
+Name that Song - Taylor's Version has been designed as a single webpage, with a series of javascript instructions ensuring the user can move through each section of the quiz. It has been designed to be compact, simple to use and easy to navigate with an opening section, a instructions section, a choose your game section, a quiz section and a final result section.
+
+### Wireframes
+
+All wireframes were created using Balsamiq
+![Mobile Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-1.png)
+![Mobile Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-2.png)
+![Mobile Wireframe 3](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-mobile-3.png)
+
+![Desktop Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-desktop-1.png)
+![Desktop Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq%20wire-frame-desktop-2.png)
+![Desktop Wireframe 3](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wire-frame-desktop-3.png)
+
 
 
 
