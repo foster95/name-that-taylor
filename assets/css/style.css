@@ -54,17 +54,23 @@ body {
 #logo {
     text-align: center;
     padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 2rem;
+
 }
 
 #nts {
     font-family: var(--primary-font);
-    font-size: 15px;
+    font-size: 21px;
     font-weight: bold;
+    padding-left: 14px;
 }
 
 #tv {
     font-family: var(--secondary-font);
-    font-size: 25px;
+    font-size: 47px;
     font-weight: bold;
 }
 
