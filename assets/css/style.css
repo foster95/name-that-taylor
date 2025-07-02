@@ -478,6 +478,10 @@ body {
         font-size: 50px;
     }
 
+    #pick-era button {
+        font-size: 19px;
+    }
+
     /* Quiz area styling */
 
     #question {
@@ -490,7 +494,7 @@ body {
     }
 
     #score {
-        font-size: 60px;
+        font-size: 35px;
     }
 
     /* Final score styling */
