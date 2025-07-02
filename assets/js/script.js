@@ -438,11 +438,9 @@ function formatEraName(era) {
     nineteeneightynine: "1989",
     reputation: "Reputation",
     lover: "Lover",
-    folklore: "Folklore",
-    evermore: "Evermore",
+    folkloreAndEvermore: "Folklore & Evermore",
     midnights: "Midnights",
     ttpd: "The Tortured Poets Department",
-    ttpdAnthology: "TTPD - The Anthology"
   };
   return eraNames [era];
 }

@@ -82,10 +82,10 @@ body {
 #start-button {
     text-align: center;
     width: 75%;
-    padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
     font-size: 22px;
+    padding: 10px;
 }
 
 #start-button:hover {
@@ -135,7 +135,6 @@ body {
     border-radius: 25px;
     font-family: var(--primary-font);
     font-size: 15px;
-    padding: 15px;
 }
 
 #pick-button:hover {
@@ -182,11 +181,10 @@ body {
 
 #pick-era button {
     width: 80%;
-    padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
     font-size: 13px;
-    padding: 15px;
+    padding: 10px;
 }
 
 #pick-era button:hover {
@@ -237,7 +235,6 @@ body {
     border-radius: 25px;
     font-family: var(--primary-font);
     font-size: 19px;
-    padding: 15px;
 }
 
 #score {
@@ -281,7 +278,6 @@ body {
 
 #additional-buttons button {
     width: 42%;
-    padding: 10px;
     border-radius: 25px;
     font-family: var(--primary-font);
     margin-left: 4px;
@@ -452,6 +448,10 @@ body {
         font-size: 30px;
     }
 
+    #start-button {
+        padding: 15px;
+    }
+
     /* Imstructions page styling */
 
     #opening-instructions h1 {
@@ -469,9 +469,14 @@ body {
     #pick-button {
         font-size: 21px;
         width: 60%;
+        padding: 15px;
     }
 
     /* Choose era section styling */
+
+    #pick-era-wrapper {
+        max-height: 100%;
+    }
 
     #pick-era h2 {
         font-size: 50px;
@@ -479,6 +484,7 @@ body {
 
     #pick-era button {
         font-size: 19px;
+        padding: 15px;
     }
 
     /* Quiz area styling */
@@ -490,6 +496,7 @@ body {
     #answer-space button {
         font-size: 21px;
         width: 55%; 
+        padding: 15px;
     }
 
     #score {
@@ -500,6 +507,12 @@ body {
 
     #final-score {
         font-size: 20px;
+    }
+
+    /* Additional buttons styling */
+
+    #additional-buttons button {
+        padding: 15px;
     }
 }
 
