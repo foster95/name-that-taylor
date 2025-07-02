@@ -58,7 +58,7 @@ body {
     font-size: 31px;
     font-weight: bold;
     padding-left: 6px;
-    padding-top: 10px
+    padding-top: 3px
 
 }
 
@@ -139,7 +139,7 @@ body {
     background-color: #f4cb8d;
     text-align: center; 
     border: 2px solid #f4cb8d;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     opacity: 80%;
     border-radius: 25px;
     display: flex;
@@ -148,7 +148,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    padding-top: 13px;
+    padding-top: 2px;
 }
 
 #pick-era h2 {
@@ -185,7 +185,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    margin-top: -3rem;
 }
 
 #question {
@@ -274,10 +273,6 @@ body {
 /* Media Query for larger screens - 375px and up */
 @media screen and (min-width:375px) {
 
-#opening-instructions {
-    margin-top: 0rem;
-}
-
 #opening-instructions h1 {
     font-size: 45px;
 }
@@ -293,6 +288,25 @@ body {
 #pick-button {
     width: 70%;
     font-size: 15px;
+}
+
+#pick-era-wrapper {
+    gap: 4px;
+}
+
+#pick-era {
+    padding-bottom: 3%
+}
+
+#pick-era button {
+    font-size: 11px;
+    width: 69%;
+    padding: 9px;
+}
+
+#pick-era h2 {
+    font-size: 33px;
+    margin-top: -8px;
 }
 
 #quiz-space {
@@ -450,6 +464,11 @@ body {
         width: 60%;
     }
 
+    #pick-era {
+        width: 75%;
+        font-size: 25px;
+    }
+
     #quiz-space {
         width: 75%;
     }
@@ -472,7 +491,7 @@ body {
     }
 
     #final-score {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     #score {
