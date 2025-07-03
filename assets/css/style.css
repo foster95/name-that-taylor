@@ -700,7 +700,7 @@ body {
     }
 
     #opening-instructions p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #opening-instructions h2 {
@@ -708,7 +708,7 @@ body {
     }
 
     #pick-button {
-        font-size: 30px;
+        font-size: 20px;
         width: 44%;
     }
 
@@ -719,7 +719,7 @@ body {
     }
 
     #pick-era-button {
-        font-size: 30px;
+        font-size: 20px;
         width: 48%;
     }
 
@@ -730,11 +730,11 @@ body {
     }
 
     #question {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     #answer-space-button {
-        font-size: 30px;
+        font-size: 20px;
         width: 42%;
     }
 }
@@ -834,7 +834,7 @@ body {
     }
 
     #additional-buttons button {
-        font-size: 25px;
+        font-size: 22px;
         width: 18%;
     }
 
