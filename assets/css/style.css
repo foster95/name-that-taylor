@@ -274,15 +274,20 @@ body {
     gap: 1rem;
     flex-wrap: wrap;
     padding-top: 20px;
+    position: fixed;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
 }
 
 #additional-buttons button {
-    width: 42%;
+    width: 27%;
     border-radius: 25px;
     font-family: var(--primary-font);
     margin-left: 4px;
     margin-right: 4px;
-    font-size: 18px;
+    font-size: 12px;
+    padding: 10px;
 }
 /* Colour change to indicate correct answer */
 
@@ -297,9 +302,16 @@ body {
     background-color: red;
     color: white;
 }
-
 /* Media Queries */
-/* Media Query for larger screens - 375px and up */
+/* Media Query for phone screens - 360px and up */
+@media screen and (min-width:360px) {
+
+    #additional-buttons {
+    bottom: 2rem;
+    }
+}
+
+/* Media Query for phone screens - 375px and up */
 @media screen and (min-width:375px) {
 
 /* Opening screen styling */
@@ -369,10 +381,22 @@ body {
 
 /* Additional buttons styling */
 
-#additional-buttons button {
-    width: 35%;
-    font-size: 15px;
+#additional-buttons {
+    bottom: 1.75rem;
 }
+
+#additional-buttons button {
+    width: 28%;
+    font-size: 14px;
+}
+}
+
+/* Media query for larger phone screens - 400px and up */
+@media screen and (min-width:400px) {
+    #additional-buttons {
+    bottom: 6rem;
+    }
+
 }
 
 /* Media query for larger phone screens - 430px and up */
@@ -513,6 +537,7 @@ body {
 
     #additional-buttons button {
         padding: 15px;
+        font-size: 21px;
     }
 }
 
@@ -616,7 +641,73 @@ body {
     #final-score {
         font-size: 25px;
     }
+
+    /* Additional button styling */
+
+    #additional-buttons {
+        bottom: 2rem;
+    }
+
+    #additional-buttons button {
+        font-size: 28px;
+    }
 }
+
+/* Media Query for XL tablets - 1024px and up */
+@media screen and (min-width:1024px) {
+
+    /* Logo styling */
+    #logo {
+        font-size: 70px;
+        padding-top: 20px;
+    }
+
+    /* Opening Instructions styling */
+
+    #opening-instructions h1 {
+        font-size: 77px;
+    }
+
+    #opening-instructions p {
+        font-size: 30px;
+    }
+
+    #opening-instructions h2 {
+        font-size: 67px;
+    }
+
+    #pick-button {
+        font-size: 30px;
+        width: 44%;
+    }
+
+    /* Choose era styling */
+
+    #pick-era h2 {
+        font-size: 67px;
+    }
+
+    #pick-era-button {
+        font-size: 30px;
+        width: 48%;
+    }
+
+    /* Quiz space styling */
+
+    #show {
+        font-size: 67px;
+    }
+
+    #question {
+        font-size: 30px;
+    }
+
+    #answer-space-button {
+        font-size: 30px;
+        width: 42%;
+    }
+}
+
 
 /* Media Query for desktops - 1280px and up */
 @media screen and (min-width:1280px) {
@@ -628,19 +719,19 @@ body {
     }
 
     #opening-instructions h1 {
-        font-size: 60px;
+        font-size: 70px;
     }
 
     #opening-instructions p {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     #opening-instructions h2 {
-        font-size: 49px;
+        font-size: 63px;
     }
 
     #pick-button {
-        font-size: 18px;
+        font-size: 25px;
         width: 39%;
     }
 
@@ -653,24 +744,28 @@ body {
         justify-content: center;
     }
 
+    #pick-era h2 {
+        font-size: 63px;
+    }
+
     #pick-era {
         width: 75%;
         padding-top: 24px;
     }
 
     #pick-era button {
-        width: 36%;
-        font-size: 20px;
+        width: 43%;
+        font-size: 25px;
     }
 
     /* Quiz area styling */
 
     #show {
-        font-size: 60px;
+        font-size: 63px;
     }
 
     #question {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     #answer-space {
@@ -684,8 +779,8 @@ body {
     }
 
     #answer-space button {
-        font-size: 23px;
-        width: 42%;
+        font-size: 25px;
+        width: 45%;
     }
 
     #score {
@@ -700,6 +795,16 @@ body {
 
     #final-score {
         font-size: 23px;
+    }
+
+    /* Additional buttons styling */
+    #additional-buttons {
+        bottom: 8rem;
+    }
+
+    #additional-buttons button {
+        font-size: 25px;
+        width: 18%;
     }
 
 }
