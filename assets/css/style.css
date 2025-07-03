@@ -305,6 +305,9 @@ body {
     color: white;
 }
 /* Media Queries */
+
+/* Media Query for xsmall phone screens - 320px and up */
+
 /* Media Query for phone screens - 360px and up */
 @media screen and (min-width:360px) {
 
@@ -339,7 +342,6 @@ body {
 
 #pick-era-wrapper {
     gap: 4px;
-    max-height: 477px;
 }
 
 #pick-era {
@@ -797,7 +799,7 @@ body {
 
     /* Additional buttons styling */
     #additional-buttons {
-        bottom: 4rem;
+        bottom: 3rem;
     }
 
     #additional-buttons button {
