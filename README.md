@@ -77,11 +77,44 @@ As with colour palettes, Taylor Swift's logo has changed as much as her image, a
 ### Welcome screen
 Upon the user opening the game, they are immediately greeted with the games welcome screen. The welcome screen uses a landing wrapper to seat it in the middle of screens,regardless of the screen dimensions. The user is required to click the "Lets Go!" button to proceed. Upon clicking "Lets go!" the console automatically logs "start button clicked". The function startButton is initiated on click and takes the user to the Opening Instructions section.
 
+function startButton() {
+    console.log("start button clicked");
+    showSection("logo");
+    showSection("opening-instructions");
+    hideSection("website-opener");
+}
+
 ## Opening instructions section
 Once the user has clicked the "lets go!" button, they are taken to a set of small instructions which explain to the user exactly how to play the game. The copy has been written to be informal and friendly and should illicit a positive user experience. When the user is ready to choose the level they will be playing at, they must click "It's been a long time coming...". Upon clicking this, "it's been a long time coming clicked" is logged to the console and the user is taken to the Choose Era section
 
+function pickButton() {
+    console.log ("It's been a long time coming clicked");
+    hideSection("opening-instructions");
+    showSection("pick-era");
+}
+
 ## Choose Era section
 At this point the user is given the opportunity to choose which game they would like to choose based on their favourite album. In order to make the section as readable as possible for smaller screens (up to 375px) the Era's options are scrollable. For desktop screens and larger, the list splits into two columns to save space. Once the user has chosen which game they would like to play, the user will click the button and the following message is logged to the console: "clicked era (game title)" followed by "loading questions for (game title)"
+
+const eraButtons = document.getElementsByClassName ("era-selector-button");
+
+for (let button of eraButtons) {
+    button.addEventListener("click", function() {
+        let gameChoice = this.getAttribute ("data-type");
+        console.log("Clicked era", gameChoice);
+
+        if (allErasQuestions[gameChoice]) {
+            console.log ("Loading questions for", gameChoice);
+            hideSection ("pick-era");
+            showSection ("quiz-space");
+            showSection ("additional-buttons");
+            revealEra(gameChoice);
+            startQuiz (allErasQuestions [gameChoice]);
+        } else {
+            console.log ("No game questions found for", gameChoice)
+        }
+    });
+}
 
 ## Quiz section
 This is now the game part of the site. Upon choosing the game they would like to play the user is greeted with a screen which shows the following:
@@ -93,8 +126,159 @@ This is now the game part of the site. Upon choosing the game they would like to
 
 Once the user has chosen which button they want to choose for their answer they are immediately provided visual feedback to say if they have gotten the answer wrong or right. Correct answers turn the button green after 1.5 seconds, incorrect answers turn the button red after 1.5 seconds, all other buttons are frozen whilst this happens so the user cannot spam any buttons. If the user provides an incorrect answer, the correct answer will turn green at the same time. Correct answers will increment the score below the quiz. Incorrect answers will not increment the score. The quiz will automatically provide a new lyric after 1.5 seconds until it runs through 15 randomised lyrics.
 
+function shuffleArray(array) {
+    return [...array].sort(() => Math.random() - 0.5);
+}
+
+// Quiz Logic - load and shuffle questions to only show 15)
+function startQuiz (questionsArray){
+    currentQuestions = shuffleArray(questionsArray).slice(0, 15);
+    currentQuestionIndex = 0;
+    showQuestion (currentQuestions[currentQuestionIndex]);
+    score = 0;
+    scoreEl.innerText = `0 / 15`
+}
+
+const answerButtons = [
+    document.querySelector(".answer1"),
+    document.querySelector(".answer2"),
+    document.querySelector(".answer3"),
+    document.querySelector(".answer4")
+]
+
+function showQuestion (quest) {
+    questionEl.innerText = quest.question;
+
+    // Enable button on each individual question
+    quest.answers.forEach((answer, index) => {
+        const btn = answerButtons [index];
+        btn.disabled = false;
+        btn.classList.remove("correct-answer", "wrong-answer");
+        btn.innerText = answer;
+
+        btn.onclick = () => {
+            showAnswer (btn, index === quest.correct);
+        };
+    });
+}
+
+function showAnswer (button, isCorrect) {
+    // Update score if correct
+    if (isCorrect) {
+        score++;
+        scoreEl.innerText = `${score} / 15`;
+    }
+
+    // Disable buttons so player cannot choose another and show colour highlight
+    answerButtons.forEach((btn, index) => {
+        btn.disabled = true;
+
+      // Change colour to indicate if correct or incorrect answer
+    if (index === currentQuestions [currentQuestionIndex].correct) {
+        btn.classList.add("correct-answer");
+    }    
+
+    if (btn === button && !isCorrect) {
+        btn.classList.add("wrong-answer");
+    }
+});
+
+    // Jump to next question automatically after 1.5 seconds
+    currentQuestionIndex++;
+    if (currentQuestionIndex < currentQuestions.length) {
+        setTimeout(() => {
+            showQuestion(currentQuestions[currentQuestionIndex]);
+        }, 1500);
+    } else {
+        setTimeout (() => {
+            endQuiz ();
+        }, 1500);
+    }
+}
+
+// Score tracker
+let score = 0
+
+
 ## Result section
 Once the quiz has run through 15 questions, the user will be shown a results message that will be dependent on the score. At the bottom of the results section, they are shown buttons to go to the home screen or to pick another era from the list.
+
+function finalScore () {
+    const finalScoreEl = document.getElementById("final-score");
+
+    if (score === 15) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+
+        <p>Okay, wait a minute... you got a perfect score?! Are you kidding us right now?!</p>
+        
+        <p>This wasn't just knowing the answers <em>"All Too Well"</em>; it was <em>"(Mr) Perfectly Fine"</em> taken to an entirely new level! You didn't just pass; you absolutely conquered that quiz like it was <em>"The Great War"</em>, and you were the only one left standing.</p>
+        
+        <p>You're not just a Swiftie; you're a certified <em>"Mastermind!"</em> It's as if you know the lyrics better than Taylor Swift herself sometimes. This is your moment to really make the whole place shimmer!</p>
+        
+        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.`;
+    }
+    else if (score >= 12 && score <= 14) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+
+        <p>Did you have <em>"The Lucky One"</em> on repeat while studying, or are you just a <em>"Mastermind</em> when it comes to all things Taylor? Because you absolutely slayed that quiz like it was a surprise album drop!</p>
+        
+        <p>We bet you were feeling <em>"Fearless"</em> walking into that, and now you're probably singing <em>"Long Live"</em> at the top of your lungs. You didn't just know the answers, you knew them <em>"All Too Well."</em></p>
+        
+        <p>Consider this your <em>"Picture to Burn"</em> moment for anyone who doubted your Swiftie knowledge.</p> 
+        
+        <p>You've officially entered your champion Era, and honestly, it looks <em>"Gorgeous"</em> on you!</p>
+        
+        Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering if you'll ever let us in on your <em>"Mastermind"</em> strategy, because we're not as cool as you.`;
+    }
+
+       else if (score >= 9 && score <= 11) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+
+        <p>Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! You showed up, gave it your all, and you're still a brilliant Swiftie.</p>
+        
+        <p>Sometimes, you don't know all the little secret Easter eggs, and honestly, that's totally okay! The whole point is to have fun. You just gotta <em>"Shake It Off"</em> when it comes to the score and remember what a dedicated fan you are.</p>
+        
+        Don't even sweat it! There's always a <em>"Begin Again"</em> moment for the next quiz, and we know you'll absolutely crush it. Congratulations on playing along!`;
+    }
+
+     else if (score >= 4 && score <= 9) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+        
+        <p>Well, that quiz was certainly a <em>"Bad Blood"</em> moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question, the important thing is you showed up, you played, and you still have an <em>"Invisible String"</em> connecting you to all things Taylor!</p>
+      
+        <p>Maybe you just had a <em>"Glitch"</em> on a few answers, or perhaps you were too busy jamming to the music in your head to focus on the trivia. Either way, there's absolutely no need to </em>"Shake It Off"</em>.</p>
+    
+        Consider this just a little <em>"Long Story Short"</em> moment. It's all about the fun, plus, now you have even more reason to dive back into the discography. You can always <em>"Begin Again"</em> with another quiz!`;
+    }
+
+     else if (score >= 1 && score <= 4) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+        
+        <p>Okay, so maybe that quiz was more of a <em>"Death By A Thousand Cuts"</em> than a <em>"Love Story"</em> for you, but hold up! You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album booklets - a small victory, but a victory nonetheless!</p>
+        
+        <p>No need to <em>"Shake It Off"</em> in despair, because seriously, the fact that you even showed up and faced the music makes you a <em>"Fearless"</em> fan in our book. Maybe you were just too busy feeling <em>"22"</em> and having a blast to remember every deep cut, and that's perfectly okay!</p>
+        
+        Consider this just a <em>"Long Story Short"</em> moment on your Swiftie journey. It's not about being a <em>"Mastermind"</em> every time, it's about the shared love for the music. Plus, now you've got a whole new set of lyrics to dive into for next time. You can always <em>"Begin Again"</em> with another quiz!`;
+    }
+
+        else if (score === 0) {
+        finalScoreEl.innerHTML = `
+        <strong>Your final score is ${score} / 15!</strong>
+        
+        <p>Okay, so you just took a Taylor Swift quiz and landed squarely in a <em>"Blank Space"</em> when it came to the answers, huh? You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!</p>
+        
+        <p>There's absolutely no need to <em>"Shake It Off"</em> in despair because, honestly, showing up and giving it a shot is a <em>"Fearless"</em> move in itself. Maybe you were just too busy feeling <em>"22"</em> and having a good time, or perhaps you were already mentally planning your next eras fit!</p>
+        
+        <p>Consider this just a <em>"Long Story Short"</em> moment. The real win isn't about the score; it's about the pure, unadulterated love for Taylor's music that brought you to the quiz in the first place.</p> 
+
+        You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!`;
+    }
+}
 
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.
