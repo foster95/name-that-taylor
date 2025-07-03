@@ -310,8 +310,12 @@ body {
 /* Media Query for phone screens - 360px and up */
 @media screen and (min-width:360px) {
 
+    #pick-era {
+    margin-top: 4rem;
+    }
+
     #additional-buttons {
-    bottom: 2rem;
+    bottom: 1.5rem;
     }
 }
 
@@ -741,6 +745,10 @@ body {
 
     /* Instructions styling */
 
+    #opening-instructions {
+        margin-top: 6rem;
+    }
+
     #opening-instructions h1 {
         font-size: 62px;
     }
@@ -807,7 +815,7 @@ body {
     }
 
     #score {
-        font-size: 43px;
+        font-size: 30px;
     }
 
     /* Final score styling */
