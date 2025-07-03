@@ -716,24 +716,20 @@ body {
 
     /* Instructions styling */
 
-    #opening-instructions {
-        margin-top: 3rem;
-    }
-
     #opening-instructions h1 {
-        font-size: 70px;
+        font-size: 62px;
     }
 
     #opening-instructions p {
-        font-size: 25px;
+        font-size: 21px;
     }
 
     #opening-instructions h2 {
-        font-size: 63px;
+        font-size: 53px;
     }
 
     #pick-button {
-        font-size: 25px;
+        font-size: 21px;
         width: 39%;
     }
 
@@ -757,7 +753,7 @@ body {
 
     #pick-era button {
         width: 43%;
-        font-size: 25px;
+        font-size: 21px;
     }
 
     /* Quiz area styling */
@@ -781,7 +777,7 @@ body {
     }
 
     #answer-space button {
-        font-size: 25px;
+        font-size: 21px;
         width: 45%;
     }
 
@@ -796,7 +792,7 @@ body {
     }
 
     #final-score {
-        font-size: 23px;
+        font-size: 21px;
     }
 
     /* Additional buttons styling */
