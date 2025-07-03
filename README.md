@@ -73,6 +73,29 @@ As with colour palettes, Taylor Swift's logo has changed as much as her image, a
 * Manrope - which is used for the bulk of the game (on instructions, the questions itself and any major bodies of text) which is a clean font that is readable across multiple font sizes
 * Licorice - which is used for any details on the game (headers, album titles on the quiz) which is a handwritten style font, designed to emulate Taylor's handwritten notes.
 
+## Features
+### Welcome screen
+Upon the user opening the game, they are immediately greeted with the games welcome screen. The welcome screen uses a landing wrapper to seat it in the middle of screens,regardless of the screen dimensions. The user is required to click the "Lets Go!" button to proceed. Upon clicking "Lets go!" the console automatically logs "start button clicked". The function startButton is initiated on click and takes the user to the Opening Instructions section.
+
+## Opening instructions section
+Once the user has clicked the "lets go!" button, they are taken to a set of small instructions which explain to the user exactly how to play the game. The copy has been written to be informal and friendly and should illicit a positive user experience. When the user is ready to choose the level they will be playing at, they must click "It's been a long time coming...". Upon clicking this, "it's been a long time coming clicked" is logged to the console and the user is taken to the Choose Era section
+
+## Choose Era section
+At this point the user is given the opportunity to choose which game they would like to choose based on their favourite album. In order to make the section as readable as possible for smaller screens (up to 375px) the Era's options are scrollable. For desktop screens and larger, the list splits into two columns to save space. Once the user has chosen which game they would like to play, the user will click the button and the following message is logged to the console: "clicked era (game title)" followed by "loading questions for (game title)"
+
+## Quiz section
+This is now the game part of the site. Upon choosing the game they would like to play the user is greeted with a screen which shows the following:
+* The title of the game they chose - ie Fearless, Debut
+* A lyric from the album related to that game
+* Four options to choose from
+* A score marker
+* Additional buttons on the bottom of the screen which allow the user to escape the game, return to the instructions or choose another game to play. 
+
+Once the user has chosen which button they want to choose for their answer they are immediately provided visual feedback to say if they have gotten the answer wrong or right. Correct answers turn the button green after 1.5 seconds, incorrect answers turn the button red after 1.5 seconds, all other buttons are frozen whilst this happens so the user cannot spam any buttons. If the user provides an incorrect answer, the correct answer will turn green at the same time. Correct answers will increment the score below the quiz. Incorrect answers will not increment the score. The quiz will automatically provide a new lyric after 1.5 seconds until it runs through 15 randomised lyrics.
+
+## Result section
+Once the quiz has run through 15 questions, the user will be shown a results message that will be dependent on the score. At the bottom of the results section, they are shown buttons to go to the home screen or to pick another era from the list.
+
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.
 
