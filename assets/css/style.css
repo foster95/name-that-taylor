@@ -796,7 +796,7 @@ body {
     }
 
     #question {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     #answer-space {
@@ -825,7 +825,7 @@ body {
     }
 
     #final-score {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     /* Additional buttons styling */
