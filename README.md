@@ -77,21 +77,21 @@ As with colour palettes, Taylor Swift's logo has changed as much as her image, a
 ### Welcome screen
 Upon the user opening the game, they are immediately greeted with the games welcome screen. The welcome screen uses a landing wrapper to seat it in the middle of screens,regardless of the screen dimensions. The user is required to click the "Lets Go!" button to proceed. Upon clicking "Lets go!" the console automatically logs "start button clicked". The function startButton is initiated on click and takes the user to the Opening Instructions section.
 
-     function startButton() {
+    function startButton() {
     console.log("start button clicked");
     showSection("logo");
     showSection("opening-instructions");
     hideSection("website-opener");
-     }
+    }
 
 ## Opening instructions section
 Once the user has clicked the "lets go!" button, they are taken to a set of small instructions which explain to the user exactly how to play the game. The copy has been written to be informal and friendly and should illicit a positive user experience. When the user is ready to choose the level they will be playing at, they must click "It's been a long time coming...". Upon clicking this, "it's been a long time coming clicked" is logged to the console and the user is taken to the Choose Era section
 
-function pickButton() {
+    function pickButton() {
     console.log ("It's been a long time coming clicked");
     hideSection("opening-instructions");
     showSection("pick-era");
-}
+    }
 
 ## Choose Era section
 At this point the user is given the opportunity to choose which game they would like to choose based on their favourite album. In order to make the section as readable as possible for smaller screens (up to 375px) the Era's options are scrollable. For desktop screens and larger, the list splits into two columns to save space. Once the user has chosen which game they would like to play, the user will click the button and the following message is logged to the console: "clicked era (game title)" followed by "loading questions for (game title)"
@@ -114,7 +114,7 @@ At this point the user is given the opportunity to choose which game they would 
             console.log ("No game questions found for", gameChoice)
         }
     });
-}
+    }
 
 ## Quiz section
 This is now the game part of the site. Upon choosing the game they would like to play the user is greeted with a screen which shows the following:
@@ -126,27 +126,27 @@ This is now the game part of the site. Upon choosing the game they would like to
 
 Once the user has chosen which button they want to choose for their answer they are immediately provided visual feedback to say if they have gotten the answer wrong or right. Correct answers turn the button green after 1.5 seconds, incorrect answers turn the button red after 1.5 seconds, all other buttons are frozen whilst this happens so the user cannot spam any buttons. If the user provides an incorrect answer, the correct answer will turn green at the same time. Correct answers will increment the score below the quiz. Incorrect answers will not increment the score. The quiz will automatically provide a new lyric after 1.5 seconds until it runs through 15 randomised lyrics.
 
-function shuffleArray(array) {
+    function shuffleArray(array) {
     return [...array].sort(() => Math.random() - 0.5);
-}
+    }
 
-// Quiz Logic - load and shuffle questions to only show 15)
-function startQuiz (questionsArray){
+    // Quiz Logic - load and shuffle questions to only show 15)
+    function startQuiz (questionsArray){
     currentQuestions = shuffleArray(questionsArray).slice(0, 15);
     currentQuestionIndex = 0;
     showQuestion (currentQuestions[currentQuestionIndex]);
     score = 0;
     scoreEl.innerText = `0 / 15`
-}
+    }
 
-const answerButtons = [
+    const answerButtons = [
     document.querySelector(".answer1"),
     document.querySelector(".answer2"),
     document.querySelector(".answer3"),
     document.querySelector(".answer4")
-]
+    ]
 
-function showQuestion (quest) {
+    function showQuestion (quest) {
     questionEl.innerText = quest.question;
 
     // Enable button on each individual question
@@ -160,9 +160,9 @@ function showQuestion (quest) {
             showAnswer (btn, index === quest.correct);
         };
     });
-}
+    }
 
-function showAnswer (button, isCorrect) {
+    function showAnswer (button, isCorrect) {
     // Update score if correct
     if (isCorrect) {
         score++;
@@ -181,7 +181,7 @@ function showAnswer (button, isCorrect) {
     if (btn === button && !isCorrect) {
         btn.classList.add("wrong-answer");
     }
-});
+    });
 
     // Jump to next question automatically after 1.5 seconds
     currentQuestionIndex++;
@@ -194,16 +194,16 @@ function showAnswer (button, isCorrect) {
             endQuiz ();
         }, 1500);
     }
-}
+    }
 
-// Score tracker
-let score = 0
+    // Score tracker
+    let score = 0
 
 
 ## Result section
 Once the quiz has run through 15 questions, the user will be shown a results message that will be dependent on the score. At the bottom of the results section, they are shown buttons to go to the home screen or to pick another era from the list.
 
-function finalScore () {
+    function finalScore () {
     const finalScoreEl = document.getElementById("final-score");
 
     if (score === 15) {
@@ -278,7 +278,7 @@ function finalScore () {
 
         You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!`;
     }
-}
+    }
 
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.
