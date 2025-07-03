@@ -502,7 +502,6 @@ body {
     }
 
     #start-button {
-        padding: 15px;
         font-size: 25px;
         width: 36%;
     }
@@ -524,7 +523,6 @@ body {
     #pick-button {
         font-size: 21px;
         width: 60%;
-        padding: 15px;
     }
 
     /* Choose era section styling */
@@ -539,7 +537,6 @@ body {
 
     #pick-era button {
         font-size: 19px;
-        padding: 15px;
     }
 
     /* Quiz area styling */
@@ -551,7 +548,6 @@ body {
     #answer-space button {
         font-size: 21px;
         width: 55%; 
-        padding: 15px;
     }
 
     #score {
@@ -567,7 +563,6 @@ body {
     /* Additional buttons styling */
 
     #additional-buttons button {
-        padding: 15px;
         font-size: 21px;
     }
 }
@@ -588,7 +583,7 @@ body {
     }
 
     #website-opener h2 {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     #start-button {
@@ -615,12 +610,12 @@ body {
         font-size: 65px;
     }
 
-    /* Choose era styling */
-
     #pick-button {
         font-size: 24px;
         width: 60%;
     }
+
+    /* Choose era styling */
 
     #pick-era-wrapper {
         gap: 10px;
@@ -629,6 +624,7 @@ body {
     #pick-era {
         width: 75%;
         font-size: 25px;
+        padding-top: 18px;
     }
 
     #pick-era h1 {
@@ -651,16 +647,16 @@ body {
     }
 
     #question {
-        font-size: 35px;
+        font-size: 21px;
     }
 
     #answer-space button {
-        font-size: 28px;
-        width: 68%;
+        font-size: 20px;
+        width: 43%;
     }
 
     #score {
-        font-size: 50px
+        font-size: 30px
     }
 
     /* Final score styling */
@@ -680,7 +676,8 @@ body {
     }
 
     #additional-buttons button {
-        font-size: 28px;
+        font-size: 20px;
+        width: 20%;
     }
 }
 
@@ -696,31 +693,38 @@ body {
     /* Opening Instructions styling */
 
     #opening-instructions h1 {
-        font-size: 77px;
+        font-size: 63px;
     }
 
     #opening-instructions p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #opening-instructions h2 {
-        font-size: 67px;
+        font-size: 47px;
     }
 
     #pick-button {
-        font-size: 20px;
-        width: 44%;
+        font-size: 18px;
+        width: 37%;
     }
 
     /* Choose era styling */
+
+     #pick-era-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;;
+        justify-content: center;
+    }
 
     #pick-era h1 {
         font-size: 67px;
     }
 
-    #pick-era-button {
+    #pick-era button {
         font-size: 20px;
-        width: 48%;
+        width: 43%;
     }
 
     /* Quiz space styling */
@@ -733,12 +737,21 @@ body {
         font-size: 20px;
     }
 
+     #answer-space {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 14px 
+     }
+
     #answer-space-button {
         font-size: 20px;
         width: 42%;
     }
 }
-
 
 /* Media Query for desktops - 1280px and up */
 @media screen and (min-width:1280px) {
@@ -768,13 +781,6 @@ body {
 
     /* Choose era styling */
 
-    #pick-era-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;;
-        justify-content: center;
-    }
-
     #pick-era h1 {
         font-size: 63px;
     }
@@ -782,11 +788,6 @@ body {
     #pick-era {
         width: 75%;
         padding-top: 24px;
-    }
-
-    #pick-era button {
-        width: 43%;
-        font-size: 21px;
     }
 
     /* Quiz area styling */
@@ -797,16 +798,6 @@ body {
 
     #question {
         font-size: 22px;
-    }
-
-    #answer-space {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 14px
     }
 
     #answer-space button {
