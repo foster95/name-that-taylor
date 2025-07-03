@@ -395,6 +395,14 @@ body {
 /* Media query for larger phone screens - 400px and up */
 @media screen and (min-width:400px) {
 
+    #website-opener h1 {
+        font-size: 50px;
+    }
+
+    #website-opener h2 {
+        font-size: 17px;
+    }
+
     #pick-era-wrapper {
         max-height: 100%;
     }
@@ -484,11 +492,17 @@ body {
     /* Opening page styling */
 
     #website-opener h1 {
-        font-size: 30px;
+        font-size: 55px;
+    }
+
+     #website-opener h2 {
+        font-size: 22px;
     }
 
     #start-button {
         padding: 15px;
+        font-size: 25px;
+        width: 36%;
     }
 
     /* Imstructions page styling */
