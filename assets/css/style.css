@@ -71,7 +71,7 @@ body {
     font-family: var(--secondary-font);
 }
 
-#website-opener h3 {
+#website-opener h2 {
     font-weight: normal;
 }
 
@@ -173,7 +173,7 @@ body {
     padding-top: 16px;
 }
 
-#pick-era h2 {
+#pick-era h1 {
     font-family: var(--secondary-font);
     font-size: 43px;
     margin-top: 7px;
@@ -349,7 +349,7 @@ body {
     width: 69%;
 }
 
-#pick-era h2 {
+#pick-era h1 {
     font-size: 33px;
     margin-top: -8px;
 }
@@ -430,7 +430,7 @@ body {
         padding-top: 15px;
     }
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 45px;
     }
 
@@ -502,7 +502,7 @@ body {
         max-height: 100%;
     }
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 50px;
     }
 
@@ -556,7 +556,7 @@ body {
         font-size: 40px;
     }
 
-    #website-opener h3 {
+    #website-opener h2 {
         font-size: 32px;
     }
 
@@ -600,7 +600,7 @@ body {
         font-size: 25px;
     }
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 60px;
         margin-bottom: 27px;
     }
@@ -683,7 +683,7 @@ body {
 
     /* Choose era styling */
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 67px;
     }
 
@@ -744,7 +744,7 @@ body {
         justify-content: center;
     }
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 63px;
     }
 
@@ -831,7 +831,7 @@ body {
 
     /* Choose era styling */
 
-    #pick-era h2 {
+    #pick-era h1 {
         font-size: 57px;
     }
 
