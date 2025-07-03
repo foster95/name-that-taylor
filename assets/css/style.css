@@ -65,7 +65,7 @@ body {
     width: 75%;
 }
 
-#title {
+#website-opener h1 {
     text-align: center;
     font-size: 23px;
     font-family: var(--secondary-font);
@@ -73,6 +73,7 @@ body {
 
 #website-opener h2 {
     font-weight: normal;
+    font-family: var(--primary-font);
 }
 
 #start {
@@ -120,6 +121,7 @@ body {
 
 #opening-instructions p {
     font-size: 15px;
+    font-family: var(--primary-font);
 }
 
 #opening-instructions h2 {
@@ -468,7 +470,7 @@ body {
 
     /* Opening page styling */
 
-    #title {
+    #website-opener h1 {
         font-size: 30px;
     }
 
@@ -552,7 +554,7 @@ body {
 
     /* Website opener styling */
 
-    #title {
+    #website-opener h1 {
         font-size: 40px;
     }
 
