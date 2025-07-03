@@ -527,8 +527,12 @@ body {
 
     /* Choose era section styling */
 
-    #pick-era-wrapper {
-        max-height: 100%;
+     #pick-era-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;;
+        justify-content: center;
+        gap: 6px;
     }
 
     #pick-era h1 {
@@ -537,6 +541,7 @@ body {
 
     #pick-era button {
         font-size: 19px;
+        width: 44%;
     }
 
     /* Quiz area styling */
@@ -567,8 +572,8 @@ body {
     }
 }
 
-/* Media query for wider tablet screens - 820px and up */
-@media screen and (min-width:820px) {
+/* Media query for wider tablet screens - 815px and up */
+@media screen and (min-width:815px) {
 
     /* Logo styling */
 
@@ -599,27 +604,23 @@ body {
     }
 
     #opening-instructions h1 {
-        font-size: 75px;
+        font-size: 62px;
     }
 
     #opening-instructions p {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     #opening-instructions h2 {
-        font-size: 65px;
+        font-size: 49px;
     }
 
     #pick-button {
-        font-size: 24px;
-        width: 60%;
+        font-size: 18px;
+        width: 50%;
     }
 
     /* Choose era styling */
-
-    #pick-era-wrapper {
-        gap: 10px;
-    }
 
     #pick-era {
         width: 75%;
@@ -633,7 +634,8 @@ body {
     }
 
     #pick-era button {
-        font-size: 25px;
+        font-size: 18px;
+        width: 48%;
     }
 
     /* Quiz space styling */
@@ -710,13 +712,6 @@ body {
     }
 
     /* Choose era styling */
-
-     #pick-era-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;;
-        justify-content: center;
-    }
 
     #pick-era h1 {
         font-size: 67px;
