@@ -37,7 +37,7 @@ body {
     font-size: 31px;
     font-weight: bold;
     padding-left: 6px;
-    padding-top: 3px
+    padding-top: 15px
 }
 
 .landing-wrapper {
@@ -394,7 +394,7 @@ body {
 /* Media query for larger phone screens - 400px and up */
 @media screen and (min-width:400px) {
     #additional-buttons {
-    bottom: 6rem;
+    bottom: 3rem;
     }
 
 }
@@ -799,7 +799,7 @@ body {
 
     /* Additional buttons styling */
     #additional-buttons {
-        bottom: 8rem;
+        bottom: 4rem;
     }
 
     #additional-buttons button {
