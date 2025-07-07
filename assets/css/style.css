@@ -242,7 +242,7 @@ body {
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0rem;
     width: 95%;
     margin-top: 10px;
 }
@@ -251,6 +251,17 @@ body {
     font-family: var(--primary-font);
     font-size: 17px;
     padding: 10px;
+}
+
+.final-score-button {
+    width: 18%;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 /* Additional button styling */
@@ -450,7 +461,11 @@ body {
         font-size: 18px;
     }
 
-    /* Additional button stylign */
+    .final-score-button {
+        font-size: 18px;
+    }
+
+    /* Additional button styling */
 
     #additional-buttons button {
         width: 36%;
@@ -543,6 +558,11 @@ body {
 
     #final-score {
         font-size: 20px;
+    }
+
+    .final-score-button {
+        font-size: 20px;
+        width: 23%;
     }
 
     /* Additional buttons styling */
@@ -652,6 +672,10 @@ body {
         font-size: 25px;
     }
 
+    .final-score-button {
+        font-size: 23px;
+    }
+
     /* Additional button styling */
 
     #additional-buttons {
@@ -683,7 +707,7 @@ body {
 
     #start-button {
         width: 33%;
-        font-size: 38px;
+        font-size: 28px;
     }
 
     /* Opening Instructions styling */
@@ -810,11 +834,11 @@ body {
     }
 
     #show {
-        font-size: 80px;
+        font-size: 63px;
     }
 
     #question {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     #answer-space button {
@@ -829,7 +853,12 @@ body {
     }
 
     #final-score {
-        font-size: 20px;
+        font-size: 27px;
+    }
+
+    .final-score-button {
+        font-size: 27px;
+        width: 24%;
     }
 
     /* Additional buttons styling */
@@ -862,7 +891,13 @@ body {
         padding: 12px;
     }
 
+    /* Final score styling */
+
     #final-score {
+        font-size: 25px;
+    }
+
+    .final-score-button {
         font-size: 25px;
     }
 }
