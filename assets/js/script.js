@@ -655,6 +655,7 @@ function helpButton () {
     hideSection("quiz-space");
     hideSection("final-score-space");
     hideSection("pick-era");
+    hideSection ("additional-buttons")
     showSection ("opening-instructions");
 }
 
@@ -666,6 +667,7 @@ function anotherEraButton () {
     console.log ("another era clicked");
     hideSection ("quiz-space");
     hideSection("final-score-space");
+    hideSection ("additional-buttons");
     
     // Reset quiz for new questions
 
