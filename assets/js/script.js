@@ -635,11 +635,11 @@ function finalScore () {
 
 function homeButton() {
     console.log ("home button clicked");
-    showSection("website-opener");
     hideSection("quiz-space");
     hideSection("final-score-space");
     hideSection("pick-era");
     hideSection("opening-instructions");
     hideSection("additional-buttons");
     hideSection("logo");
+    showSection("website-opener");
 }
