@@ -565,7 +565,9 @@ function finalScore () {
         
         <p>You're not just a Swiftie; you're a certified <em>"Mastermind!"</em> It's as if you know the lyrics better than Taylor Swift herself sometimes. This is your moment to really make the whole place shimmer!</p>
         
-        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.`;
+        So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.`
+        
+        `<button onclick="homeButton()";>Home</button>`
     }
     else if (score >= 12 && score <= 14) {
         finalScoreEl.innerHTML = `
@@ -630,7 +632,7 @@ function finalScore () {
 }
 
 /**
- * Add function to make return button work
+ * Add function to make home button work
  */
 
 function homeButton() {
@@ -642,4 +644,38 @@ function homeButton() {
     hideSection("additional-buttons");
     hideSection("logo");
     showSection("website-opener");
+}
+
+/**
+ * Add function to make the help button work
+ */
+
+function helpButton () {
+    console.log ("help button clicked");
+    hideSection("quiz-space");
+    hideSection("final-score-space");
+    hideSection("pick-era");
+    showSection ("opening-instructions");
+}
+
+/**
+ * Add function to make another era button work
+ */
+
+function anotherEraButton () {
+    console.log ("another era clicked");
+    hideSection ("quiz-space");
+    hideSection("final-score-space");
+    
+    // Reset quiz for new questions
+
+    score = 0;
+    currentQuestionIndex = 0;
+    currentQuestions = [];
+
+    // Show pick era interface
+
+    showSection ("pick-era");
+
+
 }
