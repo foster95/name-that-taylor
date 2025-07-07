@@ -587,7 +587,6 @@ body {
     #opening-instructions{
         width: 75%;
         padding: 29px;
-        margin-top: 11.5rem;
     }
 
     #opening-instructions h1 {
@@ -613,7 +612,6 @@ body {
         width: 75%;
         font-size: 25px;
         padding-top: 18px;
-        margin-top: 13rem;
     }
 
     #pick-era h1 {
@@ -630,7 +628,6 @@ body {
 
     #quiz-space {
         width: 75%;
-        margin-top: 18rem;
     }
 
     #show {
