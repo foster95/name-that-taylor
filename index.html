@@ -6,14 +6,11 @@
     <!--Meta tags for search engines-->
     <meta name="description" content="Name That Song - Taylor's Version, a quiz game to test even the most keen of Swifties">
     <meta name="keywords" content="quiz, Taylor Swift, Eras Tour, Fearless, Debut, Speak Now, Red, 1989, Reputation, Evermore, Folklore, Lover, Midnights, TTPD, Swifty">
-
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-
     <title>Name That Song - Taylor's Version</title>
-
     <!--Personal Style Sheet-->
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -22,19 +19,16 @@
     <header id="logo" class="disappear">
       Name that Song...Taylor's Version
     </header>
-
     <!--Opening page-->
       <div id="website-opener">
           <h1>Name that Song...<br>Taylor's Version</h1>
         <h2>Her name is Taylor and she was born in 1989!</h2> 
         <button
           id="start-button"
-          aria-label="Go to game instructions"
-          onclick="startButton();">
+          aria-label="Go to game instructions">
           Let's Go!
         </button>
       </div>
-
       <!--Opening instructions on how to play-->
       <div id="opening-instructions" class="disappear">
         <h1><b>How to Play</b></h1>
@@ -45,7 +39,6 @@
           indie folk masterpieces, we're diving deep into Taylor Swift's
           incredible discography.
         </p>
-
         <h2>Instructions:</h2>
         <p>
           <b>1 - </b>Choose Your Era<br>
@@ -58,12 +51,10 @@
         </p>
         <button
           id="pick-button"
-          aria-label="choose which game to play"
-          onclick="pickButton();">
+          aria-label="choose which game to play">
           It's been a long time coming...
         </button>
       </div>
-
       <!--Eras Selection-->
       <div id="pick-era" class="disappear">
         <h1>Choose Your Era</h1>
@@ -130,7 +121,6 @@
           </button>
         </div>
       </div>
-
       <!--Question Section-->
       <div id="quiz-space" class="disappear">
         <p id="show">Defined Era</p>
@@ -141,24 +131,19 @@
           <button class="answer3" aria-label="Option 3">Answer 3</button>
           <button class="answer4" aria-label="Option 4">Answer 4</button>
         </div>
-
         <!--Score Section-->
         <p id="score">0 / 15</p>
       </div>
-
       <!--Final Score Section-->
       <div id="final-score-space" class="disappear">
         <p id="final-score"></p>
       </div>
-
     <!--Additional Button-->
     <div id="additional-buttons" class="disappear">
-      <button onclick="homeButton();">Home</button>
-      <button onclick="helpButton();">Help</button>
-      <button onclick="anotherEraButton();">Another Era</button>
+      <button id="home-button">Home</button>
+      <button id="another-era-button">Another Era</button>
     </div>
-
     <!--Script-->
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>
