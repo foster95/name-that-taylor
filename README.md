@@ -288,9 +288,21 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
 
 ## Testing
 
+### Manual Testing
+
 ### Browser Testing
 
 ### Responsive Testing
+I used Blisk to test cross compatability across multiple screen sizes and types.
+
+Device | Opening | Instructions | Choose Era | Quiz | Result Page | Notes
+--- | --- | --- | --- | --- | --- | ---
+Google Pixel 8 | Scaling correctly, text box floating centrally on the browser, margins left and right correct. Button is clearly visible to initiate game, background is not warping and is clear. Fonts are showing up correctly | Logo wrapping correctly on smller screen, padding correct. Button visible on screen and does not need to be scrolled to | Choose your Era clearly visible, buttons all have correct amount of padding, user is required to scroll to reach bottom of game selection | Quiz space floating centrally on browser, all fonts correctly displaying, all buttons have adequate padding to account for larger fingers. Additional buttons are accessible and clearly visible and wrapping correctly for smaller screen. Colour formating on correct/incorrect answers working | Result message clearly floating centrally, buttons displaying correctly and are not squashed. | No issues, all showing as correct across page.
+iPhone 16 | Scaling correctly, text box floating centrally on the browser, margins left and right correct. Button is clearly visible to initiate game, background is not warping and is clear. Fonts are showing up correctly | Logo wrapping correctly on smller screen, padding correct. Button visible on screen and does not need to be scrolled to | Choose your Era clearly visible, buttons all have correct amount of padding, user is required to scroll to reach bottom of game selection | Quiz space floating centrally on browser, all fonts correctly displaying, all buttons have adequate padding to account for larger fingers. Additional buttons are accessible and clearly visible. Colour formating on correct/incorrect answers working | Result message clearly floating centrally, buttons displaying correctly and are not squashed. | No issues, all showing as correct across page.
+iPhone SE | Scaling correctly, but text box sitting lower on the screen than intended due to screen size. Buttons clearly visible, background is clear and not warping. | Scaling correctly, but user is required to scroll to get to read instructions compared to newer/larger models. Button clearly visible | Scaling correctly but user required to scroll through full game list. | Scaling correctly but user required to scroll down to actually see game quiz, buttons and additional buttons. | Result message clearly displayed, buttons visible and displaying correctly so do not look squashed | Generally all scaling was correct, but older and smaller screen requires more user interaction (ie scrolling) to use site.
+iPad Mini | Scaling correctly, text box floating centrally on the browser, margins left and right correct. Button is clearly visible to initiate game, background is not warping and is clear. Fonts are showing up correctly | Scaling correctly, buttons clearly displayed, fonts displaying correctly. | Scaling correctly, all buttons visible and no requirement for scrolling. All buttons showing correctly on one line | Scaling correctly, quiz space floating centrally, all buttons easily viewed and accessible at all times | Scaling correctly, result message clearly displayed, buttons visible and displaying correctly | No issues, all showing as correct across pages
+iPad Pro 12 | Scaling correctly, but text box floating a little lower on browser than intended, margins left and right correct. Button clearly viible to initiate game. | 
+
 
 ### Lighthouse Testing
 
