@@ -84,9 +84,9 @@ Upon the user opening the game, they are immediately greeted with the games welc
     hideSection("website-opener");
     }
 
-[!Welcome Screen](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-screen.png)
+![Welcome Screen](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-screen.png)
 
-## Opening instructions section
+### Opening instructions section
 Once the user has clicked the "lets go!" button, they are taken to a set of small instructions which explain to the user exactly how to play the game. The copy has been written to be informal and friendly and should illicit a positive user experience. When the user is ready to choose the level they will be playing at, they must click "It's been a long time coming...". Upon clicking this, "it's been a long time coming clicked" is logged to the console and the user is taken to the Choose Era section
 
     function pickButton() {
@@ -94,9 +94,10 @@ Once the user has clicked the "lets go!" button, they are taken to a set of smal
     hideSection("opening-instructions");
     showSection("pick-era");
     }
-[!Opening Instructions](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-instructions.png)
 
-## Choose Era section
+![Opening Instructions](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-instructions.png)
+
+### Choose Era section
 At this point the user is given the opportunity to choose which game they would like to choose based on their favourite album. In order to make the section as readable as possible for smaller screens (up to 375px) the Era's options are scrollable. For desktop screens and larger, the list splits into two columns to save space. Once the user has chosen which game they would like to play, the user will click the button and the following message is logged to the console: "clicked era (game title)" followed by "loading questions for (game title)"
 
     const eraButtons = document.getElementsByClassName ("era-selector-button");
@@ -119,9 +120,9 @@ At this point the user is given the opportunity to choose which game they would 
     });
     }
 
-[!Choose Era](https://github.com/foster95/name-that-taylor/blob/main/assets/images/choose-your-era.png)
+![Choose Era](https://github.com/foster95/name-that-taylor/blob/main/assets/images/choose-your-era.png)
 
-## Quiz section
+### Quiz section
 This is now the game part of the site. Upon choosing the game they would like to play the user is greeted with a screen which shows the following:
 * The title of the game they chose - ie Fearless, Debut
 * A lyric from the album related to that game
@@ -205,7 +206,7 @@ Once the user has chosen which button they want to choose for their answer they 
     let score = 0
 
 
-## Result section
+### Result section
 Once the quiz has run through 15 questions, the user will be shown a results message that will be dependent on the score. At the bottom of the results section, they are shown buttons to go to the home screen or to pick another era from the list.
 
     function finalScore () {
@@ -284,6 +285,22 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
         You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!`;
     }
     }
+
+## Testing
+
+### Browser Testing
+
+### Responsive Testing
+
+### Lighthouse Testing
+
+### HTML Validation
+
+### CSS Validation
+
+### JShint Validation
+
+### WAVE Validation
 
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.

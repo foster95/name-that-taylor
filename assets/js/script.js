@@ -485,7 +485,7 @@ const redQuestions = [
     {
     "question": "I can't decide if it's a choice, getting swept away",
     "answers": ["All Too Well", "Sad Beautiful Tragic", "22", "Treacherous"],
-    "correct": 0
+    "correct": 3
     },
 
     {
@@ -701,7 +701,7 @@ for (let button of eraButtons) {
             revealEra(gameChoice);
             startQuiz (allErasQuestions [gameChoice]);
         } else {
-            console.log ("No game questions found for", gameChoice)
+            console.log ("No game questions found for", gameChoice);
         }
     });
 }
@@ -747,7 +747,7 @@ function startQuiz (questionsArray){
     currentQuestionIndex = 0;
     showQuestion (currentQuestions[currentQuestionIndex]);
     score = 0;
-    scoreEl.innerText = `0 / 15`
+    scoreEl.innerText = `0 / 15`;
 }
 
 const answerButtons = [
@@ -755,7 +755,7 @@ const answerButtons = [
     document.querySelector(".answer2"),
     document.querySelector(".answer3"),
     document.querySelector(".answer4")
-]
+];
 
 /**
  * Show questions
@@ -816,7 +816,7 @@ function showAnswer (button, isCorrect) {
 }
 
 // Score tracker
-let score = 0
+let score = 0;
 
 /** 
  * End Quiz
@@ -952,7 +952,7 @@ function helpButton () {
     hideSection("quiz-space");
     hideSection("final-score-space");
     hideSection("pick-era");
-    hideSection ("additional-buttons")
+    hideSection ("additional-buttons");
     showSection ("opening-instructions");
 }
 
