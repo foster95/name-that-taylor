@@ -884,8 +884,18 @@ body {
 /* Media Query for xl desktops - 1440px and up */
 @media screen and (min-width:1440px){
 
+    /* Website opener styling */
+
+    #website-opener {
+        margin-top: 16vh;
+    }
+
     /* Instructions styling */
     
+    #opening-instructions {
+        margin-top: 4vh;
+    }
+
     #opening-instructions h1 {
         font-size: 70px;
     }
@@ -894,7 +904,16 @@ body {
         font-size: 62px;
     }
 
+    /* Pick era styling */
+    #pick-era {
+        margin-top: 9vh;
+    }
+
     /* Quiz area styling */
+
+    #quiz-space {
+        margin-top: 2vh;
+    }
 
     #question {
         padding: 12px;
