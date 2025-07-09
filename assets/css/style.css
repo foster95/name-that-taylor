@@ -774,7 +774,7 @@ body {
     }
 
     #additional-buttons button {
-        font-size: 32px;
+        font-size: 30px;
 
     }
 }
@@ -790,6 +790,10 @@ body {
     }
 
     /* Instructions styling */
+
+    #website-opener {
+        margin-top: 12vh;
+    }
 
     #opening-instructions {
         margin-top: 0rem;
@@ -817,7 +821,10 @@ body {
     #pick-era {
         width: 75%;
         padding-top: 24px;
-        margin-top: 0rem;
+        margin-top: 4vh;
+        padding-bottom: 38px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #pick-era h1 {
