@@ -866,7 +866,6 @@ body {
     }
 
     .final-score-button {
-        font-size: 27px;
         width: 24%;
     }
 
@@ -920,10 +919,6 @@ body {
     }
 
     /* Final score styling */
-
-    #final-score {
-        font-size: 25px;
-    }
 
     .final-score-button {
         font-size: 25px;

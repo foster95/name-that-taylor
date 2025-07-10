@@ -3,13 +3,16 @@ import { debutQuestions } from './questions/questions-debut.js';
 import { fearlessQuestions } from './questions/questions-fearless.js';
 import { speakNowQuestions } from './questions/questions-speaknow.js';
 import { redQuestions } from './questions/questions-red.js';
+import { nineteeneightynineQuestions } from './questions/questions-nineteeneightynine.js';
 
 const allErasQuestions = {
     debut: debutQuestions,
     fearless: fearlessQuestions,
     speakNow: speakNowQuestions,
-    red: redQuestions
+    red: redQuestions,
+    nineteeneightynine: nineteeneightynineQuestions
 };
+
 document.addEventListener("DOMContentLoaded", () => {
   const startBtn = document.getElementById("start-button");
   const pickBtn = document.getElementById("pick-button");
@@ -110,12 +113,14 @@ function formatEraName(era) {
   };
   return eraNames [era];
 }
+
+// Show correct Era at top of quiz
+const eraEl = document.getElementById("show");
   
   function revealEra (era) {
     eraEl.innerText = formatEraName(era);
     }
-// Show correct Era at top of quiz
-const eraEl = document.getElementById("show");
+
 /**
  * shuffle questions
  */
