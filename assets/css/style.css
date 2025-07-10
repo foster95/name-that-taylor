@@ -862,7 +862,7 @@ body {
     }
 
     #final-score {
-        font-size: 27px;
+        font-size: 22px;
     }
 
     .final-score-button {
@@ -919,6 +919,10 @@ body {
     }
 
     /* Final score styling */
+
+    #final-score {
+        font-size: 25px;
+    }
 
     .final-score-button {
         font-size: 25px;

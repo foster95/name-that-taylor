@@ -1,5 +1,4 @@
 // Questions - 1989
-
 export const nineteeneightynineQuestions = [
     {
     "question": "The lights are so bright, but they never blind me",

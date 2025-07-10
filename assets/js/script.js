@@ -4,13 +4,15 @@ import { fearlessQuestions } from './questions/questions-fearless.js';
 import { speakNowQuestions } from './questions/questions-speaknow.js';
 import { redQuestions } from './questions/questions-red.js';
 import { nineteeneightynineQuestions } from './questions/questions-nineteeneightynine.js';
+import { reputationQuestions } from './questions/questions-reputation.js';
 
 const allErasQuestions = {
     debut: debutQuestions,
     fearless: fearlessQuestions,
     speakNow: speakNowQuestions,
     red: redQuestions,
-    nineteeneightynine: nineteeneightynineQuestions
+    nineteeneightynine: nineteeneightynineQuestions,
+    reputation: reputationQuestions
 };
 
 document.addEventListener("DOMContentLoaded", () => {
