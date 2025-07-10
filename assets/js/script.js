@@ -1,10 +1,14 @@
 "use strict";
+
+// Import Questions from Questions Folder
 import { debutQuestions } from './questions/questions-debut.js';
 import { fearlessQuestions } from './questions/questions-fearless.js';
 import { speakNowQuestions } from './questions/questions-speaknow.js';
 import { redQuestions } from './questions/questions-red.js';
 import { nineteeneightynineQuestions } from './questions/questions-nineteeneightynine.js';
 import { reputationQuestions } from './questions/questions-reputation.js';
+import { loverQuestions } from './questions/questions-lover.js';
+
 
 const allErasQuestions = {
     debut: debutQuestions,
@@ -12,7 +16,8 @@ const allErasQuestions = {
     speakNow: speakNowQuestions,
     red: redQuestions,
     nineteeneightynine: nineteeneightynineQuestions,
-    reputation: reputationQuestions
+    reputation: reputationQuestions,
+    lover: loverQuestions
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -41,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 // General Code for the DOM
 const pickEra = document.getElementById ("pick-era");
 const quizSpace = document.getElementById ("quiz-space");
@@ -49,6 +55,7 @@ const answers = document.getElementById ("answer-space");
 const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
+
 /**
  * Show/hide sections as required
  */
@@ -58,6 +65,7 @@ function showSection(id) {
 function hideSection (id) {
     document.getElementById(id).classList.add("disappear");
 }
+
 // On DOM ready, show welcome and hide others
 window.addEventListener('DOMContentLoaded', () => {
   showSection("website-opener");
@@ -65,6 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
   hideSection("logo");
   hideSection("pick-era");
 });
+
 /**
  * On clicking "lets go", take the user to the instructions page
  */
@@ -73,6 +82,7 @@ function startButton() {
     showSection("opening-instructions");
     hideSection("website-opener");
 }
+
 /**
  * on clicking "it's been a long time coming" the user is taken to the era 
  * selection option
@@ -81,6 +91,7 @@ function pickButton() {
     hideSection("opening-instructions");
     showSection("pick-era");
 }
+
 /**
  * select Era then open quiz
  */
@@ -97,6 +108,7 @@ for (let button of eraButtons) {
         } 
     });
 }
+
 /**
  *  Format Era titles for readability at top of page
  */
@@ -129,6 +141,7 @@ const eraEl = document.getElementById("show");
 function shuffleArray(array) {
     return [...array].sort(() => Math.random() - 0.5);
 }
+
 // Quiz Logic - load and shuffle questions to only show 15)
 function startQuiz (questionsArray){
     currentQuestions = shuffleArray(questionsArray).slice(0, 15);
@@ -143,11 +156,13 @@ const answerButtons = [
     document.querySelector(".answer3"),
     document.querySelector(".answer4")
 ];
+
 /**
  * Show questions
  */
 function showQuestion (quest) {
     questionEl.innerText = quest.question;
+
     // Enable button on each individual question
     quest.answers.forEach((answer, index) => {
         const btn = answerButtons [index];
@@ -159,6 +174,7 @@ function showQuestion (quest) {
         };
     });
 }
+
 /**
  * Show answers
  */
@@ -168,9 +184,11 @@ function showAnswer (button, isCorrect) {
         score++;
         scoreEl.innerText = `${score} / 15`;
     }
+
     // Disable buttons so player cannot choose another and show colour highlight
     answerButtons.forEach((btn, index) => {
         btn.disabled = true;
+
       // Change colour to indicate if correct or incorrect answer
     if (index === currentQuestions [currentQuestionIndex].correct) {
         btn.classList.add("correct-answer");
@@ -179,6 +197,7 @@ function showAnswer (button, isCorrect) {
         btn.classList.add("wrong-answer");
     }
 });
+
     // Jump to next question automatically after 1.5 seconds
     currentQuestionIndex++;
     if (currentQuestionIndex < currentQuestions.length) {
@@ -191,8 +210,10 @@ function showAnswer (button, isCorrect) {
         }, 1500);
     }
 }
+
 // Score tracker
 let score = 0;
+
 /** 
  * End Quiz
  */
@@ -202,6 +223,7 @@ function endQuiz () {
     showSection ("final-score-space");
     finalScore();
 }
+
 /**
  * Final score messages
  */
@@ -288,6 +310,7 @@ function finalScore () {
         ${buttons}`;
     }
 }
+
 /**
  * Add function to make home button work
  */
@@ -300,6 +323,7 @@ function homeButton() {
     hideSection("logo");
     showSection("website-opener");
 }
+
 /**
  * Add function to make another era button work
  */
@@ -312,6 +336,7 @@ function anotherEraButton () {
     score = 0;
     currentQuestionIndex = 0;
     currentQuestions = [];
+
     // Show pick era interface
     showSection ("pick-era");
 }
