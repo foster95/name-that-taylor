@@ -38,6 +38,7 @@ body {
     font-weight: bold;
     padding-top: 15px;
     position: sticky;
+    top: 0;
     padding-bottom: 20px;
 }
 
@@ -48,7 +49,7 @@ body {
     border: 2px solid #f4cb8d;
     padding: 2rem;
     border-radius: 25px;
-    opacity: 0.9;
+    opacity: 0.8;
     text-align: center;
     width: 75%;
     margin-left: auto;
@@ -96,14 +97,14 @@ body {
     padding-bottom: 5%;
     padding-top: 5%;
     margin-top: 1.5rem;
-    opacity: 80%;
+    opacity: 0.8;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
 }
 
-#opening-instructions h1 {
+#opening-instructions h2 {
     font-family: var(--secondary-font);
     font-size: 50px;
     margin-top: -5px;
@@ -115,7 +116,7 @@ body {
     font-family: var(--primary-font);
 }
 
-#opening-instructions h2 {
+#opening-instructions h3 {
     font-family: var(--secondary-font);
     font-size: 43px;
     margin-top: 10px;
@@ -152,14 +153,14 @@ body {
     text-align: center; 
     border: 2px solid #f4cb8d;
     padding-bottom: 33px;
-    opacity: 80%;
+    opacity: 0.8;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
 }
 
-#pick-era h1 {
+#pick-era h2 {
     font-family: var(--secondary-font);
     font-size: 50px;
     margin-top: 7px;
@@ -181,7 +182,7 @@ body {
 }
 
 /* Era title Styling */
-#show {
+#era-label {
     padding-top: 1.5rem;
     font-family: var(--secondary-font);
     font-size: 50px;
@@ -195,7 +196,7 @@ body {
     text-align: center;
     background-color: #f4cb8d;
     border: 2px solid #f4cb8d;
-    opacity: 80%;
+    opacity: 0.8;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -226,7 +227,7 @@ body {
 #score {
     text-align: center;
     background-color: #f4cb8d;
-    opacity: 80%;
+    opacity: 0.8;
     margin-bottom: 2rem;
     font-weight: bold;
     font-size: 1.5rem;
@@ -238,7 +239,7 @@ body {
     text-align: center;
     background-color: #f4cb8d;
     border: 2px solid #f4cb8d;
-    opacity: 80%;
+    opacity: 0.8;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -325,7 +326,7 @@ body {
     gap: 4px;
 }
 
-#pick-era h1 {
+#pick-era h2 {
     font-size: 40px;
 }
 
@@ -382,7 +383,7 @@ body {
         width: 75%;
     }
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 44px;
     }
 
@@ -413,7 +414,7 @@ body {
 
     /* Opening screen styling */
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 50px;
     }
 
@@ -421,7 +422,7 @@ body {
         font-size: 20px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 40px
     }
 
@@ -440,7 +441,7 @@ body {
         padding-top: 15px;
     }
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 50px;
     }
 
@@ -492,11 +493,11 @@ body {
 
     /* Opening page styling */
 
-    #website-opener h1 {
+    #website-opener h2 {
         font-size: 60px;
     }
 
-     #website-opener h2 {
+     #website-opener h3 {
         font-size: 22px;
     }
 
@@ -507,7 +508,7 @@ body {
 
     /* Imstructions page styling */
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 60px;
     }
 
@@ -515,7 +516,7 @@ body {
         font-size: 25px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 55px;
     }
 
@@ -529,12 +530,12 @@ body {
      #pick-era-wrapper {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;;
+        flex-direction: row;
         justify-content: center;
         gap: 6px;
     }
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 60px;
     }
 
@@ -545,7 +546,7 @@ body {
 
     /* Quiz area styling */
 
-    #show {
+    #era-label {
         font-size: 60px;
     }
 
@@ -612,7 +613,7 @@ body {
         padding: 29px;
     }
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 80px;
     }
 
@@ -620,7 +621,7 @@ body {
         font-size: 28px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 65px;
     }
 
@@ -637,7 +638,7 @@ body {
         padding-top: 18px;
     }
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 80px;
         margin-bottom: 27px;
     }
@@ -653,7 +654,7 @@ body {
         width: 75%;
     }
 
-    #show {
+    #era-label {
         font-size: 80px;
     }
 
@@ -720,7 +721,7 @@ body {
 
     /* Opening Instructions styling */
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 85px;
     }
 
@@ -728,7 +729,7 @@ body {
         font-size: 32px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 75px;
     }
 
@@ -739,7 +740,7 @@ body {
 
     /* Choose era styling */
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 85px;
     }
 
@@ -750,7 +751,7 @@ body {
 
     /* Quiz space styling */
 
-    #show {
+    #era-label {
         font-size: 85px;
     }
 
@@ -768,7 +769,7 @@ body {
         gap: 14px 
      }
 
-    #answer-space-button {
+    #answer-space button {
         font-size: 32px;
         width: 48%;
     }
@@ -799,7 +800,7 @@ body {
         margin-top: 0rem;
     }
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 56px;
     }
 
@@ -807,7 +808,7 @@ body {
         font-size: 23px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 53px;
     }
 
@@ -827,7 +828,7 @@ body {
         padding-right: 15px;
     }
 
-    #pick-era h1 {
+    #pick-era h2 {
         font-size: 63px;
     }
 
@@ -842,7 +843,7 @@ body {
         margin-top: 0rem;
     }
 
-    #show {
+    #era-label {
         font-size: 63px;
     }
 
@@ -895,11 +896,11 @@ body {
         margin-top: 4vh;
     }
 
-    #opening-instructions h1 {
+    #opening-instructions h2 {
         font-size: 70px;
     }
 
-    #opening-instructions h2 {
+    #opening-instructions h3 {
         font-size: 62px;
     }
 

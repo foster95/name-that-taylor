@@ -8,7 +8,7 @@ import { redQuestions } from './questions/questions-red.js';
 import { nineteeneightynineQuestions } from './questions/questions-nineteeneightynine.js';
 import { reputationQuestions } from './questions/questions-reputation.js';
 import { loverQuestions } from './questions/questions-lover.js';
-import { folkloreAndEvermoreQuestions } from './questions/questions-folkmore-and-evermore.js';
+import { folkloreAndEvermoreQuestions } from './questions/questions-folklore-and-evermore.js';
 import { midnightsQuestions } from './questions/questions-midnights.js';
 import { theTorturedPoetsDepartmentQuestions } from './questions/questions-the-tortured-poets-department.js';
 
@@ -135,7 +135,7 @@ function formatEraName(era) {
 }
 
 // Show correct Era at top of quiz
-const eraEl = document.getElementById("show");
+const eraEl = document.getElementById("era-label");
   
   function revealEra (era) {
     eraEl.innerText = formatEraName(era);
@@ -147,6 +147,9 @@ const eraEl = document.getElementById("show");
 function shuffleArray(array) {
     return [...array].sort(() => Math.random() - 0.5);
 }
+
+// Score tracker
+let score = 0;
 
 // Quiz Logic - load and shuffle questions to only show 15)
 function startQuiz (questionsArray){
@@ -216,9 +219,6 @@ function showAnswer (button, isCorrect) {
         }, 1500);
     }
 }
-
-// Score tracker
-let score = 0;
 
 /** 
  * End Quiz
