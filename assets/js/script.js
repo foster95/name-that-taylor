@@ -10,6 +10,7 @@ import { reputationQuestions } from './questions/questions-reputation.js';
 import { loverQuestions } from './questions/questions-lover.js';
 import { folkloreAndEvermoreQuestions } from './questions/questions-folkmore-and-evermore.js';
 import { midnightsQuestions } from './questions/questions-midnights.js';
+import { theTorturedPoetsDepartmentQuestions } from './questions/questions-the-tortured-poets-department.js';
 
 
 const allErasQuestions = {
@@ -21,7 +22,8 @@ const allErasQuestions = {
     reputation: reputationQuestions,
     lover: loverQuestions,
     folkloreAndEvermore: folkloreAndEvermoreQuestions,
-    midnights: midnightsQuestions
+    midnights: midnightsQuestions,
+    ttpd: theTorturedPoetsDepartmentQuestions
 };
 
 document.addEventListener("DOMContentLoaded", () => {
