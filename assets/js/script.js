@@ -8,6 +8,8 @@ import { redQuestions } from './questions/questions-red.js';
 import { nineteeneightynineQuestions } from './questions/questions-nineteeneightynine.js';
 import { reputationQuestions } from './questions/questions-reputation.js';
 import { loverQuestions } from './questions/questions-lover.js';
+import { folkloreAndEvermoreQuestions } from './questions/questions-folkmore-and-evermore.js';
+import { midnightsQuestions } from './questions/questions-midnights.js';
 
 
 const allErasQuestions = {
@@ -17,7 +19,9 @@ const allErasQuestions = {
     red: redQuestions,
     nineteeneightynine: nineteeneightynineQuestions,
     reputation: reputationQuestions,
-    lover: loverQuestions
+    lover: loverQuestions,
+    folkloreAndEvermore: folkloreAndEvermoreQuestions,
+    midnights: midnightsQuestions
 };
 
 document.addEventListener("DOMContentLoaded", () => {
