@@ -88,7 +88,7 @@ export const theTorturedPoetsDepartmentQuestions = [
     {
     "question": "My beloved ghost and me, sitting in a tree",
     "answers": ["Thank You Aimee", "I Look in People's Windows", "How Did it End?", "Peter"],
-    "correct": 3
+    "correct": 2
     },
 
     {
@@ -112,7 +112,7 @@ export const theTorturedPoetsDepartmentQuestions = [
     {
     "question": "Transfixed by rose golden glows",
     "answers": ["The Prophecy", "I Look in People's Windows", "Florida!!!", "So Long, London"],
-    "correct": 2
+    "correct": 1
     },
 
     {
