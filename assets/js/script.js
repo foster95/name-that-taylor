@@ -235,8 +235,8 @@ function endQuiz () {
  */
 function finalScore () {
     const finalScoreEl = document.getElementById("final-score");
-    const buttons = `
-    <button class="final-score-button" onclick="window.location.reload();">Home</button>
+    const button = `
+    <button class="final-score-button"  onclick="window.location.reload();">Home</button>
         `
     
     if (score === 15) {
@@ -250,7 +250,7 @@ function finalScore () {
         
         <p>So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.</p>
         
-        ${buttons}`;
+        ${button}`;
     }
     else if (score >= 12 && score <= 14) {
         finalScoreEl.innerHTML = `
@@ -265,7 +265,7 @@ function finalScore () {
         
         <p>Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering if you'll ever let us in on your <em>"Mastermind"</em> strategy, because we're not as cool as you.</p>
         
-        ${buttons}`;
+        ${button}`;
     }
        else if (score >= 9 && score <= 11) {
         finalScoreEl.innerHTML = `
@@ -276,7 +276,7 @@ function finalScore () {
         
         <p>Don't even sweat it! There's always a <em>"Begin Again"</em> moment for the next quiz, and we know you'll absolutely crush it. Congratulations on playing along!</p>
         
-        ${buttons}`;
+        ${button}`;
     }
      else if (score >= 4 && score <= 9) {
         finalScoreEl.innerHTML = `
@@ -288,7 +288,7 @@ function finalScore () {
     
         <p>Consider this just a little <em>"Long Story Short"</em> moment. It's all about the fun, plus, now you have even more reason to dive back into the discography. You can always <em>"Begin Again"</em> with another quiz!</p>
         
-        ${buttons}`;
+        ${button}`;
     }
      else if (score >= 1 && score <= 4) {
         finalScoreEl.innerHTML = `
@@ -300,7 +300,7 @@ function finalScore () {
         
         <p>Consider this just a <em>"Long Story Short"</em> moment on your Swiftie journey. It's not about being a <em>"Mastermind"</em> every time, it's about the shared love for the music. Plus, now you've got a whole new set of lyrics to dive into for next time. You can always <em>"Begin Again"</em> with another quiz!</p>
         
-        ${buttons}`;
+        ${button}`;
     }
         else if (score === 0) {
         finalScoreEl.innerHTML = `
@@ -313,7 +313,7 @@ function finalScore () {
         <p>Consider this just a <em>"Long Story Short"</em> moment. The real win isn't about the score; it's about the pure, unadulterated love for Taylor's music that brought you to the quiz in the first place.</p> 
         <p>You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!</p>
         
-        ${buttons}`;
+        ${button}`;
     }
 }
 

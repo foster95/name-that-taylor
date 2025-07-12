@@ -134,7 +134,7 @@ body {
 #pick-button:hover {
     background-color: #C5A3DA;
     color: black;
-    border: 2px solid white;
+    border: 2px solid white; 
 }
 
 /* Choose era section styling */
@@ -178,7 +178,7 @@ body {
 #pick-era button:hover {
     background-color: #C5A3DA;
     color: black;
-    border: 2px solid white;
+    border: 2px solid white; 
 }
 
 /* Era title Styling */
@@ -263,6 +263,12 @@ body {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 0.5rem;
+}
+
+.final-score-button:hover {
+    background-color: #C5A3DA;
+    color: black;
+    border: 2px solid white;
 }
 
 /* Additional button styling */
@@ -751,6 +757,10 @@ body {
 
     /* Quiz space styling */
 
+    #quiz-space {
+        margin-top: 2vh;
+    }
+
     #era-label {
         font-size: 85px;
     }
@@ -771,7 +781,7 @@ body {
 
     #answer-space button {
         font-size: 32px;
-        width: 48%;
+        width: 75%;
     }
 
     #additional-buttons button {
