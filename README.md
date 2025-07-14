@@ -14,6 +14,47 @@ The website is compromised of a simple quiz mechanic through JavaScript, which a
 Image from [amiresponsive](https://ui.dev/amiresponsive?url=https://foster95.github.io/name-that-taylor/)
  
 # Table of Contents
+1. [UX](#ux)
+     - [User Stories](#user-stories)
+2. [Design] (#design)
+     - [Wireframes](#wireframes)
+     - [Mobile Wireframes](#mobile-wireframes)
+     - [Desktop Wireframes](#desktop-wireframes)
+     - [Colour Palette](#colour-palette)
+     - [Imagery](#imagery)
+     - [Typography](#typography)
+3. [Features](#features)
+     - [Welcome Screen](#welcome-screen)
+     - [Opening Instructions Section](#opening-instructions-section)
+     - [Choose Era Section](#choose-era-section)
+     - [Quiz Section](#quiz-section)
+     - [Result Section](#result-section)
+     - [Additional Buttons](#additional-buttons)
+4. [Testing](#testing)
+     - [Manual Testing](#manual-testing)
+     - [Manual Testing Against User Stories](#manual-testing-against-user-stories)
+     - [Browser Testing](#browser-testing)
+     - [Responsive Testing](#responsive-testing)
+     - [Responsive Testing Images - Mobile](#mobile-device)
+     - [Responsive Testing Images - Tablet](#tablet-device)
+     - [Responsive Testing Images - Desktop](#desktop-device)
+     - [Lighthouse Testing](#lighthouse-testing)
+     - [HTML Validation](#html-validation)
+     - [CSS Validation](#css-validation)
+     - [JShint Validation](#jshint-validation)
+     - [WAVE Validation](#wave-validation)
+5. [Bugs and Errors](#bugs-and-errors)
+     - [Buttons Not Reenabling](#buttons-not-reenabling-after-being-disabled-and-moving-to-the-next-quiz-section)
+     - [CSS Issue on Safari and Fox](#css-issues-on-safari-and-firefox)
+     - [Responsivity](#responsivity)
+6. [Deployyment](#deployment)
+     -[GitHub Page](#github-pages)
+     -[Forking](#forking)
+     -[Cloning](#cloning)
+7. [Technologies](#technologies)
+8. [Credits and Acknowledgement](#credits-and-acknowledgement)
+9. [Final Note from the Developer](#final-note-from-the-developer)
+
 ## UX
 ### User Stories
 In order to prepare for the project, I created a series of user stories that were built in Github's project board. The user stories can be found below:
@@ -48,8 +89,8 @@ Name that Song - Taylor's Version has been designed as a single webpage, with a 
 All wireframes were created using Balsamiq
 
 ### Mobile Wireframes
-![Mobile Wireframe 1]()
-![Mobile Wireframe 2]()
+![Mobile Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-mobile-1.png)
+![Mobile Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-mobile-2.png)
 
 ### Desktop Wireframes
 ![Desktop Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-desktop-1.png)
@@ -206,7 +247,7 @@ Once the user has chosen which button they want to choose for their answer they 
     }
 
 ![Quiz section mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/quiz-space-mobile.png)
-![Quiz section desktop]()
+![Quiz section desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/quiz-space-desktop.png)
 
 ### Result section
 Once the quiz has run through 15 questions, the user will be shown a results message that will be dependent on the score. At the bottom of the results section, they are shown buttons to go to the home screen or to pick another era from the list.
@@ -231,26 +272,19 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
         <p>Okay, wait a minute... you got a perfect score?! Are you kidding us right now?!</p>
-        
         <p>This wasn't just knowing the answers <em>"All Too Well"</em>; it was <em>"(Mr) Perfectly Fine"</em> taken to an entirely new level! You didn't just pass; you absolutely conquered that quiz like it was <em>"The Great War"</em>, and you were the only one left standing.</p>
-        
         <p>You're not just a Swiftie; you're a certified <em>"Mastermind!"</em> It's as if you know the lyrics better than Taylor Swift herself sometimes. This is your moment to really make the whole place shimmer!</p>
-        
         <p>So, to the quiz champion, CONGRATULATIONS! You've officially proven you're the ultimate, undisputed, 100%-scoring quiz legend. Go celebrate like you just won a Grammy; you absolutely earned it.</p>
-        
+
         ${button}`;
      }
       else if (score >= 12 && score <= 14) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
         <p>Did you have <em>"The Lucky One"</em> on repeat while studying, or are you just a <em>"Mastermind</em> when it comes to all things Taylor? Because you absolutely slayed that quiz like it was a surprise album drop!</p>
-        
-        <p>We bet you were feeling <em>"Fearless"</em> walking into that, and now you're probably singing <em>"Long Live"</em> at the top of your lungs. You didn't just know the answers, you knew them <em>"All Too Well."</em></p>
-        
+        <p>We bet you were feeling <em>"Fearless"</em> walking into that, and now you're probably singing <em>"Long Live"</em> at the top of your lungs. You didn't just know the answers, you knew them <em>"All Too Well."</em><p>
         <p>Consider this your <em>"Picture to Burn"</em> moment for anyone who doubted your Swiftie knowledge.</p> 
-        
         <p>You've officially entered your champion Era, and honestly, it looks <em>"Gorgeous"</em> on you!</p>
-        
         <p>Congratulations, you magnificent, lyrical genius! Now, if you'll excuse us, we're just wondering if you'll ever let us in on your <em>"Mastermind"</em> strategy, because we're not as cool as you.</p>
         
         ${button}`;
@@ -259,9 +293,7 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
         <p>Okay, so someone just jumped into that Taylor Swift quiz, and you know what? That's what truly matters! You showed up, gave it your all, and you're still a brilliant Swiftie.</p>
-        
         <p>Sometimes, you don't know all the little secret Easter eggs, and honestly, that's totally okay! The whole point is to have fun. You just gotta <em>"Shake It Off"</em> when it comes to the score and remember what a dedicated fan you are.</p>
-        
         <p>Don't even sweat it! There's always a <em>"Begin Again"</em> moment for the next quiz, and we know you'll absolutely crush it. Congratulations on playing along!</p>
         
         ${button}`;
@@ -269,11 +301,8 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
      else if (score >= 4 && score <= 8) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
-        
-        <p>Well, that quiz was certainly a <em>"Bad Blood"</em> moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question, the important thing is you showed up, you played, and you still have an <em>"Invisible String"</em> connecting you to all things Taylor!</p>
-      
+        <p>Well, that quiz was certainly a <em>"Bad Blood"</em> moment for some of us, wasn't it? But honestly, who cares if you didn't ace every single question, the important thing is you showed up, you played, and you still have an <em>"Invisible String"</em> connecting you to all things Taylor!<p>
         <p>Maybe you just had a <em>"Glitch"</em> on a few answers, or perhaps you were too busy jamming to the music in your head to focus on the trivia. Either way, there's absolutely no need to </em>"Shake It Off"</em>.</p>
-    
         <p>Consider this just a little <em>"Long Story Short"</em> moment. It's all about the fun, plus, now you have even more reason to dive back into the discography. You can always <em>"Begin Again"</em> with another quiz!</p>
         
         ${button}`;
@@ -281,11 +310,8 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
      else if (score >= 1 && score <= 4) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
-        
         <p>Okay, so maybe that quiz was more of a <em>"Death By A Thousand Cuts"</em> than a <em>"Love Story"</em> for you, but hold up! You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album booklets - a small victory, but a victory nonetheless!</p>
-        
         <p>No need to <em>"Shake It Off"</em> in despair, because seriously, the fact that you even showed up and faced the music makes you a <em>"Fearless"</em> fan in our book. Maybe you were just too busy feeling <em>"22"</em> and having a blast to remember every deep cut, and that's perfectly okay!</p>
-        
         <p>Consider this just a <em>"Long Story Short"</em> moment on your Swiftie journey. It's not about being a <em>"Mastermind"</em> every time, it's about the shared love for the music. Plus, now you've got a whole new set of lyrics to dive into for next time. You can always <em>"Begin Again"</em> with another quiz!</p>
         
         ${button}`;
@@ -293,11 +319,8 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
         else if (score === 0) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
-        
         <p>Okay, so you just took a Taylor Swift quiz and landed squarely in a <em>"Blank Space"</em> when it came to the answers, huh? You know what? That's not a loss; that's just a clean slate ready to be filled with all the amazing Taylor knowledge you're about to gain!</p>
-        
         <p>There's absolutely no need to <em>"Shake It Off"</em> in despair because, honestly, showing up and giving it a shot is a <em>"Fearless"</em> move in itself. Maybe you were just too busy feeling <em>"22"</em> and having a good time, or perhaps you were already mentally planning your next eras fit!</p>
-        
         <p>Consider this just a <em>"Long Story Short"</em> moment. The real win isn't about the score; it's about the pure, unadulterated love for Taylor's music that brought you to the quiz in the first place.</p> 
         <p>You're still connected by an <em>"Invisible String"</em> to this fandom. Plus, now you have all the songs to re-listen to and all the lyrics to learn! We're confident that next time, you'll be singing a different tune and going <em>"Clean"</em> on that scoreboard!</p>
         
@@ -372,25 +395,25 @@ Standard Laptop | Scaling correctly, text box floating centrally on the browser,
 Widescreen Desktop | Scaling correctly, text box floating centrally on the browser, margins left and right correct. Button is clearly visible to initiate game, background is not warping and is clear. Fonts are showing up correctly | Scaling correctly, button is clearly displayed, fonts displaying correctly. | Choose your Era box floating centraly, padding adequate to allow additional breathing room. All buttons clearly visible | Scaling correctly, quiz space floating centrally, all buttons easily viewed and accessible at all times | Scaling correctly, result message clearly displayed, buttons visible and displaying correctly | No issues, all showing as correct across pages
 
 #### Mobile Device
-![Opening Page - mobile]()
-![Instructions Page - mobile]()
-![Choose Your Era - mobile]()
-![Quiz section - mobile]()
-![Results Page - mobile]()
+![Opening Page - mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/mobile-testing-opening-screen.png)
+![Instructions Page - mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/mobile-testing-opening-instructions.png)
+![Choose Your Era - mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/mobile-testing-choose-your-era.png)
+![Quiz section - mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/mobile-testing-quiz-space.png)
+![Results Page - mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/mobile-testing-result-page.png)
 
 #### Tablet Device
-![Opening Page - tablet]()
+![Opening Page - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-opening-screen.png)
 ![Instructions Page - tablet]()
 ![Choose Your Era - tablet]()
 ![Quiz section - tablet]()
 ![Results Page - tablet]()
 
 #### Desktop Device
-![Opening Page - desktop]()
-![Instructions Page - desktop]()
-![Choose Your Era - desktop]()
-![Quiz section -desktop]()
-![Results Page - desktop]()
+![Opening Page - desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-opening-screen.png)
+![Instructions Page - desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-opening-instructions.png)
+![Choose Your Era - desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-choose-your-era.png)
+![Quiz section -desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-quiz-space.png)
+![Results Page - desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-result-page.png)
 
 
 ### Lighthouse Testing
@@ -485,8 +508,38 @@ When I originally visualised this project, I knew I wanted it to have a very min
 However whilst this did fix te issue in its entirety, it also made the site entirely unresponsive to the various screen widths and dimensions without making the font so small as to be unreadable. In the end I decided as the developer that is was far better to have a responsive website that was slightly less aesthetically perfect, than to have an aesthetically perfect site that would not and could not work with multiple screen widths. I subsequently made the decision to remove the landing wrapper div and the code that came with that, and instead used padding and a few margin tops to create a better indication of visual space, even if it didn't always work perfectly. 
 
 ## Deployment
+This site was deployed to GitHub Pages using the following steps
 
-### Technologies 
+## GitHub Pages
+1. Log in to GitHub and locate the ![GitHub Repository](https://github.com/foster95/name-that-taylor).
+2. Navigate to the "Settings" of the repository, located at the top of the page in the menu.
+3. On the left hand-side is a menu, and click on the "Pages" from the Code and Automation section.
+4. Under "Branch" click on the dropdown menu called "None" and select "Main".
+5. On the dropdown menu next to "Main" select "Root" and click the "Save" button.
+6. Navigate to the "Code" of the repository, located at the top of the page in the menu.
+7. On the right-hand side is an "About" section and below that is the "Deployments" which shows the GitHub pages that deployed.
+
+![The live link can be found here](https://github.com/foster95/name-that-taylor).
+
+The site is hosted using GitHub pages and is deployed via the main branch. The deployed site uses a Version Control System to track changes in the source code using the Gitpod terminal to commit messages and push them to GitHub. This will update the repository automatically when GitHub receives these commits in the main branch. The main landing page of the site must be named index.html for the site to be deployed correctly, as the search engines are looking for this document to load the site onto the web.
+
+## Forking
+1. Log in to GitHub and navigate to the ![required repository](https://github.com/foster95/name-that-taylor).
+2. Navigate to the right-hand side of the page and click ‘Fork’. This is located in-line with your repository name underneath the nav bar.
+3. Give the forked repository a name of your choosing.
+4. Amend the repository description if required.
+5. Tick ‘Copy the main branch only'.
+6. Click the ‘Create fork’ button.
+7. You will now have a copy of the original repository in your GitHub account.
+
+## Cloning
+1. Log in to GitHub and navigate to the ![required repository](https://github.com/foster95/name-that-taylor).
+2. Click on the ‘Code’ button at the top of the repository and copy the URL.
+3. Open Git Bash in your IDE of choice and change the working directory to the location where you want the cloned directory.
+4. Type git clone, then paste the URL you copied earlier.
+5. Press enter. Your local clone will be created.
+
+## Technologies 
 #### Languages and technologies used
 * JavaScript
 * HTML

@@ -816,6 +816,13 @@ button {
 
 /* Media Query for large tablets - 1024 px and up */
 @media screen and (min-width:1024px) {
+
+    /* Website opener styling */
+
+    #website-opener {
+        width: 85%;
+    }
+
     /* Opening Instructions Styling */
 
     #opening-instructions {
@@ -842,13 +849,15 @@ button {
     }
 
     #final-score {
-        font-size: 36px;
+        font-size: 34px;
+    }
+
+    .final-score-button {
+        font-size: 29px;
     }
 }
 /* Media Query for desktops - 1280px and up */
 @media screen and (min-width:1280px) {
-
-
     /* Logo */
 
     #logo {
