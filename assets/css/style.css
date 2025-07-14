@@ -25,6 +25,15 @@ body {
     position: relative;
 }
 
+button {
+    border-radius: 25px;
+    font-family: var(--primary-font);
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
 .disappear {
     display: none !important;
 }
@@ -74,12 +83,8 @@ body {
 }
 
 #start-button {
-    text-align: center;
     width: 75%;
-    border-radius: 25px;
-    font-family: var(--primary-font);
     font-size: 15px;
-    padding: 10px;
 }
 
 #start-button:hover {
@@ -125,9 +130,6 @@ body {
 
 #pick-button {
     width: 81%;
-    padding: 10px;
-    border-radius: 25px;
-    font-family: var(--primary-font);
     font-size: 15px;
 }
 
@@ -176,10 +178,7 @@ body {
 
 #pick-era button {
     width: 86%;
-    border-radius: 25px;
-    font-family: var(--primary-font);
     font-size: 15px;
-    padding: 10px;
 }
 
 #pick-era button:hover {
@@ -232,9 +231,6 @@ body {
 
 #answer-space button {
     width: 92%;
-    padding: 10px;
-    border-radius: 25px;
-    font-family: var(--primary-font);
     font-size: 16px;
 }
 
@@ -303,12 +299,9 @@ body {
 
 #additional-buttons button {
     width: 33%;
-    border-radius: 25px;
-    font-family: var(--primary-font);
     margin-left: 4px;
     margin-right: 4px;
     font-size: 12px;
-    padding: 10px;
 }
 
 #additional-buttons button:hover {

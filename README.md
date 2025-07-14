@@ -321,18 +321,20 @@ Widescreen Desktop | Scaling correctly, text box floating centrally on the brows
 The site was tested using Lighthouse across both mobile and desktop devices. Scores for these can be found below:
 
 #### Mobile
+![Lighthouse Mobile Testing](https://github.com/foster95/name-that-taylor/blob/main/assets/images/lighthouse-testing-mobile.png)
+
 #### Desktop
+![Lighthouse Desktop Testing](https://github.com/foster95/name-that-taylor/blob/main/assets/images/lighthouse-testing-desktop.png)
 
 ### HTML Validation
-
 Additionally, the site was tested using the HTML validator, w3.org. No errors were returned
+![HTML Validation](https://github.com/foster95/name-that-taylor/blob/main/assets/images/html%20testing.png)
 
 ### CSS Validation
-
 The site was also further tested using the CSS validator, also through w3.org. No errors were returned. 
+![CSS Validation](https://github.com/foster95/name-that-taylor/blob/main/assets/images/css-testing.png)
 
 ### JShint Validation
-
 To check the validity of the JavaScript, the script itself was ran through JShint. JShint returned warnings which were rectified by the addition of the following instructions into the script at the top:
 
 /* use strict */
@@ -350,10 +352,11 @@ JShint also picked up the following variables were not being used:
 * answers
 
 These variables were remove following testing which determined that they had no impact to the running of the game.
+![JShint Validation](https://github.com/foster95/name-that-taylor/blob/main/assets/images/jshint-testing.png)
 
 ### WAVE Validation
-
 Finally the game was run through the WAVE validator to check for its accessibility. The results of this can be found below:
+![WAVE Testing](https://github.com/foster95/name-that-taylor/blob/main/assets/images/wave-testing.png)
 
 Bug Fix
 Buttons not reenabling after being disabled making quiz defunct.
