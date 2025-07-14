@@ -769,7 +769,7 @@ body {
         font-size: 40px;
     }
 
-     #answer-space {
+    #answer-space {
         text-align: center;
         display: flex;
         flex-wrap: wrap;

@@ -1,4 +1,7 @@
-"use strict";
+/* use strict */
+/* jshint esversion: 6 */
+/* jshint -W033 */
+
 
 // Import Questions from Questions Folder
 import { debutQuestions } from './questions/questions-debut.js';
@@ -54,10 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // General Code for the DOM
-const pickEra = document.getElementById ("pick-era");
-const quizSpace = document.getElementById ("quiz-space");
 const questionEl = document.getElementById ("question");
-const answers = document.getElementById ("answer-space");
 const scoreEl = document.getElementById ("score");
 let currentQuestionIndex = 0;
 let currentQuestions = [];
@@ -278,7 +278,7 @@ function finalScore () {
         
         ${button}`;
     }
-     else if (score >= 4 && score <= 9) {
+     else if (score >= 4 && score <= 8) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
         

@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint -W033 */
+
 // Questions - Speak Now
 export const speakNowQuestions = [
 

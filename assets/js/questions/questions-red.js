@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint -W033 */
+
 // Questions - Red
 export const redQuestions = [ 
     

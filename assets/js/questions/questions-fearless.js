@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* jshint -W033 */
+
 // Questions - Fearless
 
 export const fearlessQuestions = [
