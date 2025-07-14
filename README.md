@@ -52,18 +52,18 @@ All wireframes were created using Balsamiq
 ![Mobile Wireframe 2]()
 
 ### Desktop Wireframes
-![Desktop Wireframe 1]()
-![Desktop Wireframe 2]()
-![Desktop Wireframe 3]()
+![Desktop Wireframe 1](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-desktop-1.png)
+![Desktop Wireframe 2](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-desktop-2.png)
+![Desktop Wireframe 3](https://github.com/foster95/name-that-taylor/blob/main/assets/images/balsamiq-wireframes-desktop-3.png)
 
 ### Colour Palette
 Choosing the colour palette for Name That Song - Taylor's Version, was a surprisingly tricky experience. As a female popstar who has existed and made music for the last 15 years, Taylor Swift has famously had to reinvent her image time and time again, making it impossible to associate her with one set of colours. With this in mind, I decided instead to base the colour palette of the project off the Era's Tour itself, rather than an individual album. I was originally inspired by the below colour palette, which I found when googling "Era's Tour colour palettes". 
 
-![Googled Era's Tour Palette]()
+![Googled Era's Tour Palette - credit to jwhitaker42599](https://github.com/foster95/name-that-taylor/blob/main/assets/images/eras-tour-palette.png)
 
 On starting the project however, I realised that there were simply too many colours to create a cohesive colour palette across the site that would be an enjoyable user experience and didn't demand too much attention. With this in mind I scaled down the colour palette considerably, to the the pink, yellow and purple aspect of the Era's tour, and decided to go for black font as this would provide the best readability for all users. The final colour palette I settled on can be seen below:
 
-![Refined Project Palette]()
+![Refined Project Palette](https://github.com/foster95/name-that-taylor/blob/main/assets/images/final-colour-palette.png)
 
 ### Imagery
 The main background of the game is an image of the visuals used on the Era's Tour and its press releases and would() be instantly recognisable to any fan and can be seen in the original Wireframes. The image was taken from Google and is in a high enough resolution that it does not pixelate.
@@ -86,7 +86,7 @@ Upon the user opening the game, they are immediately greeted with the games welc
     hideSection("website-opener");
     }
 
-![Welcome Screen]()
+![Welcome Screen](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-screen.png)
 
 ### Opening instructions section
 Once the user has clicked the "lets go!" button, they are taken to a set of small instructions which explain to the user exactly how to play the game. The copy has been written to be informal and friendly and should illicit a positive user experience. When the user is ready to choose the level they will be playing at, they must click "It's been a long time coming...". Upon clicking this the user is taken to the Choose Era section
@@ -96,7 +96,7 @@ Once the user has clicked the "lets go!" button, they are taken to a set of smal
     showSection("pick-era");
     }
 
-![Opening Instructions]()
+![Opening Instructions](https://github.com/foster95/name-that-taylor/blob/main/assets/images/opening-instructions.png)
 
 ### Choose Era section
 At this point the user is given the opportunity to choose which game they would like to choose based on their favourite album. In order to make the section as readable as possible for smaller screens (up to 375px) the Era's options are scrollable. For desktop screens and larger, the list splits into two columns to save space. Once the user has chosen which game they would like to play, the user will click the button relevant and will be taken to that quiz
@@ -117,8 +117,8 @@ At this point the user is given the opportunity to choose which game they would 
     });
     }
 
-![Choose Era mobile]()
-![Choose Era desktop]()
+![Choose Era mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/choose-your-era-mobile.png)
+![Choose Era desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/choose-your-era-desktop.png)
 
 ### Quiz section
 This is now the game part of the site. Upon choosing the game they would like to play the user is greeted with a screen which shows the following:
@@ -205,7 +205,7 @@ Once the user has chosen which button they want to choose for their answer they 
     }
     }
 
-![Quiz section mobile]()
+![Quiz section mobile](https://github.com/foster95/name-that-taylor/blob/main/assets/images/quiz-space-mobile.png)
 ![Quiz section desktop]()
 
 ### Result section
@@ -305,7 +305,7 @@ Once the quiz has run through 15 questions, the user will be shown a results mes
      }
      }
 
-![Result section]()
+![Result section](https://github.com/foster95/name-that-taylor/blob/main/assets/images/results-screen.png)
 
 ## Additional Buttons
 Once the user has launched the quiz, two additional buttons will appear underneath the quiz which allow the user to exit out of the game to the home page, or to choose to play another set of quiz functions. 
@@ -340,7 +340,7 @@ Once the user has launched the quiz, two additional buttons will appear undernea
      showSection ("pick-era");
      }
 
-![Additional buttons]()
+![Additional buttons](https://github.com/foster95/name-that-taylor/blob/main/assets/images/additional-buttons.png)
 
 ## Testing
 
@@ -442,7 +442,7 @@ At the time of submission no errors were found in the code.
 
 Earlier in development I ran into issues with the following:
 
-#### Buttons not reenabling after being disabled and moving to the next quiz section
+### Buttons not reenabling after being disabled and moving to the next quiz section
 
 Original code in showAnswer () 
 
@@ -467,6 +467,22 @@ This then fixed the issue. I ran into issues generally throughout the project, h
 
 ### CSS issues on Safari and Firefox
 When testing the site on different websites I found that there were issues with Mozilla Firefox and Safari showing up my CSS as intended. This was fixed by using the Autofixer platform, as recommended by Code Institute's earlier walkthrough, Boardwalk Games.
+
+### Responsivity
+When I originally visualised this project, I knew I wanted it to have a very minimal interface with the questions and all of the boxes floating centrally regardless of the screen. After experimentating, I found there was a way to fix this so that the boxes always floated centrally by adding a landing wrapper div and wrapping all the content in the following code:
+
+     .landing-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+However whilst this did fix te issue in its entirety, it also made the site entirely unresponsive to the various screen widths and dimensions without making the font so small as to be unreadable. In the end I decided as the developer that is was far better to have a responsive website that was slightly less aesthetically perfect, than to have an aesthetically perfect site that would not and could not work with multiple screen widths. I subsequently made the decision to remove the landing wrapper div and the code that came with that, and instead used padding and a few margin tops to create a better indication of visual space, even if it didn't always work perfectly. 
 
 ## Deployment
 
@@ -498,4 +514,8 @@ This JavaScript project has been a major learning curve from project one, and wa
 
 This project is small in scope and is certainly not perfect, but I am very proud of it, and I look forward to a future where JavaScript doesn't send a chill down my spine. 
 
-As a final disclaimer, this project is for education purposes, and not for public use. It was created for Code Institute's Full Stack Diploma course and is not affiliated with Taylor Swift, 13 Products, TAR Rights Manangement or Taylor Nation LLC.
+As a final disclaimer, this project is for education purposes, and not for public use. It was created for Code Institute's Full Stack Diploma course and is not affiliated with Taylor Swift, 13 Productions/Taylor Swift Productions, TAR Rights Manangement or Taylor Nation LLC.
+
+All trademarked and/or copyrighted content are the property of their respective owners.
+
+Developed by Alice Foster, 2025.

@@ -591,7 +591,7 @@ button {
     /* Final score styling */
 
     #final-score {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .final-score-button {
@@ -607,8 +607,8 @@ button {
     }
 }
 
-/* Media query for wider tablet screens - 815px and up */
-@media screen and (min-width:815px) {
+/* Media query for wider tablet screens - 810px and up */
+@media screen and (min-width:810px) {
 
     /* Logo styling */
 
@@ -634,7 +634,6 @@ button {
     /* Instructions page styling */
 
     #opening-instructions{
-        width: 75%;
         padding: 29px;
     }
 
@@ -658,7 +657,6 @@ button {
     /* Choose era styling */
 
     #pick-era {
-        width: 75%;
         font-size: 25px;
         padding-top: 18px;
     }
@@ -674,10 +672,6 @@ button {
     }
 
     /* Quiz space styling */
-
-    #quiz-space {
-        width: 75%;
-    }
 
     #era-label {
         font-size: 80px;
@@ -697,10 +691,6 @@ button {
     }
 
     /* Final score styling */
-
-    #final-score-space {
-        width: 75%
-    }
 
     #final-score {
         font-size: 25px;
@@ -808,6 +798,11 @@ button {
         gap: 14px 
      }
 
+    /* Final Result Styling */
+    #final-score {
+        font-size: 26px;
+    }
+
     #answer-space button {
         font-size: 32px;
         width: 75%;
@@ -819,6 +814,37 @@ button {
     }
 }
 
+/* Media Query for large tablets - 1024 px and up */
+@media screen and (min-width:1024px) {
+    /* Opening Instructions Styling */
+
+    #opening-instructions {
+        width: 85%;
+    }
+
+    /* Choose Era Styling */
+
+    #pick-era {
+        width: 85%;
+    }
+
+    /* Quiz Space Styling */
+
+    #quiz-space {
+        width: 85%;
+        margin-top: 2vh;
+    }
+
+    /* Final Score Styling */
+
+    #final-score-space {
+        width: 85%;
+    }
+
+    #final-score {
+        font-size: 36px;
+    }
+}
 /* Media Query for desktops - 1280px and up */
 @media screen and (min-width:1280px) {
 
