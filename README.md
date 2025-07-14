@@ -77,9 +77,8 @@ These user stories were then further broken down into the following categories:
 
 ### Could Have
 * As a user and player of the game, I would like an element of time pressure and to see a countdown clock which resets at every question
-* As a user and player of the game, I would like the quiz to change colour palettes depending on which game I choose to run.
 
-The full project board list can be found by clicking here
+[The full project board list can be found by clicking here](https://github.com/users/foster95/projects/4)
 
 ## Design
 Name that Song - Taylor's Version has been designed as a single webpage, with a series of javascript instructions ensuring the user can move through each section of the quiz. It has been designed to be compact, simple to use and easy to navigate with an opening section, a instructions section, a choose your game section, a quiz section and a final result section.
@@ -498,10 +497,10 @@ Widescreen Desktop | Scaling correctly, text box floating centrally on the brows
 
 #### Tablet Device
 ![Opening Page - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-opening-screen.png)
-![Instructions Page - tablet]()
-![Choose Your Era - tablet]()
-![Quiz section - tablet]()
-![Results Page - tablet]()
+![Instructions Page - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-opening-instructions.png)
+![Choose Your Era - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-choose-your-era.png)
+![Quiz section - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-quiz-space.png)
+![Results Page - tablet](https://github.com/foster95/name-that-taylor/blob/main/assets/images/tablet-testing-result-page.png)
 
 #### Desktop Device
 ![Opening Page - desktop](https://github.com/foster95/name-that-taylor/blob/main/assets/images/desktop-testing-opening-screen.png)
