@@ -8,7 +8,7 @@ Project 02 by Alice Foster
 
 Name that Song - Taylor's Version is designed as a fun quiz, which allows users to test their knowledge about Taylor Swift's lyrics, from her very first album through to her most recent. 
 
-The website is compromised of a simple quiz mechanic through JavaScript, which allows the user to choose the album they wish to test themselves on, before being prompted with random lyrics from that particular album. If the answer is correct, the answer will highlight in green, if it is incorrect the answer will highlight in red and the correct answer will be revealed. At the end of the 15 questions, the user will be greeted with an end of quiz message, which is dependent on how well they answered the quiz.
+The website is compromised of a simple quiz mechanic through JavaScript, which allows the user to choose the album they wish to test themselves on, before being prompted with random lyrics from that particular album. If the answer is correct, the answer will highlight in green, if it is incorrect the answer will highlight in red and the correct answer will be revealed. At the end of the 15 questions, the user will be greeted with an end of quiz message, which is dependent on how well they answered the quiz. Whilst any one can use the lyric generator, this quiz has been built specifically towards a female target audience and even more specifically, for those who consider themselves fans of Taylor Swift's music and wish to test themselves on the lyrics. 
 
 ![amiresponsive](https://github.com/foster95/name-that-taylor/blob/main/assets/images/am-i-responsive-image.png)
 Image from [amiresponsive](https://ui.dev/amiresponsive?url=https://foster95.github.io/name-that-taylor/)
@@ -16,7 +16,7 @@ Image from [amiresponsive](https://ui.dev/amiresponsive?url=https://foster95.git
 # Table of Contents
 1. [UX](#ux)
      - [User Stories](#user-stories)
-2. [Design] (#design)
+2. [Design](#design)
      - [Wireframes](#wireframes)
      - [Mobile Wireframes](#mobile-wireframes)
      - [Desktop Wireframes](#desktop-wireframes)
@@ -377,6 +377,101 @@ Quiz | On choosing which era they would like to play, the user is taken to the q
 Results | After completing 15 questions the user is shown their final score and a message that is specific to the score. This message will change dependent on how good or bad the score is. Underneath the score there is a "Home" button. On clicking this button the user is taken to the opening page. The button highlights purple on hover | After completing 15 questions the user is shown their final score. The message they recieve is dependent on their score. Underneath the score, there is a "Home" button, and on clicking this button the user is taken to the opening page. On mobile/tablet, the button does not turn purple when hovered over as hover is not an option for mobiles. On laptops/desktops the button turns purple when hovered over | All features responding as intended
 
 ### Manual Testing Against User Stories
+### User Story One
+As a user I need to be able to use the website in a clearly visible, engaging, responsive way. This should be the same across all devices and should be accessible for all users.
+
+#### Acceptance Critera
+* Website is responsive to multiple screen sizes (mobile, tablet, desktop and larger desktop)
+* Website should feature high quality photos and images that are appropriate to the project
+* All website links and images should have alt descriptions and where relevant ARIA labels
+* Any external links (if used) should open to a new tab
+* A header should be in place
+* Ideally a 404 page should be created if users click to the wrong page
+
+#### Was Acceptance Critera Met?
+* Website is responsive to multiple screen sizes with multiple media queries for small phone screens, larger phone screens, smaller tablet screens, larger tablet screens, small desktop screens and large desktop screens
+* I decided against using images in the website so as to not be distracting from the main quiz, however the primary image which sits in the background has been embedded in the CSS
+* As there were no images used and the background image was embedded into the CSS I did not have to provide any alt-text labels, however all buttons including answer buttons have an ARIA label. 
+* There are no external links
+* A header is in place, which holds the name of the site. This is coded to only appear once the user has launched the opening instructions and remains at the top of the page for the remainder of the game unless the user goes back to the homepage where it hides again
+* A 404 was not created due to time constraints of the project
+
+### User Story Two
+As a person playing Name that Song - Taylor's Version, I would like to be able to see the instructions to the game before I launch the game.
+
+#### Acceptance Criteria 
+* There is a help/instructions section that automatically pops up at the start of the game
+
+#### Was Acceptance Criteria Met?
+* There is an opening instructions section which the user is obligated to open when they launch the game but before they have chosen which quiz they would like to play. 
+* I had originally intended for this instructions button to be available at all times whilst the quiz was in progress, however this was shelved during development as it was too difficult to close the quiz, open the instructions and then return to the exact place in the quiz where the user left off. If I had more time this would absolutely be something I would develop in a future version of the site.
+
+### User Story Three
+As someone playing the game I want to know if my answer if correct or incorrect immediately and have it add to a tally if the score is correct.
+
+#### Acceptance Criteria 
+* Button highlights red or green if answer correct/incorrect
+* Score is featured on the page prominently so that a player can always gauge their progress.
+
+#### Was Acceptance Criteria Met?
+* When the user chooses an answer, the buttons automatically deactivate to stop the user from providing an alternative answer. If the answer is correct, the button turns green. If the answer is incorrect, the button turns red and the correct answer is shown in green
+* Correct answers increment the score automatically. The user is aiming to get a high score with the maximum score being 15. Incorrect answers do not increment the score. The next question automatically loads regardless of the answer being correct or incorrect after 1.5 seconds.
+
+### User Story Four
+As a game player and a Taylor fan I want the ability to choose the Era of songs I am guessing. No point in calling yourself a Swifty game if you can't guess ALL the Eras
+
+#### Acceptance Criteria
+* The quiz has different options for eras, each with a different pool of lyrics to guess
+
+#### Was Acceptance Criteria Met?
+* A list of lyrics from Taylor Swift albums was curated - one easy lyric, one medium lyric and one difficult lyric per song for each album using the GitHub project board
+* There are seven different sets of quiz sections throughout the game - Debut, Fearless, Speak Now, Red, 1989, Reputation, Lover, Folklore & Evermore, Midnights and The Tortured Poets Department.
+* For time purposes, the albums Folklore & Evermore were categorised together as both are two short albums and also have been described as sister albums. The Tortured Poets Department and The Tortured Poets Department - The Anthology have been combined into one category as again these have been described as complimentary albums that were launched at the same time
+* All of the questions were added to a folder in JavaScript which was specifically dedicated to the questions, to avoid making the general JavaScript long and messy. The questions have been imported to the main JavaScript which can be seen at the very top of the script. 
+
+### User Story Five
+As a player I would like to recieve a Taylor themed message at the end of the game based on how many answers I got correct. These messages should be punny, light hearted and just a touch of fun.
+
+#### Acceptance Criteria
+* The user should recieve different messages based on how many correct answers they make
+* Scores should be grouped to ensure different people recieve different messages depending on their overall score - ie less than 10 = poor score response 10-15 = not bad score response 15-18 = very good score response 18-19 = incredible score response 20 = pure score response.
+
+#### Was Acceptance Criteria Met?
+* On finishing the game, all users are met with a results page which shows them their answer and a message dependent on the answer.
+* These messages were written by me, with some help from Google Gemini to help me think of some good puns and have been coded into the JavaScript using inner HTML.
+* There are six different options for the message recieved and all of these are dependent on the score that the user provides - one for a full marks score, one for a 12-14 score, one for a 11-9 score, one for a 8-4 score, one for a 1-3 score and one for a 0 score. 
+
+### User Story Six
+As a fan of Taylor and a user of the game I want the option to challenge myself to harder levels within each Era
+
+#### Acceptance Criteria 
+* Create a easy, medium, difficulty option for each of the eras options
+* Once level is selected, only specific questions are called for that level
+
+#### Was Acceptance Criteria Met?
+* No - due to the constraints of time and the scope of the project, I decided against creating multiple different levels within each each individual quiz.
+* I also decided against creating different levels as I found that in order to make the quiz as random as possible, I had to provide different lyrics from the same song, which I took from the easy, medium and difficult list. If I had to create the further difficulty levels I would have to have had further song lyrics and I did not feel the scope of the project meritted this.
+* This was also a Should Have from my project board and was always going to be on the basis of time and scope of project
+
+### User Story Seven
+As a user, I do not want to have the same question shown to me everytime I play the game and instead want a randomised selection every time.
+
+#### Acceptance Criteria
+* Questions are drawn randomly from the pool of questions, ensuring that people receive different
+
+#### Was Acceptance Criteria Met?
+* Javascript was written to shuffle the array of questions provided from each question pool. 
+* To try and ensure as much randomisation as possible, 25 lyrics and answers were loaded into each set of questions
+
+### User Story Eight
+As a user and player of the game, I would like an element of time pressure and to see a countdown clock which resets at every question
+
+#### Acceptance Criteria
+* A timer sits on the website which has been styled to suit the rest of the website. It is prominently displayed so the user always knows how much time they have left
+
+#### Was Acceptance Criteria Met?
+* No - Due to the time constraints of the project I was unable to find a way to include a timer within the game
+* This was also a Could Have from my project board and was always going to be on the basis of time and scope of project
 
 ### Browser Testing
 The site was tested manually across Google Chrome, Mozilla Firefox and Safari. No errors were discovered across any of the sites, however some of the CSS did look slightly different on each browser. In order to fix this, I used the AutoPrefixer tool. 
@@ -511,7 +606,7 @@ However whilst this did fix te issue in its entirety, it also made the site enti
 This site was deployed to GitHub Pages using the following steps
 
 ## GitHub Pages
-1. Log in to GitHub and locate the ![GitHub Repository](https://github.com/foster95/name-that-taylor).
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/foster95/name-that-taylor).
 2. Navigate to the "Settings" of the repository, located at the top of the page in the menu.
 3. On the left hand-side is a menu, and click on the "Pages" from the Code and Automation section.
 4. Under "Branch" click on the dropdown menu called "None" and select "Main".
@@ -519,12 +614,12 @@ This site was deployed to GitHub Pages using the following steps
 6. Navigate to the "Code" of the repository, located at the top of the page in the menu.
 7. On the right-hand side is an "About" section and below that is the "Deployments" which shows the GitHub pages that deployed.
 
-![The live link can be found here](https://github.com/foster95/name-that-taylor).
+[The live link can be found here](https://github.com/foster95/name-that-taylor).
 
 The site is hosted using GitHub pages and is deployed via the main branch. The deployed site uses a Version Control System to track changes in the source code using the Gitpod terminal to commit messages and push them to GitHub. This will update the repository automatically when GitHub receives these commits in the main branch. The main landing page of the site must be named index.html for the site to be deployed correctly, as the search engines are looking for this document to load the site onto the web.
 
 ## Forking
-1. Log in to GitHub and navigate to the ![required repository](https://github.com/foster95/name-that-taylor).
+1. Log in to GitHub and navigate to the [required repository](https://github.com/foster95/name-that-taylor).
 2. Navigate to the right-hand side of the page and click ‘Fork’. This is located in-line with your repository name underneath the nav bar.
 3. Give the forked repository a name of your choosing.
 4. Amend the repository description if required.
@@ -533,7 +628,7 @@ The site is hosted using GitHub pages and is deployed via the main branch. The d
 7. You will now have a copy of the original repository in your GitHub account.
 
 ## Cloning
-1. Log in to GitHub and navigate to the ![required repository](https://github.com/foster95/name-that-taylor).
+1. Log in to GitHub and navigate to the [required repository](https://github.com/foster95/name-that-taylor).
 2. Click on the ‘Code’ button at the top of the repository and copy the URL.
 3. Open Git Bash in your IDE of choice and change the working directory to the location where you want the cloned directory.
 4. Type git clone, then paste the URL you copied earlier.
@@ -551,7 +646,7 @@ The site is hosted using GitHub pages and is deployed via the main branch. The d
 * Coolors
 * Favicon.io
 * Google Chrome Developer Tools
-* Chat GPT 
+* Chat GPT/Google Gemini
 * Code Autofixer 
 
 ## Credits and acknowledgement

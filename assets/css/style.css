@@ -729,6 +729,10 @@ button {
         padding-top: 20px;
     }
 
+    #website-opener {
+        margin-top: 25vh;
+    }
+
     #website-opener h1 {
         font-size: 100px;
     }
@@ -743,6 +747,10 @@ button {
     }
 
     /* Opening Instructions styling */
+
+    #opening-instructions {
+        width: 86%
+    }
 
     #opening-instructions h2 {
         font-size: 85px;
@@ -762,6 +770,10 @@ button {
     }
 
     /* Choose era styling */
+
+    #pick-era {
+        width: 90%;
+    }
 
     #pick-era h2 {
         font-size: 85px;
