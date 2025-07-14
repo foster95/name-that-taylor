@@ -46,8 +46,6 @@ button {
     font-size: 35px;
     font-weight: bold;
     padding-top: 15px;
-    position: sticky;
-    top: 0;
     padding-bottom: 20px;
 }
 
@@ -380,10 +378,6 @@ button {
 /* Media query for larger phone screens - 400px and up */
 @media screen and (min-width:400px) {
 
-    #logo {
-        font-size: 40px;
-    }
-
     #website-opener h1 {
         font-size: 50px;
     }
@@ -430,6 +424,10 @@ button {
 
 /* Media query for larger phone screens - 430px and up */
 @media screen and (min-width:430px) {
+
+    #logo {
+        font-size: 40px;
+    }
 
     /* Opening screen styling */
 
