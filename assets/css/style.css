@@ -619,6 +619,11 @@ button {
 
     /* Website opener styling */
 
+    #website-opener {
+        width: 87%;
+        margin-top: 19vh;
+    }
+
     #website-opener h1 {
         font-size: 90px;
     }
@@ -636,6 +641,7 @@ button {
 
     #opening-instructions{
         padding: 29px;
+        width: 87%;
     }
 
     #opening-instructions h2 {
