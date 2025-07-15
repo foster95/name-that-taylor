@@ -641,6 +641,7 @@ The site is hosted using GitHub pages and is deployed via the main branch. The d
 * Github
 * Gitpages
 * Visual Studio Code
+* Google Fonts
 * Balsamiq
 * Coolors
 * Favicon.io
