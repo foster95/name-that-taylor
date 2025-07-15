@@ -174,12 +174,12 @@ button {
     padding: 9px;
 }
 
-#pick-era button {
+.era-selector-button {
     width: 86%;
     font-size: 15px;
 }
 
-#pick-era button:hover {
+.era-selector-button:hover {
     background-color: #C5A3DA;
     color: black;
     border: 2px solid white; 
@@ -400,7 +400,7 @@ button {
         font-size: 44px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 18px;
         width: 79%;
     }
@@ -463,7 +463,7 @@ button {
         font-size: 50px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 20px;
         width: 87%;
     }
@@ -566,7 +566,7 @@ button {
         margin-bottom: 25px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 22px;
         width: 61%;
     }
@@ -674,7 +674,7 @@ button {
         margin-bottom: 27px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 26px;
         width: 75%;
     }
@@ -780,7 +780,7 @@ button {
         font-size: 85px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 32px;
         width: 71%;
     }
@@ -895,7 +895,7 @@ button {
         font-size: 63px;
     }
 
-    #pick-era button {
+    .era-selector-button {
         font-size: 23px;
         width:48%;
     }
