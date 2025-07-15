@@ -563,7 +563,7 @@ button {
 
     #pick-era h2 {
         font-size: 75px;
-        margin-bottom: 16px;
+        margin-bottom: 25px;
     }
 
     #pick-era button {
@@ -615,7 +615,7 @@ button {
     /* Logo styling */
 
     #logo {
-        font-size: 75px;
+        font-size: 68px;
     }
 
     /* Website opener styling */
@@ -731,6 +731,7 @@ button {
 
     #website-opener {
         margin-top: 25vh;
+        width: 85%
     }
 
     #website-opener h1 {
@@ -749,7 +750,7 @@ button {
     /* Opening Instructions styling */
 
     #opening-instructions {
-        width: 86%
+        width: 87%
     }
 
     #opening-instructions h2 {
@@ -830,53 +831,20 @@ button {
     }
 
     /* Final Result Styling */
-    #final-score {
-        font-size: 31px;
-    }
-}
-
-/* Media Query for large tablets - 1024 px and up */
-@media screen and (min-width:1024px) {
-
-    /* Website opener styling */
-
-    #website-opener {
-        width: 85%;
-    }
-
-    /* Opening Instructions Styling */
-
-    #opening-instructions {
-        width: 85%;
-    }
-
-    /* Choose Era Styling */
-
-    #pick-era {
-        width: 85%;
-    }
-
-    /* Quiz Space Styling */
-
-    #quiz-space {
-        width: 85%;
-        margin-top: 2vh;
-    }
-
-    /* Final Score Styling */
 
     #final-score-space {
         width: 85%;
     }
 
     #final-score {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .final-score-button {
         font-size: 29px;
     }
 }
+
 /* Media Query for desktops - 1280px and up */
 @media screen and (min-width:1280px) {
     /* Logo */
@@ -958,7 +926,7 @@ button {
     }
 
     #final-score {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .final-score-button {
@@ -1017,7 +985,7 @@ button {
     /* Final score styling */
 
     #final-score {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .final-score-button {
