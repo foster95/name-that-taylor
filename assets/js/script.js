@@ -3,7 +3,7 @@
 /* jshint -W033 */
 
 
-// Import Questions from Questions Folder
+// Import Questions from Questions Folder - support on import provided by mentor Spencer Barribal
 import { debutQuestions } from './questions/questions-debut.js';
 import { fearlessQuestions } from './questions/questions-fearless.js';
 import { speakNowQuestions } from './questions/questions-speaknow.js';
@@ -234,6 +234,7 @@ function endQuiz () {
  * Final score messages
  */
 function finalScore () {
+    // Window reload suggested by mentor Spencer Barribal
     const finalScoreEl = document.getElementById("final-score");
     const button = `
     <button class="final-score-button"  onclick="window.location.reload();">Home</button>
@@ -278,7 +279,7 @@ function finalScore () {
         
         ${button}`;
     }
-     else if (score >= 1 && score <= 4) {
+     else if (score >= 1 && score <= 3) {
         finalScoreEl.innerHTML = `
         <strong>Your final score is ${score} / 15!</strong>
         <p>Okay, so maybe that quiz was more of a <em>"Death By A Thousand Cuts"</em> than a <em>"Love Story"</em> for you, but hold up! You got a few right, and in the grand scheme of things, that's like finding a secret message in one of Taylor's album booklets - a small victory, but a victory nonetheless!</p>

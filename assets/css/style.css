@@ -43,7 +43,7 @@ button {
 #logo {
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -169,7 +169,7 @@ button {
 
 #pick-era h2 {
     font-family: var(--secondary-font);
-    font-size: 50px;
+    font-size: 44px;
     margin-top: 7px;
     padding: 9px;
 }
