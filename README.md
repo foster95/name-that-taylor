@@ -101,7 +101,7 @@ Choosing the colour palette for Name That Song - Taylor's Version, was a surpris
 
 ![Googled Era's Tour Palette - credit to jwhitaker42599](https://github.com/foster95/name-that-taylor/blob/main/assets/images/eras-tour-palette.png)
 
-On starting the project however, I realised that there were simply too many colours to create a cohesive colour palette across the site that would be an enjoyable user experience and didn't demand too much attention. With this in mind I scaled down the colour palette considerably, to the the yellow and purple aspect of the Era's tour, and decided to go for black font as this would provide the best readability for all users. The final colour palette I settled on can be seen below:
+On starting the project however, I realised that there were simply too many colours to create a cohesive colour palette across the site that would be an enjoyable user experience and didn't demand too much attention. With this in mind I scaled down the colour palette considerably, to the the yellow and purple aspect of the Era's tour, and decided to go for black font as this would provide the best readability for all users. The final colour palette I settled on can be seen below (created using Coolors):
 
 ![Refined Project Palette](https://github.com/foster95/name-that-taylor/blob/main/assets/images/final-colour-palette.png)
 
@@ -652,10 +652,13 @@ The site is hosted using GitHub pages and is deployed via the main branch. The d
 * Blisk
 
 ## Credits and acknowledgement
-All questions came from the lyrics from Taylor Alison Swift and I do not claim any copyright to the lyrics used
+All questions came from the lyrics from Taylor Alison Swift and I do not claim any copyright to the lyrics used.
+
 Similarly the general image and aesthetic of the website was inspired by Taylor's Swift's Era's Tour and I do not claim any copyright or credit for this
+
 All instructions and the results messages were written by myself
 Spencer Barribal for his continued support and for helping me with the import aspect of JavaScript
+
 I would also like to thank my partner Jon for his continued championing and support all throughout the difficult and often long evenings
 Friends and family members who tested the website and pointed out small ammendments and changes in the kindest way they could
 
