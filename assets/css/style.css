@@ -931,6 +931,7 @@ button {
 
     .final-score-button {
         width: 24%;
+        font-size: 25px;
     }
 
     /* Additional buttons styling */
@@ -963,6 +964,10 @@ button {
         font-size: 70px;
     }
 
+    #opening-instructions p {
+        font-size: 27px;
+    }
+
     #opening-instructions h3 {
         font-size: 62px;
     }
@@ -972,10 +977,18 @@ button {
         margin-top: 9vh;
     }
 
+    .era-selector-button {
+        font-size: 25px;
+    }
+
     /* Quiz area styling */
 
     #quiz-space {
         margin-top: 2vh;
+    }
+
+    #answer-space button {
+        font-size: 25px;
     }
 
     #question {
