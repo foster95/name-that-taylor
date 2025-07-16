@@ -47,7 +47,7 @@ Image from [amiresponsive](https://ui.dev/amiresponsive?url=https://foster95.git
      - [Buttons Not Reenabling](#buttons-not-reenabling-after-being-disabled-and-moving-to-the-next-quiz-section)
      - [CSS Issue on Safari and Fox](#css-issues-on-safari-and-firefox)
      - [Responsivity](#responsivity)
-6. [Deployyment](#deployment)
+6. [Deployment](#deployment)
      - [GitHub Page](#github-pages)
      - [Forking](#forking)
      - [Cloning](#cloning)
@@ -476,7 +476,7 @@ As a user and player of the game, I would like an element of time pressure and t
 The site was tested manually across Google Chrome, Mozilla Firefox and Safari. No errors were discovered across any of the sites, however some of the CSS did look slightly different on each browser. In order to fix this, I used the AutoPrefixer tool. 
 
 ### Responsive Testing
-I used Blisk to test cross compatability across multiple screen sizes and types.
+I used [Blisk](https://blisk.io/) to test cross compatability across multiple screen sizes and types.
 
 Device | Opening | Instructions | Choose Era | Quiz | Result Page | Notes
 --- | --- | --- | --- | --- | --- | ---
@@ -649,6 +649,7 @@ The site is hosted using GitHub pages and is deployed via the main branch. The d
 * Chat GPT/Google Gemini
 * Code Autofixer
 * Adobe Photoshop 
+* Blisk
 
 ## Credits and acknowledgement
 All questions came from the lyrics from Taylor Alison Swift and I do not claim any copyright to the lyrics used
